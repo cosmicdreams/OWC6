@@ -1,2 +1,6 @@
 static/build/node_modules
 static/build/.sass-cache
+.DS_STORE
+static/.sass-cache
+static/node_modules/gulp-autoprefixer/node_modules
+static/node_modules
