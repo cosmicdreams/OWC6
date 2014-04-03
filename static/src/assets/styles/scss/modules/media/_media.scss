@@ -1,0 +1,59 @@
+/* ---------------------------------------------------------------------
+ Media
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Media
+name: media
+category: modules
+---
+
+
+```html_example
+      
+<!-- Media -->
+ <div class="media">
+    <div class="media-img">
+      <img src="http://placehold.it/300x200" alt="" />
+    </div>
+    <div class="media-bd">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+<!-- // End Media -->
+
+<!-- Media Inverse -->
+  <div class="media">
+    <div class="media-img media-img_inverse">
+      <img src="http://placehold.it/300x200" alt="" />
+    </div>
+    <div class="media-bd">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+<!-- // End Media Block (inverse) Sample -->
+```
+*/
+
+$margin: 10px;
+
+/* standard */
+.media { 
+  overflow: hidden; 
+}
+
+.media-img {
+    float: left;
+    margin: 0 $margin 0 0;
+}
+
+.media-bd { 
+  overflow: hidden; 
+}
+
+/* inverse */
+.media-img_inverse {
+    float: right;
+    margin: 0 0 0 $margin;
+}
