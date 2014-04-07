@@ -1,0 +1,60 @@
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Heading
+name: heading
+category: modules
+---
+
+
+```html_example
+
+<h1 class="hdg hdg_1">Heading 1</h1>
+<h2 class="hdg hdg_2">Heading 2</h1>
+<h3 class="hdg hdg_3">Heading 3</h1>
+<h4 class="hdg hdg_4">Heading 4</h1>
+<h5 class="hdg hdg_5">Heading 5</h1>
+
+```
+*/
+
+.hdg {
+    font-family: 'Istok Web', Helvetica, Arial, sans-serif;
+    color: inherit;
+    font-weight: 700;
+}
+
+/* heading sizes */
+.hdg_1 { 
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hdg_2 { 
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.hdg_3 { 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hdg_4 { 
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hdg_5 { 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.hdg_6 { font-size: 18px; }
+.hdg_7 { font-size: 16px; }
+.hdg_8 { font-size: 14px; }
+.hdg_9 { font-size: 12px; }

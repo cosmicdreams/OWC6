@@ -8,32 +8,34 @@ title: Blocks
 name: blocks
 category: modules
 ---
-# Blocks!!!!!
+## Blocks 2up
 
 ```html_example
 
 <ul class="blocks blocks_2up">
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img" src="http://placekitten.com/g/300/300" alt="" /></li>
 </ul>
 ```
-Blocks!!!!!
+## Blocks 3up
 
 ```html_example
 
 <ul class="blocks blocks_3up">
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
 </ul>
 ```
+## Blocks 4up
+
 ```html_example
 
 <ul class="blocks blocks_4up">
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
-  <li><img src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
 </ul>
 
 ```
@@ -69,5 +71,3 @@ $gutter: 20%;
 .blocks_4up > * {
   @include blocks(4, $gutter);
 }
-
-img { width: 100%; }

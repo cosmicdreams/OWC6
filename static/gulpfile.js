@@ -10,9 +10,12 @@ var sass = require('gulp-ruby-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var exec = require('gulp-exec');
+var connect = require('gulp-connect');
 
 
 /* GULP TASKS */
+
+// Process styles
 gulp.task('styles', function() {
     return gulp.src(BASE_PATH + SOURCE_PATH + '/assets/styles/scss/screen.scss')
         .pipe(sass({ style: 'expanded' }))
@@ -21,8 +24,26 @@ gulp.task('styles', function() {
         ;
 });
 
-
 gulp.task('hologram', function() {
     gulp.src('./**/**')
         .pipe(exec('hologram'));
 });
+
+gulp.task('connect', function() {
+  connect.server({
+    root: ['styleguide'],
+    port: 1337,
+    livereload: false
+  });
+});
+
+gulp.task('html', function () {
+  gulp.src('./styleguide/**/*.html')
+    .pipe(connect.reload());
+});
+
+gulp.task('watch', function () {
+  gulp.watch(['./styleguide/**/*.html'], ['html']);
+});
+
+gulp.task('default', ['connect', 'watch']);

@@ -1,9 +1,3 @@
-<!doctype html>
-<html>
-  <head>
-    <title>a brand new styleguide: <%= title %></title>
-    <link rel="stylesheet" href="./css/screen.css">
-    <style>
     @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
       .content {
         width: 600px;
@@ -85,22 +79,3 @@
 .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
-    </style>
-  </head>
-  <body>
-
-    <nav>
-      <ul>
-      <% @categories.each do |category, file_name| %>
-        <li><a href="<%= file_name %>"><%= category %></a></li>
-      <% end %>
-      </ul>
-    </nav>
-
-    <h1>a brand new style guide, it's super effective</h1>
-    <section class="content">
-      <ul>
-      <% @blocks.each do |b| %>
-        <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
-      <% end %>
-      </ul>
