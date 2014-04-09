@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Codename: Space Eagle</title>
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./assets/styles/hologram.css">
+    <script src="./assets/scripts/iconic.min.js"></script>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+      <% @categories.each do |category, file_name| %>
+        <li><a href="<%= file_name %>"><%= category %></a></li>
+      <% end %>
+      </ul>
+    </nav>
+
+    <h1>Codename: Space Eagle</h1>
+    <section class="content">
+      <ul>
+      <% @blocks.each do |b| %>
+        <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+      <% end %>
+      </ul>

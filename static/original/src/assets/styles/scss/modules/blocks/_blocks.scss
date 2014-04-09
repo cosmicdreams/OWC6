@@ -1,0 +1,73 @@
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Blocks
+name: blocks
+category: modules
+---
+## Blocks 2up
+
+```html_example
+
+<ul class="blocks blocks_2up">
+  <li><img class="img" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img" src="http://placekitten.com/g/300/300" alt="" /></li>
+</ul>
+```
+## Blocks 3up
+
+```html_example
+
+<ul class="blocks blocks_3up">
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+</ul>
+```
+## Blocks 4up
+
+```html_example
+
+<ul class="blocks blocks_4up">
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+  <li><img class="img img_full" src="http://placekitten.com/g/300/300" alt="" /></li>
+</ul>
+
+```
+*/
+
+$gutter: 1%;
+
+@mixin blocks($n, $g) {
+  width: (100% - ($n * $g)) / $n;
+}
+
+.blocks {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin-left: ( (100% * $gutter)/(100% - $gutter) ) * -1;
+}
+
+.blocks > * {
+  display: block;
+  margin-left: $gutter;
+  float: left;
+}
+
+.blocks_2up > * {
+  @include blocks(2, $gutter);
+}
+
+.blocks_3up > * {
+  @include blocks(3, $gutter);
+}
+
+.blocks_4up > * {
+  @include blocks(4, $gutter);
+}

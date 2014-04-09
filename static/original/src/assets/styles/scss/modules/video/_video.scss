@@ -1,0 +1,50 @@
+/* ---------------------------------------------------------------------
+ Video
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Video
+name: video
+category: modules
+---
+
+```html_example
+<div class="video">	
+	<iframe width="560" height="315" src="http://www.youtube.com/embed/2XID_W4neJo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="video video_vimeo">
+	<iframe src="http://player.vimeo.com/video/11673745" width="500" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+```
+*/
+
+.video {
+	position: relative;
+	padding-top: 1.5625rem;
+	padding-bottom: 67.5%;
+	height: 0;
+	margin-bottom: 1rem;
+	overflow: hidden; 
+}
+
+.video_widescreen {
+	padding-bottom: 56.34%;
+}
+
+.video_vimeo {
+	padding-top: 0; 
+}
+
+.video iframe,
+.video object,
+.video embed,
+.video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+}

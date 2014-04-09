@@ -1,0 +1,70 @@
+/* ---------------------------------------------------------------------
+ Button
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Button
+name: button
+category: modules
+---
+
+## Anchor
+```html_example    
+<a href="#" class="btn">Primary Button</a>
+<a href="#" class="btn btn_disabled">Disabled Button</a>
+<a href="#" class="btn btn_cta">Call to Action</a>
+```
+
+## Input
+```html_example
+<input type="submit" class="btn" value="Primary Button" />
+<input type="submit" class="btn btn_disabled" value="Disabled Button" disabled />
+<input type="submit" class="btn btn_cta" value="Call to Action" />
+```
+
+## Button
+```html_example
+<button type="submit" class="btn">Primary Button</button>
+<button type="submit" class="btn btn_disabled" disabled>Disabled Button</button>
+<button type="submit" class="btn btn_cta">Call to Action</button>
+```
+*/
+
+$btnPaddingVert: 8px;
+$btnPaddingHor: 16px;
+
+.btn {
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    padding: $btnPaddingVert $btnPaddingHor;
+    background: #666666;
+    color: #eeeeee; /* fallback for non rgba browsers */
+    color: rgba(255,255,255,.9);
+    font: bold 14px/1 Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #333333;
+}
+
+.btn_disabled {
+    color: #666666; /* fallback for non rgba browsers */
+    color: rgba(0,0,0,.3);
+    background: #cccccc !important; /* override hovers - disabled buttons don't have hover states */
+}
+
+.btn_cta {
+    background: #d53b3b;
+}
+
+.btn_cta:hover {
+    background: #b81818;
+}
+
+

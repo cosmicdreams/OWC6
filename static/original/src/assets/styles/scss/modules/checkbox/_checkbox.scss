@@ -1,0 +1,43 @@
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Checkbox
+name: checkbox
+category: modules
+---
+
+```html_example
+      
+<!-- Checkbox Group -->
+  <input type="checkbox" name="checkbox-group" class="checkbox" />
+  <input type="checkbox" name="checkbox-group" class="checkbox" />
+  <input type="checkbox" name="checkbox-group" class="checkbox" />
+  <input type="checkbox" name="checkbox-group" class="checkbox" />
+<!-- // End Checkbox Group -->
+```
+## Checkbox - disabled
+
+```html_example
+<!-- Checkbox Disabled -->
+  <input type="checkbox" name="checkbox-group" class="checkbox" disabled />
+  <input type="checkbox" name="checkbox-group" class="checkbox" disabled />
+  <input type="checkbox" name="checkbox-group" class="checkbox" disabled />
+  <input type="checkbox" name="checkbox-group" class="checkbox" disabled />
+<!-- // End Checkbox Disabled -->
+
+```
+*/
+
+
+
+/* ---------------------------------------------------------------------
+ H List
+------------------------------------------------------------------------ */
+
+.checkbox {
+    width: 13px;
+    height: 13px;
+}

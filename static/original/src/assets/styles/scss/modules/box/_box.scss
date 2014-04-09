@@ -1,0 +1,38 @@
+/* ---------------------------------------------------------------------
+ Feature
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Feature
+name: feature
+category: modules
+---
+
+
+```html_example
+      
+<!-- Box  -->
+<div class="feature">
+  <div class="feature-hd">
+    <h3 class="hdg hdg_3">Box Head</h3>
+  </div>
+  <div class="feature-img">
+    <img class="img img_full" src="http://placekitten.com/g/200/200" alt="" />
+  </div>
+  <div class="feature-bd">
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, corrupti, voluptas corporis atque minus eligendi ea officia exercitationem dolorum aspernatur doloremque aliquid omnis blanditiis. Laboriosam eligendi sunt a minima dicta!
+    </p>
+  </div>
+  <div class="feature-ft">
+    <button class="btn btn_cta">Call to Action!</button>
+  </div>
+</div>
+```
+*/
+
+.feature {
+  border: 1px solid black;
+}
+
