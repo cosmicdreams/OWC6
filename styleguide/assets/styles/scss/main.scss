@@ -1,0 +1,11 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Behold, here are all the Foundation components.
+@import
+  "objects/_blocks.scss",
+  "objects/_breadcrumbs.scss",
+  "objects/_grid.scss",
+  "objects/_orbit.scss",
+  "objects/_pagination.scss",
+  "objects/_wysiwyg.scss";

@@ -1,0 +1,14 @@
+{
+  "name": "owc-project",
+  "version": "1.0.0",
+  "description": "OWC Client Website",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-ruby-sass": "^0.4.1",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-exec": "^1.0.4",
+    "gulp-connect": "~2.0.4",
+    "gulp-clean": "^0.2.4"
+  }
+}
