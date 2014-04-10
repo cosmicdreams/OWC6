@@ -10,3 +10,6 @@ npm-debug.log
 tools/node/
 web/
 *.sass-cache
+main.css
+styleguide/*.html
+styleguide/*.html
