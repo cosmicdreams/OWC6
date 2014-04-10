@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Codename: Space Eagle</title>
+    <link rel="stylesheet" href="./css/foundation.min.css">
+    <link rel="stylesheet" href="./assets/styles/hologram.css">
+
+  <body>
+
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <nav class="tab-bar">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
+
+        <section class="middle tab-bar-section">
+          <h1 class="title">OWC Style Guide</h1>
+        </section>
+
+        <section class="right-small">
+          <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
+      </nav>
+
+      <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>Objects</label></li>
+            <% @blocks.each do |b| %>
+            <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+            <% end %>
+            <li><label>Pages</label></li>
+
+            <% @categories.each do |category, file_name| %>
+            <li><a href="<%= file_name %>"><%= category %></a></li>
+            <% end %>
+        </ul>
+      </aside>
+    <!--<aside class="right-off-canvas-menu">-->
+        <!--<ul class="off-canvas-list">-->
+            <!--<% @categories.each do |category, file_name| %>-->
+            <!--<li><a href="<%= file_name %>"><%= category %></a></li>-->
+            <!--<% end %>-->
+        <!--</ul>-->
+    <!--</aside>-->
+      <section class="main-section">
+
+    <!--<nav>-->
+      <!--<ul>-->
+
+      <!--</ul>-->
+    <!--</nav>-->
+
+
