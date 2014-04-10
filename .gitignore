@@ -4,3 +4,7 @@ static/build/.sass-cache
 static/.sass-cache
 static/node_modules/gulp-autoprefixer/node_modules
 static/node_modules
+
+# Ignore IntelliJ files.
+.idea
+atlassian-ide-plugin.xml
