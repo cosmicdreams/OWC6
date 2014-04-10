@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * panopoly_faq_demo.install
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function panopoly_faq_demo_enable() {
+  _panopoly_core_import_demo_content(array('PanopolyFAQDemoNode'));
+}
+
+/**
+ * Implements hook_disable().
+ */
+function panopoly_faq_demo_disable() {
+  _panopoly_core_rollback_demo_content(array('PanopolyFAQDemoNode'));
+}

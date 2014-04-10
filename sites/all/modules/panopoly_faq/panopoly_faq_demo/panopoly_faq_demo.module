@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+/**
+ * Implements hook_migrate_api().
+ */
+function panopoly_faq_demo_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'PanopolyFAQDemoNode' => array('class_name' => 'PanopolyFAQDemoNode'),
+    ),
+  );
+  return $api;
+}

@@ -1,0 +1,6 @@
+<?php
+
+// This file is blank. The panopoly_faq_democontent module was renamed to
+// panopoly_faq_demo. This file remains to help with the upgrade process.
+//
+// panopoly_faq_democontent could be deleted at a later date.

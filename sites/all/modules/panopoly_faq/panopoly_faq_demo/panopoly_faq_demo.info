@@ -1,0 +1,16 @@
+name = Panopoly FAQ Demo
+description = Demo content for Panopoly FAQ
+core = 7.x
+package = Panopoly Demos
+project = panopoly_faq_demo
+dependencies[] = migrate
+dependencies[] = panopoly_faq
+features[features_api][] = api:1
+files[] = import/panopoly_faq_demo.node.inc
+
+; Information added by Drupal.org packaging script on 2014-01-29
+version = "7.x-1.1"
+core = "7.x"
+project = "panopoly_faq"
+datestamp = "1391037225"
+

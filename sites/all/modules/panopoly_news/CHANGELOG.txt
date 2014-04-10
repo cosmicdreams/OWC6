@@ -1,0 +1,12 @@
+Panopoly News 7.x-1.2, 2014-03-08
+---------------------------
+- Add CHANGELOG.txt
+- Topics links give 404 where the term alias doesn't match the automatic default.
+- Update Feature (it's from an older version of Features).
+- Remove "Uncategorized" link from Topics view (was: Not categorised news gives a 404).
+
+Panopoly News 7.x-1.1, 2014-01-13
+---------------------------
+- Cannot migrate site with panopoly_news from rc2 --> 1.0.
+- Update demo content enable/disable hooks to use new helper function from Panopoly Core.
+- Implement Migrate module for Panopoly News demo content.

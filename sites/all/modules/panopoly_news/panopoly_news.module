@@ -1,0 +1,66 @@
+<?php
+/**
+ * @file
+ * Code for the Panopoly News feature.
+ */
+
+include_once 'panopoly_news.features.inc';
+
+/**
+ * Implementation of hook_apps_app_info()
+ */
+function panopoly_news_apps_app_info() {
+  return array(
+    'demo content description' => 'If you are using Panopoly News for the first time we recommend you install some demo content to see how the magic works.<br/><br/>',
+    'demo content module' => 'panopoly_news_demo',
+    'demo content link path' => 'news',
+  	'configure form' => 'panopoly_news_configure_form',
+  );
+}
+
+/**
+ * Config form for Panopoly News
+ */
+function panopoly_news_configure_form($form, &$form_state) {
+  $form = array();
+  
+  // This is currently just to test the apps config integration
+  $form['panopoly_news_config_group'] = array(
+      '#type' => 'fieldset',
+      '#title' => "Configuration Options for Panopoly News",
+  );
+
+  $form['panopoly_news_config_group']['panopoly_news_test'] = array(
+    '#title' => t('Trivia'),
+    '#type' => 'select',
+    '#required' => TRUE,
+    '#options' => array(
+      '1' => 'Mark Antony',
+      '0' => 'Mark Anthony',
+    ),
+    '#default_value' => variable_get('panopoly_news_test', FALSE) ? '1' : '0',
+    '#description' => t('Which Mark is superior?'),
+  );
+
+  return system_settings_form($form);
+}
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function panopoly_news_ctools_plugin_directory($module, $plugin) {
+  return 'plugins/' . $plugin;
+}
+
+/**
+ * Implementation of hook_views_pre_render()
+ */
+function panopoly_news_views_pre_view(&$view, &$display_id, &$args) {
+
+  // Modify the options from the view to add in the current sitename into the RSS feed
+  if ($view->name == 'panopoly_news' && $display_id == 'panopoly_news_feed') {
+    $sitename = variable_get('site_name');
+    $view->display_handler->options['title'] = str_replace('!sitename', $sitename, $view->display_handler->options['title']);
+    $view->display_handler->options['style_options']['description'] = str_replace('!sitename', $sitename, $view->display_handler->options['style_options']['description']);
+  }
+}

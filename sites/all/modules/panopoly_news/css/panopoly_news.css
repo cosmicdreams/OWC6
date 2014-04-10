@@ -1,0 +1,9 @@
+div.panels-ipe-pseudobutton-container a.panels-ipe-add-content {
+  padding-left: 34px;
+  background: url(../images/icon-add.png) no-repeat 10px 9px;
+}
+
+div.panels-ipe-pseudobutton-container a.panels-ipe-style {
+  padding-left: 34px;
+  background: url(../images/icon-style.png) no-repeat 10px 9px;
+}

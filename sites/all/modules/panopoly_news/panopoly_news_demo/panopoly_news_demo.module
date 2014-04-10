@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * panopoly_news_demo.module
+ */
+
+/**
+ * Implements hook_migrate_api().
+ */
+function panopoly_news_demo_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'PanopolyNewsDemoNode' => array('class_name' => 'PanopolyNewsDemoNode'),
+      'PanopolyNewsDemoTerm' => array('class_name' => 'PanopolyNewsDemoTerm'),
+    ),
+  );
+  return $api;
+}
