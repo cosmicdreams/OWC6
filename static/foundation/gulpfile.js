@@ -15,7 +15,6 @@ var connect = require('gulp-connect');
 
 /* GULP TASKS */
 
-Process styles
 gulp.task('styles', function() {
      return gulp.src(BASE_PATH + SOURCE_PATH + '/scss/foundation.scss')
          .pipe(sass({ style: 'expanded' }))

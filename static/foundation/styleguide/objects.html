@@ -2,18 +2,9 @@
 <html>
   <head>
     <title>Codename: Space Eagle</title>
-    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/foundation.min.css">
     <link rel="stylesheet" href="./assets/styles/hologram.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./assets/scripts/iconic.min.js"></script>
-    <script src="./assets/scripts/foundation.min.js"></script>
-    <script src="./assets/scripts/foundation/foundation.offcanvas.js"></script>
-    <script src="./assets/scripts/foundation/foundation.orbit.js"></script>
 
-  <script>
-      $(document).foundation();
-  </script>
-  </head>
   <body>
 
   <div class="off-canvas-wrap" data-offcanvas>
@@ -191,13 +182,7 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></div></div></div>
 <h1 id="orbit">Orbit</h1>
-<div class="codeExample"><div class="exampleOutput"><ul data-orbit
-    data-options="animation:slide;
-                  pause_on_hover:true;
-                  animation_speed:500;
-                  navigation_arrows:true;
-                  bullets:false;">
-
+<div class="codeExample"><div class="exampleOutput"><ul class="example-orbit" data-orbit>
   <li>
   <img src="//placekitten.com/300/200" alt="slide 1" />
     <div class="orbit-caption">
@@ -205,25 +190,19 @@
     </div>
   </li>
   <li class="active">
-    <img src="//placekitten.com/300/200" alt="slide 2" />
+  <img src="//placekitten.com/300/200" alt="slide 2" />
     <div class="orbit-caption">
       Caption Two.
     </div>
   </li>
   <li>
-    <img src="//placekitten.com/300/200" alt="slide 3" />
+  <img src="//placekitten.com/300/200" alt="slide 3" />
     <div class="orbit-caption">
       Caption Three.
     </div>
   </li>
 </ul>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">data-orbit</span>
-    <span class="na">data-options=</span><span class="s">&quot;animation:slide;</span>
-<span class="s">                  pause_on_hover:true;</span>
-<span class="s">                  animation_speed:500;</span>
-<span class="s">                  navigation_arrows:true;</span>
-<span class="s">                  bullets:false;&quot;</span><span class="nt">&gt;</span>
-
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;example-orbit&quot;</span> <span class="na">data-orbit</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//placekitten.com/300/200&quot;</span> <span class="na">alt=</span><span class="s">&quot;slide 1&quot;</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;orbit-caption&quot;</span><span class="nt">&gt;</span>
@@ -231,19 +210,25 @@
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//placekitten.com/300/200&quot;</span> <span class="na">alt=</span><span class="s">&quot;slide 2&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//placekitten.com/300/200&quot;</span> <span class="na">alt=</span><span class="s">&quot;slide 2&quot;</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;orbit-caption&quot;</span><span class="nt">&gt;</span>
       Caption Two.
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//placekitten.com/300/200&quot;</span> <span class="na">alt=</span><span class="s">&quot;slide 3&quot;</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;//placekitten.com/300/200&quot;</span> <span class="na">alt=</span><span class="s">&quot;slide 3&quot;</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;orbit-caption&quot;</span><span class="nt">&gt;</span>
       Caption Three.
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
-</pre></div></div></div><div class="codeExample"><div class="exampleOutput">
+</pre></div></div></div><div class="codeExample"><div class="exampleOutput"><a href="#" data-dropdown="drop1" class="button dropdown">Dropdown Button</a><br>
+<ul id="drop1" data-dropdown-content class="f-dropdown">
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
 <ul class="example-orbit-content" data-orbit>
   <li data-orbit-slide="headline-1">
     <div>
@@ -264,7 +249,14 @@
     </div>
   </li>
 </ul>
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;example-orbit-content&quot;</span> <span class="na">data-orbit</span><span class="nt">&gt;</span>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-dropdown=</span><span class="s">&quot;drop1&quot;</span> <span class="na">class=</span><span class="s">&quot;button dropdown&quot;</span><span class="nt">&gt;</span>Dropdown Button<span class="nt">&lt;/a&gt;&lt;br&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;drop1&quot;</span> <span class="na">data-dropdown-content</span> <span class="na">class=</span><span class="s">&quot;f-dropdown&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>This is a link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>This is another<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Yet another<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;example-orbit-content&quot;</span> <span class="na">data-orbit</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">data-orbit-slide=</span><span class="s">&quot;headline-1&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div&gt;</span>
       <span class="nt">&lt;h2&gt;</span>Headline 1<span class="nt">&lt;/h2&gt;</span>
@@ -329,5 +321,18 @@
         <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
       </footer>
     </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.0/fastclick.min.js"></script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./assets/scripts/iconic.min.js"></script>
+<script src="./assets/scripts/foundation.min.js"></script>
+
+
+<script>
+    $(document).foundation();
+</script>
+</head>
   </body>
 </html>
