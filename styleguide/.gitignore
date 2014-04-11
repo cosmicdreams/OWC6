@@ -1,0 +1,15 @@
+.*.swp
+.DS_Store
+._.DS_Store
+.idea/*
+*.idea/*
+.tmp/
+docs/
+env.js
+node_modules/
+npm-debug.log
+tools/node/
+web/
+*.sass-cache
+styleguide/*main.css
+styleguide/*.html
