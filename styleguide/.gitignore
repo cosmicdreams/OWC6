@@ -13,3 +13,4 @@ web/
 *.sass-cache
 styleguide/*main.css
 styleguide/*.html
+styleguide/samples

@@ -40,6 +40,11 @@ gulp.task('connect', function() {
   });
 });
 
+//gulp.task('move-samples', function() {
+//    gulp.src('templates/samples/*.html')
+//        .pipe(gulp.dest('./'))
+//});
+
 // gulp.task('html', function () {
 //    gulp.src('./styleguide/**/*.html')
 //      .pipe(connect.reload());
@@ -54,6 +59,7 @@ gulp.task('connect', function() {
 gulp.task('build', function() {
   gulp.run('clean-styles');
   gulp.run('clean-markup');
+  //gulp.run('move-samples');
   gulp.run('sass');
   gulp.run('hologram');
 });
