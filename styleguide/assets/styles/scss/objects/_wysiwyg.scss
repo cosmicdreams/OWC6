@@ -267,6 +267,7 @@ testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeemail@eeeeeeeeeeeeeeeeeeeeeeeeeeee
 
 @import "../foundation/components/global";
 @import "../foundation/components/type";
+@import "../foundation/components/tables";
 
 /* ---------------------------------------------------------------------
 wysiwyg default
@@ -548,13 +549,8 @@ wysiwyg tables
   tfoot tr td { display: $table-display; line-height: $table-line-height; }
 }
 
-
-@include exports("table") {
-  @if $include-html-table-classes {
-    .wysiwyg table {
-      @include table;
-    }
-  }
+.wysiwyg table {
+  @include table;
 }
 
 /* ---------------------------------------------------------------------

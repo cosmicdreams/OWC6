@@ -2,7 +2,8 @@
 
 </div>
 </div>
-</section>
+</div>
+</div>
 <footer>
 <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
 </footer>
@@ -16,6 +17,16 @@
 
 <script>
 $(document).foundation();
+
+$(function() {
+    $('.exampleOutput').after('<hr/><a href="#" class="js-codeButton button tiny">Toggle Markup</a>');
+    $('.js-codeButton').on('click', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        $this.next().slideToggle(150);
+    });
+});
+
 </script>
 </head>
 </body>

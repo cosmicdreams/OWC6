@@ -3,6 +3,10 @@
 	max-width: 80rem;
 	margin: 0 auto;
 }
+
+.codeBlock {
+    display: none;
+}
 .codeExample {
   margin-bottom: 100px;
 }
@@ -15,6 +19,7 @@
   font-size: 14px;
   overflow-x: auto;
   line-height: 1.5;
+  color: #eee;
 }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
