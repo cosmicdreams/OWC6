@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/.sculpin/robloach/component-installer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.sculpin/robloach/component-installer/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/.sculpin/robloach/component-installer/tests/ComponentInstaller" isTestSource="false" packagePrefix="Composer" />
+      <sourceFolder url="file://$MODULE_DIR$/.sculpin/kriswallsmith/assetic/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+
