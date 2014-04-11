@@ -1,0 +1,22 @@
+/* ---------------------------------------------------------------------
+ Link
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Link
+name: link
+category: Objects
+---
+
+```html_example
+
+<a href="#" class="link">Lorem ipsum dolor sit amet.</a>
+<a href="#" class="link link_decorated">Lorem ipsum dolor sit amet.</a>
+
+```
+*/
+
+.link {}
+
+.link_decorated { text-decoration: underline; }

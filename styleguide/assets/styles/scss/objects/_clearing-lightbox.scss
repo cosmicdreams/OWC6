@@ -1,0 +1,37 @@
+/* ---------------------------------------------------------------------
+ Clearing Lightbox
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Clearing Lightbox
+name: clearing-lightbox
+category: Objects
+---
+
+### Basic Image Clearing
+
+```html_example
+<ul class="clearing-thumbs" data-clearing>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/100/100"></a></li>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/101/100"></a></li>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+</ul>
+```
+
+### Featured Image Clearing
+
+```html_example
+<ul class="clearing-thumbs clearing-feature" data-clearing>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+  <li class="clearing-featured-img"><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+</ul>
+```
+
+
+
+*/
+
+
+
