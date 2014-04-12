@@ -41,7 +41,7 @@ function zurb_foundation_html_head_alter(&$head_elements) {
     '#tag' => 'meta',
     '#attributes' => array(
       'name' => 'viewport',
-      'content' => 'width=device-width, maximum-scale = 1.0',
+      'content' => 'width=device-width',
     ),
   );
 
@@ -366,7 +366,7 @@ function zurb_foundation_preprocess_field(&$variables) {
   // Add class to a specific fields across content types.
   switch ($variables['element']['#field_name']) {
     case 'body':
-      $variables['classes_array'][] = array('body');
+      $variables['classes_array'] = array('body');
       break;
 
     case 'field_summary':
@@ -376,12 +376,12 @@ function zurb_foundation_preprocess_field(&$variables) {
     case 'field_link':
     case 'field_date':
       // Replace classes entirely, instead of adding extra.
-      $variables['classes_array'][] = array('text-content');
+      $variables['classes_array'] = array('text-content');
       break;
 
     case 'field_image':
       // Replace classes entirely, instead of adding extra.
-      $variables['classes_array'][] = array('image');
+      $variables['classes_array'] = array('image');
       break;
 
     default:

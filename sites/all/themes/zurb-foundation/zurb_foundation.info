@@ -1,10 +1,10 @@
 name = ZURB Foundation
-description = Drupal implementation of the Zurb Foundation 4 framework.
+description = Drupal implementation of the Zurb Foundation 5 framework.
 core = 7.x
 engine = phptemplate
 
 ; Image appears on admin/appearance
-screenshot = images/screenshot.png
+screenshot = images/screenshot.jpg
 
 ; Reset styles with normalize
 stylesheets[all][] = css/normalize.css
@@ -64,9 +64,9 @@ settings[zurb_foundation_html_tags] = 1
 settings[zurb_foundation_messages_modal] = 0
 settings[zurb_foundation_pager_center] = 1
 
-; Information added by Drupal.org packaging script on 2014-02-22
-version = "7.x-4.0"
+; Information added by Drupal.org packaging script on 2014-02-19
+version = "7.x-5.0-alpha3"
 core = "7.x"
 project = "zurb-foundation"
-datestamp = "1393091312"
+datestamp = "1392847787"
 

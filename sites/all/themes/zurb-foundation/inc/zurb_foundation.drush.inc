@@ -48,6 +48,7 @@ function drush_zurb_foundation_foundation_sub_theme($name = NULL, $machine_name 
   // Find theme paths.
   $zurb_path = drush_locate_root() . '/' . drupal_get_path('theme', 'zurb_foundation');
   $subtheme_path = dirname($zurb_path) . '/' . $machine_name;
+  $relative_path = str_replace('zurb-foundation', $machine_name, drupal_get_path('theme', 'zurb_foundation'));
 
   // Make a fresh copy of the subtheme.
   $s = drush_copy_dir("$zurb_path/STARTER/", $subtheme_path);
@@ -63,9 +64,10 @@ function drush_zurb_foundation_foundation_sub_theme($name = NULL, $machine_name 
 
   // Rename files and fill in the theme machine name
   drush_op('rename', "$subtheme_path/STARTER.info.txt", "$subtheme_path/$machine_name.info");
-  drush_op('rename', "$subtheme_path/css/custom.css", "$subtheme_path/css/$machine_name.css");
-  drush_op('rename', "$subtheme_path/scss/custom.scss", "$subtheme_path/scss/$machine_name.scss");
+  drush_op('rename', "$subtheme_path/css/STARTER.css", "$subtheme_path/css/$machine_name.css");
+  drush_op('rename', "$subtheme_path/scss/STARTER.scss", "$subtheme_path/scss/$machine_name.scss");
   drush_op('rename', "$subtheme_path/js/scripts.js", "$subtheme_path/js/$machine_name.js");
+
   // Update the .info file
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/$machine_name.info", 'ZURB Foundation Sub-theme Starter', "$name");
   // Change the name of the theme
@@ -83,6 +85,12 @@ function drush_zurb_foundation_foundation_sub_theme($name = NULL, $machine_name 
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/template.php", 'STARTER', "$machine_name");
   // Rename functions in theme-settings.php
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/theme-settings.php", 'STARTER', "$machine_name");
+  // Replace STARTER in package.json
+  drush_op('zurb_foundation_file_str_replace', "$subtheme_path/package.json", 'STARTER', "$machine_name");
+  // Replace STARTER in Gruntfile.js
+  drush_op('zurb_foundation_file_str_replace', "$subtheme_path/Gruntfile.js", 'STARTER', "$machine_name");
+  // Replace THEMENAME in STARTER.scss
+  drush_op('zurb_foundation_file_str_replace', "$subtheme_path/scss/$machine_name.scss", 'THEMENAME', "$machine_name");
 
   // Notify user of the newly created theme.
   drush_print(dt("\n!name sub-theme was created in !path. \n",
@@ -91,6 +99,7 @@ function drush_zurb_foundation_foundation_sub_theme($name = NULL, $machine_name 
       '!path' => $subtheme_path,
     )
   ));
+
   drush_pm_enable_validate($machine_name);
   drush_pm_enable($machine_name);
 }

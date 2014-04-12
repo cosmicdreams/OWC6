@@ -91,10 +91,6 @@ function zurb_foundation_field_multiple_value_form($variables) {
  * Modifies description to display the description in a tooltip.
  */
 function _zurb_foundation_add_tooltips(&$variables) {
-  // Don't do this if tooltips were turned off in settings.
-  if (!theme_get_setting('zurb_foundation_tooltip_enable')) {
-    return;
-  }
   if (!empty($variables['element']['#title']) && !empty($variables['element']['#description'])) {
     $variables['element']['#title'] = '<label>' . $variables['element']['#title'] . '</label>';
     $text = theme_get_setting('zurb_foundation_tooltip_text');
