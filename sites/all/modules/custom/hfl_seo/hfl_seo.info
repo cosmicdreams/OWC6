@@ -4,7 +4,6 @@ core = 7.x
 package = Home For Life
 version = 7.x-1.0
 project = hfl_seo
-dependencies[] = google_analytics
 dependencies[] = checklistapi
 dependencies[] = metatag
 dependencies[] = seo_checklist
