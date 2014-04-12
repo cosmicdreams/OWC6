@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the HFL SEO feature.
  */
+
+include_once 'hfl_seo.features.inc';
