@@ -1,0 +1,24 @@
+/* ---------------------------------------------------------------------
+ Text
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Text
+name: text
+category: Objects
+---
+
+```html_example
+<p class="text">Lorem ipsum dolor sit amet.</p>
+<p class="text text_strong">Lorem ipsum dolor sit amet.</p>
+<p class="text text_em">Lorem ipsum dolor sit amet.</p>
+
+```
+*/
+
+.text {}
+
+.text_em { font-style: italic; }
+
+.text_strong { font-weight: bold; }
