@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Pet Profile feature.
- */
-
-include_once 'pet_profile.features.inc';
