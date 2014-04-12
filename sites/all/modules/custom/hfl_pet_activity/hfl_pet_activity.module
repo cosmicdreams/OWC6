@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Pet Activity feature.
+ */
+
+include_once 'hfl_pet_activity.features.inc';
