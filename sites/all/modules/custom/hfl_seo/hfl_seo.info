@@ -10,4 +10,5 @@ dependencies[] = seo_checklist
 dependencies[] = pathauto
 dependencies[] = globalredirect
 dependencies[] = redirect
+dependencies[] = module_filter
 features[features_api][] = api:2
