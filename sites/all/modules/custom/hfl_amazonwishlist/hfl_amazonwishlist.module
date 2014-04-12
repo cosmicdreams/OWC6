@@ -24,7 +24,11 @@ function hfl_amazonwishlist_block_info() {
 function hfl_amazonwishlist_block_view($delta='') {
   $block = array();
 
-  $block['content'] = '<SCRIPT charset="utf-8" type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fwidgetsamazon-20%2F8004%2F94bb03e5-60fb-4d80-b532-d9ecca2f3211"> </SCRIPT> <NOSCRIPT><A HREF="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fwidgetsamazon-20%2F8004%2F94bb03e5-60fb-4d80-b532-d9ecca2f3211&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>';
+  $block['content'] = '<SCRIPT
+  charset="utf-8"
+  type="text/javascript"
+  src="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fwidgetsamazon-20%2F8004%2F72774958-3642-4555-844d-137cb12763a0"></SCRIPT>
+  <NOSCRIPT><A HREF="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fwidgetsamazon-20%2F8004%2F72774958-3642-4555-844d-137cb12763a0&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>';
 
 
   return $block;
