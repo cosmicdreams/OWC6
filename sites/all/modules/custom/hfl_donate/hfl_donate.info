@@ -1,0 +1,5 @@
+name = HFL Donate 
+core = 7.x
+package = Home For Life
+version = 7.x-1.0
+
