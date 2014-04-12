@@ -11,6 +11,8 @@ category: Objects
 
 ```html_example
   <div class="box"></div>
+  <div class="box box_light"></div>
+
 ```
 
 */
@@ -19,4 +21,8 @@ category: Objects
 .box {
   padding: 5px;
   border: 1px solid #ccc;
+}
+
+.box_opaqueLight{
+  background: hsla(0,0%,100%,.8);
 }
