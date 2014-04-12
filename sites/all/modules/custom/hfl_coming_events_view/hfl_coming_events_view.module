@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Coming Events View feature.
+ */
+
+include_once 'hfl_coming_events_view.features.inc';
