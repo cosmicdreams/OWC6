@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Helper module for the Edit tests.
+ */
+
+/**
+ * Implements hook_edit_render_field().
+ */
+function edit_test_edit_render_field($entity_type, $entity, $field_name, $view_mode_id, $langcode) {
+  $field = field_view_field($entity_type, $entity, $field_name);
+  $field['#prefix'] = '<div class="edit-test-wrapper">';
+  $field['#suffix'] = '</div>';
+  return $field;
+}
+

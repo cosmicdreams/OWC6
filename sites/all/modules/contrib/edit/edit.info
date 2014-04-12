@@ -1,0 +1,19 @@
+name = Edit
+description = In-place content editing.
+package = Spark
+core = 7.x
+
+files[] = tests/edit_loading.test
+
+dependencies[] = contextual
+dependencies[] = entity
+dependencies[] = field (>=7.22)
+dependencies[] = libraries (>=2.x)
+dependencies[] = ctools
+
+; Information added by Drupal.org packaging script on 2014-01-24
+version = "7.x-1.0"
+core = "7.x"
+project = "edit"
+datestamp = "1390581855"
+
