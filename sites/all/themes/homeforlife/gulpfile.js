@@ -34,7 +34,7 @@ gulp.task('hologram', function() {
 
 gulp.task('connect', function() {
   connect.server({
-    root: ['./'],
+    root: ['./styleguide'],
     port: 1337,
     livereload: false
   });

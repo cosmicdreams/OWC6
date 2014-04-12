@@ -44,7 +44,8 @@ tools/node/
 web/
 *.sass-cache
 main.css
-styleguide/*.html
+styleguide/objects.html
+styleguide/wysiwyg.html
 homeforlife.css
 foundation.min.js
 scripts.js
