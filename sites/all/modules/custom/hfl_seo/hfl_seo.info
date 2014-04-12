@@ -1,0 +1,10 @@
+name = HFL Seo
+description = SEO feature for all the SEO module dependoncies
+core = 7.x
+package = Home For Life
+version = 7.x-1.0
+project = hfl_seo
+dependencies[] = checklistapi
+dependencies[] = metatag
+dependencies[] = seo_checklist
+features[features_api][] = api:2
