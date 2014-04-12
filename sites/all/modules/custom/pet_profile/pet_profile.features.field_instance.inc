@@ -61,8 +61,8 @@ function pet_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-pet_profile-field_pet_type'
-  $field_instances['node-pet_profile-field_pet_type'] = array(
+  // Exported field_instance: 'node-pet_profile-field_petprofile_pettype'
+  $field_instances['node-pet_profile-field_petprofile_pettype'] = array(
     'bundle' => 'pet_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -74,21 +74,15 @@ function pet_profile_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 1,
       ),
-      'full' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
       'teaser' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_pet_type',
+    'field_name' => 'field_petprofile_pettype',
     'label' => 'Pet Type',
     'required' => 1,
     'settings' => array(
@@ -103,20 +97,16 @@ function pet_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-pet_profile-field_picture'
-  $field_instances['node-pet_profile-field_picture'] = array(
+  // Exported field_instance: 'node-pet_profile-field_petprofile_profileimage'
+  $field_instances['node-pet_profile-field_petprofile_profileimage'] = array(
     'bundle' => 'pet_profile',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -127,18 +117,18 @@ function pet_profile_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_picture',
-    'label' => 'Picture',
+    'field_name' => 'field_petprofile_profileimage',
+    'label' => 'Profile Image',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 1,
+      'alt_field' => 0,
       'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '200x200',
-      'title_field' => 1,
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -157,7 +147,7 @@ function pet_profile_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Pet Type');
-  t('Picture');
+  t('Profile Image');
 
   return $field_instances;
 }

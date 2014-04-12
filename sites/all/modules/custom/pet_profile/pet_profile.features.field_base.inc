@@ -39,13 +39,13 @@ function pet_profile_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_pet_type'
-  $field_bases['field_pet_type'] = array(
+  // Exported field_base: 'field_petprofile_pettype'
+  $field_bases['field_petprofile_pettype'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_pet_type',
+    'field_name' => 'field_petprofile_pettype',
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
@@ -73,13 +73,13 @@ function pet_profile_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_picture'
-  $field_bases['field_picture'] = array(
+  // Exported field_base: 'field_petprofile_profileimage'
+  $field_bases['field_petprofile_profileimage'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_picture',
+    'field_name' => 'field_petprofile_profileimage',
     'foreign keys' => array(
       'fid' => array(
         'columns' => array(
