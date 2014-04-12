@@ -1,0 +1,195 @@
+<?php
+
+//
+// Field Bases
+//
+
+/**
+ * Implementation of hook_field_info().
+ */
+function hfl_credit_field_info() {
+  $fields = array();
+
+  $fields['hfl_credit_field_credit'] = array(
+    'label' => t('Credit Card Information'),
+    'description' => t('Credit Card Information'),
+    'default_widget' => 'hfl_credit_widget_credit',
+    'default_formatter' => 'hfl_credit_formatter_credit',
+    'settings' => array(),
+    'instance_settings' => array(),
+  );
+
+  return $fields;
+}
+
+function hfl_credit_field_settings_form($item, $field) {
+}
+
+/**
+ * Implementation of hook_field_is_empty().
+ */
+function hfl_credit_field_is_empty($item, $field) {
+  switch ($field['type']) {
+    case 'hfl_credit_field_credit':
+      // todo
+      break;
+    default:
+      break;
+  }
+  return FALSE;
+}
+
+/**
+ * Implementation of hook_field_validate().
+ */
+function hfl_credit_field_validate(
+  $entity_type,
+  $entity,
+  $field,
+  $instance,
+  $langcode,
+  $items,
+  &$errors
+) {
+  // this space intentionally left blank
+}
+
+//
+// Widgets
+//
+
+/**
+ * Implementation of hook_field_widget_info().
+ */
+function hfl_credit_field_widget_info() {
+  $widgets = array();
+
+  $widgets['hfl_credit_widget_credit'] = array(
+    'label' => t('Credit Cart Widget'),
+    'description' => t('A widget for entering credit card information.'),
+    'field types' => array('hfl_credit_field_credit'),
+    'behaviors' => array(
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+      'default value' => FIELD_BEHAVIOR_NONE,
+    ),
+    'settings' => array(),
+  );
+
+  return $widgets;
+}
+
+/**
+ * Implementation of hook_field_widget_form().
+ */
+function hfl_credit_field_widget_form(
+  &$form,
+  &$form_state,
+  $field,
+  $instance,
+  $langcode,
+  $items,
+  $delta,
+  $element
+) {
+
+  $elements = array();
+
+  switch ($instance['widget']['type']) {
+    case 'hfl_credit_widget_credit':
+      $elements['creditinfo'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Credit Card Info'),
+        '#collapsible' => TRUE,
+        '#collapsed' => FALSE,
+      );
+
+      $elements['creditinfo']['type'] = array(
+        '#type' => 'select',
+        '#title' => t('Card Type'),
+        '#options' => array(
+          'visa' => t('Visa'),
+          'mastercard' => t('MasterCard'),
+          'american_express' => t('American Express'),
+          'discover' => t('Discover'),
+        ),
+        '#default_value' => isset($items[$delta]['cardtype']) ? $items[$delta]['cardtype'] : NULL,
+        '#required' => TRUE,
+      );
+      $elements['creditinfo']['cardnumber'] = array(
+        '#type' => 'creditfield_cardnumber',
+        '#title' => t('Card Number'),
+        '#default_value' => isset($items[$delta]['cardnumber']) ? $items[$delta]['cardnumber'] : NULL,
+        '#required' => TRUE,
+      );
+      $elements['creditinfo']['date'] = array(
+        '#type' => 'creditfield_date',
+        '#title' => t('Expiration Date'),
+        '#default_value' => isset($items[$delta]['date']) ? $items[$delta]['date'] : NULL,
+        '#required' => TRUE,
+      );
+      $elements['creditinfo']['cvv'] = array(
+        '#type' => 'creditfield_cvv',
+        '#title' => t('CVV'),
+        '#default_value' => isset($items[$delta]['cvv']) ? $items[$delta]['cvv'] : NULL,
+        '#required' => TRUE,
+      );
+      break;
+
+    default:
+      break;
+  }
+
+  return $elements;
+}
+
+/**
+ * Implementation of hook_field_widget_error().
+ */
+function hfl_credit_field_widget_error($element, $error, $form, &$form_state) {
+  // empty
+}
+
+//
+// Formatters
+//
+
+/**
+ * Implementation of hook_field_formatter_info().
+ */
+function hfl_credit_field_formatter_info() {
+  $formatters = array();
+
+  $formatters['hfl_credit_formatter_credit'] = array(
+    'label' => t('Credit Formatter'),
+    'field types' => array('hfl_credit_formatter_credit'),
+  );
+
+  return $formatters;
+}
+
+/**
+ * Implementation of hook_field_formatter_view().
+ */
+function hsl_credit_field_formatter_view(
+  $entity_type,
+  $entity,
+  $field,
+  $instance,
+  $langcode,
+  $items,
+  $display
+) {
+  $element = array();
+
+  switch ($display['type']) {
+    case 'hfl_credit_formatter_credit':
+      return '';
+      break;
+
+    default:
+      break;
+  }
+
+  return $element;
+}
+

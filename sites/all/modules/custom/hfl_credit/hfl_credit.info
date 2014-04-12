@@ -1,0 +1,6 @@
+name = HFL Credit 
+description = Defines a custom credit card field. 
+core = 7.x
+package = Home For Life 
+version = 7.x-1.0
+dependencies[] = creditfield
