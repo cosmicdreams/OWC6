@@ -22,8 +22,8 @@ function hfl_constant_contact_settings_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
-        'region' => 'sidebar_second',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'bartik',
         'weight' => 0,
       ),
@@ -31,6 +31,12 @@ function hfl_constant_contact_settings_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'zurb_foundation' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'zurb_foundation',
         'weight' => 0,
       ),
     ),

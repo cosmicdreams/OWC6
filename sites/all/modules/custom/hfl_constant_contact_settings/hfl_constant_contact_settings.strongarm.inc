@@ -30,7 +30,7 @@ function hfl_constant_contact_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cc_block_redirect_url_1';
-  $strongarm->value = 'email-thankyou';
+  $strongarm->value = 'email-signup-thankyou';
   $export['cc_block_redirect_url_1'] = $strongarm;
 
   $strongarm = new stdClass();
