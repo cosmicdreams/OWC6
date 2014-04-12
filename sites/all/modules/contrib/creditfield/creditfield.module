@@ -1,0 +1,173 @@
+<?php
+
+/**
+ * Implements hook_element_info().
+ *
+ * @return array
+ */
+
+function creditfield_element_info() {
+  $types['creditfield_cardnumber'] = array(
+    '#input' => TRUE,
+    '#element_validate' => array('creditfield_cardnumber_validate'),
+    '#autocomplete_path' => FALSE,
+    '#process' => array('form_process_creditfield'),
+    '#theme' => 'textfield',
+    '#theme_wrappers' => array('form_element'),
+    '#maxlength' => 16,
+  );
+
+  $types['creditfield_date'] = array(
+    '#input' => TRUE,
+    '#element_validate' => array('creditfield_date_validate'),
+    '#process' => array('form_process_creditfield_date'),
+    '#theme' => 'date',
+    '#theme_wrappers' => array('form_element'),
+  );
+
+  $types['creditfield_cvv'] = array(
+    '#input' => TRUE,
+    '#element_validate' => array('creditfield_cvv_validate'),
+    '#autocomplete_path' => FALSE,
+    '#process' => array('form_process_creditfield'),
+    '#theme' => 'textfield',
+    '#theme_wrappers' => array('form_element'),
+    '#maxlength' => 4,
+  );
+
+  return $types;
+}
+
+/**
+ * Validate callback for credit card number fields.
+ * Luhn algorithm number checker - (c) 2005-2008 shaman - www.planzero.org
+ *
+ * @param array $element
+ */
+
+function creditfield_cardnumber_validate($element) {
+  // Strip any non-digits (useful for credit card numbers with spaces and hyphens)
+  $cardnumber = preg_replace('/\D/', '', $element['#value']);
+
+  if (!is_numeric($cardnumber)) {
+    form_error($element, t('Please enter a valid credit card number.'));
+  }
+
+  // Set the string length and parity
+  $cardnumber_length = drupal_strlen($cardnumber);
+  $parity = $cardnumber_length % 2;
+
+  // Loop through each digit and do the maths
+  $total=0;
+
+  for ($i = 0; $i < $cardnumber_length; $i++) {
+    $digit = $cardnumber[$i];
+    // Multiply alternate digits by two
+    if ($i % 2 == $parity) {
+      $digit *= 2;
+      // If the sum is two digits, add them together (in effect)
+      if ($digit > 9) {
+        $digit -= 9;
+      }
+    }
+    // Total up the digits
+    $total += $digit;
+  }
+
+  // If the total mod 10 equals 0, the number is valid
+  $valid = ($total % 10 == 0) ? TRUE : FALSE;
+
+  if (!$valid) {
+    form_error($element, t('Your card appears to be invalid. Please check the numbers and try again.'));
+  }
+}
+
+/**
+ * Validate callback for credit card expiration date.
+ *
+ * @param type $element
+ */
+
+function creditfield_date_validate($element) {
+  if ($element['#value']['year'] == date('Y', time()) && $element['#value']['month'] < date('m', time())) {
+    form_error($element, t('Please enter a valid expiration date.'));
+  }
+}
+
+/**
+ * Validate callback for credit card cvv number fields.
+ *
+ * @param type $element
+ */
+
+function creditfield_cvv_validate($element) {
+  if (!is_numeric($element['#value'])) {
+    form_error($element, t('Please enter a valid CVV number.'));
+  }
+}
+
+/**
+ * Form element process callback.
+ *
+ * @param type $element
+ */
+
+function form_process_creditfield($element) {
+  return $element;
+}
+
+/**
+ * Element process callback; adds support for credit expiration date entry.
+ *
+ * @param $element
+ *   An associative array containing the properties of the element.
+ *
+ * @return
+ *   The processed element.
+ */
+
+function form_process_creditfield_date($element) {
+  // Default to current date
+  if (empty($element['#value'])) {
+    $element['#value'] = array(
+      'month' => format_date(REQUEST_TIME, 'custom', 'n'),
+      'year' => format_date(REQUEST_TIME, 'custom', 'Y'),
+    );
+  }
+
+  $element['#tree'] = TRUE;
+
+  // Determine the order of month & year in the site's chosen date format.
+  $format = variable_get('date_format_short', 'm/Y');
+  $sort = array();
+  $sort['month'] = max(strpos($format, 'm'), strpos($format, 'M'));
+  $sort['year'] = strpos($format, 'Y');
+  asort($sort);
+  $order = array_keys($sort);
+
+  // Output multi-selector for date.
+  foreach ($order as $type) {
+    switch ($type) {
+      case 'month':
+        $options = drupal_map_assoc(range(1, 12), 'map_month');
+        $title = t('Month');
+        break;
+
+      case 'year':
+        $options = drupal_map_assoc(range(date('Y', time()), date('Y', time()) + 10));
+        $title = t('Year');
+        break;
+    }
+
+    $element[$type] = array(
+      '#type' => 'select',
+      '#title' => $title,
+      '#title_display' => 'invisible',
+      '#value' => $element['#value'][$type],
+      '#attributes' => $element['#attributes'],
+      '#options' => $options,
+    );
+  }
+
+  return $element;
+}

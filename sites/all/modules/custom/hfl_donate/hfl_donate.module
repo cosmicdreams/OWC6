@@ -1,0 +1,21 @@
+<?php
+
+module_load_include('inc', 'hfl_donate', 'hfl_donate.form');
+module_load_include('inc', 'hfl_donate', 'hfl_donate.menu');
+
+/**
+ * Implementation of hook_menu().
+ */
+function hfl_donate_menu() {
+  $items = array();
+
+  $items['donate'] = array(
+    'title' => 'Donate',
+    'page callback' => '_hfl_donate_menu_donate',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
