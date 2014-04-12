@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Constant Contact settings feature.
+ */
+
+include_once 'hfl_constant_contact_settings.features.inc';
