@@ -1,0 +1,106 @@
+<?php
+/**
+ * @file
+ * Define tokens based on the parsing of Google Analytics cookie.
+ */
+module_load_include('php', 'ga_tokenizer', 'class.gaparse');
+/**
+ * Implements hook_tokens().
+ */
+function ga_tokenizer_tokens($type, $tokens, array $data = array(), array $options = array()){
+  $replacements = array();
+  $sanitize = !empty($options['sanitize']);
+
+  if ($type == 'ga_tokenizer') {
+    $ga_parse = new GA_Parse($_COOKIE);
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'ga-source':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->campaign_source) : $ga_parse->campaign_source;
+          break;
+        case 'ga-campaign':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->campaign_name) : $ga_parse->campaign_name;
+          break;
+        case 'ga-medium':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->campaign_medium) : $ga_parse->campaign_medium;
+          break;
+        case 'ga-content':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->campaign_content) : $ga_parse->campaign_content;
+          break;
+        case 'ga-term':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->campaign_term) : $ga_parse->campaign_term;
+          break;
+        case 'ga-first-visit':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->first_visit) : $ga_parse->first_visit;
+          break;
+        case 'ga-previous-visit':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->previous_visit) : $ga_parse->previous_visit;
+          break;
+        case 'ga-current-visit':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->current_visit_started) : $ga_parse->current_visit_started;
+          break;
+        case 'ga-times-visited':
+          $replacements[$original] = $sanitize ? check_plain($ga_parse->times_visited) : $ga_parse->times_visited;
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function ga_tokenizer_token_info() {
+  $types = array(
+    'ga_tokenizer' => array(
+      'name' =>  t('Google Analytics tokenizer tokens.'),
+      'description' => t('Tokens related with Google Analytics that are not provided by google_analytics module.'),
+    ),
+  );
+
+  $ga_tokenizer['ga-source'] = array(
+    'name' => t('Source'),
+    'description' => t('Search engine, newsletter name, or other source.'),
+  );
+  $ga_tokenizer['ga-campaign'] = array(
+    'name' => t('Campaign'),
+    'description' => t('To identify a specific product promotion or strategic campaign.'),
+  );
+  $ga_tokenizer['ga-medium'] = array(
+    'name' => t('Medium'),
+    'description' => t('A medium such as email or cost-per-click.'),
+  );
+  $ga_tokenizer['ga-content'] = array(
+    'name' => t('Content'),
+    'description' => t('Used for A/B testing. To differentiate ads or links that point to the same URL.'),
+  );
+  $ga_tokenizer['ga-term'] = array(
+    'name' => t('Term'),
+    'description' => t('The keywords for the organic search or ad.'),
+  );
+  $ga_tokenizer['ga-first-visit'] = array(
+    'name' => t('First visit'),
+    'description' => t('Date/Time of initial visit.'),
+  );
+  $ga_tokenizer['ga-previous-visit'] = array(
+    'name' => t('Previous visit'),
+    'description' => t('Date/Time of previous visit.'),
+  );
+  $ga_tokenizer['ga-current-visit'] = array(
+    'name' => t('Current visit'),
+    'description' => t('Date/Time of current visit.'),
+  );
+  $ga_tokenizer['ga-times-visited'] = array(
+    'name' => t('Times visited'),
+    'description' => t('Total number of times visited.'),
+  );
+
+  return array(
+    'types' => $types,
+    'tokens' => array(
+      'ga_tokenizer' => $ga_tokenizer,
+    ),
+  );
+}
