@@ -1,6 +1,6 @@
 name = Request a Tour
 core = 7.x
-package = Home for Life
+package = Home For Life
 version = 7.x-1.0
 project = hfl_requestatour
 dependencies[] = date
