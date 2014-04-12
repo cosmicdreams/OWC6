@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pet_profile.strongarm.inc
+ * hfl_pet_profile.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function pet_profile_strongarm() {
+function hfl_pet_profile_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

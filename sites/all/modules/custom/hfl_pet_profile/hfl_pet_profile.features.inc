@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pet_profile.features.inc
+ * hfl_pet_profile.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function pet_profile_ctools_plugin_api($module = NULL, $api = NULL) {
+function hfl_pet_profile_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,7 +16,7 @@ function pet_profile_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function pet_profile_node_info() {
+function hfl_pet_profile_node_info() {
   $items = array(
     'pet_profile' => array(
       'name' => t('Pet Profile'),
