@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ *
+ * @return array
+ */
+function hfl_amazonwishlist_block_info() {
+  $blocks = array();
+  $blocks['my_block'] = array(
+    'info' => t('Amazon Wishlist'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * @param string $delta
+ *
+ * @return array
+ */
+function hfl_amazonwishlist_block_view($delta='') {
+  $block = array();
+
+  $block['content'] = '<SCRIPT charset="utf-8" type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fwidgetsamazon-20%2F8004%2F94bb03e5-60fb-4d80-b532-d9ecca2f3211"> </SCRIPT> <NOSCRIPT><A HREF="http://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fwidgetsamazon-20%2F8004%2F94bb03e5-60fb-4d80-b532-d9ecca2f3211&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>';
+
+
+  return $block;
+}
