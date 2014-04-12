@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Node Export settings feature.
+ */
+
+include_once 'hfl_node_export_settings.features.inc';
