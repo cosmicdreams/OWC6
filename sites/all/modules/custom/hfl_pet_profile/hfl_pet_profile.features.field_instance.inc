@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pet_profile.features.field_instance.inc
+ * hfl_pet_profile.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function pet_profile_field_default_field_instances() {
+function hfl_pet_profile_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-pet_profile-body'

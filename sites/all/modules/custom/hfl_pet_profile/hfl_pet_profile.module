@@ -4,4 +4,4 @@
  * Code for the Pet Profile feature.
  */
 
-include_once 'pet_profile.features.inc';
+include_once 'hfl_pet_profile.features.inc';

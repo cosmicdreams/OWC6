@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pet_profile.features.taxonomy.inc
+ * hfl_pet_profile.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function pet_profile_taxonomy_default_vocabularies() {
+function hfl_pet_profile_taxonomy_default_vocabularies() {
   return array(
     'pet_type' => array(
       'name' => 'Pet Type',

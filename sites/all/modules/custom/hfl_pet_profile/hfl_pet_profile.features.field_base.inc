@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pet_profile.features.field_base.inc
+ * hfl_pet_profile.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function pet_profile_field_default_field_bases() {
+function hfl_pet_profile_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'

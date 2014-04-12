@@ -1,7 +1,7 @@
-name = Pet Profile
+name = HFL Pet Profile
 description = Profile of a specific pet.
 core = 7.x
-package = HomeForLife
+package = Home For Life
 version = 7.x-1.0
 project = pet_profile
 dependencies[] = features
