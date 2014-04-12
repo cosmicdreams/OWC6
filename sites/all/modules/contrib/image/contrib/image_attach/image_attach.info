@@ -1,0 +1,11 @@
+name = Image Attach
+description = Allows easy attaching of image nodes to other content types.
+package = Image
+dependencies[] = image
+core = 6.x
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "image"
+datestamp = "1380582650"
+

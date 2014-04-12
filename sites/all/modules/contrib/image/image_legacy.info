@@ -1,0 +1,12 @@
+name = Image legacy
+description = Convert Drupal 6 image nodes to use the Drupal 7 image field. Requires Field convert module.
+package = Image
+core = 7.x
+files[] = image_legacy.module
+
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "image"
+datestamp = "1380582650"
+
