@@ -1,0 +1,148 @@
+<?php
+
+define('IMAGE_ORIGINAL', '_original');
+define('IMAGE_PREVIEW', 'preview');
+define('IMAGE_THUMBNAIL', 'thumbnail');
+
+define('IMAGE_LINK_HIDDEN', 0);
+define('IMAGE_LINK_SHOWN', 1);
+define('IMAGE_LINK_NEW', 2);
+
+/**
+ * Implementation of hook_help().
+ */
+function image_legacy_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#image_legacy':
+      return t('TODO: Create admin help text.');
+    // OPTIONAL: Add additional cases for other paths that should display help text.
+  }
+}
+
+
+/**
+ * Implementation of hook_init().
+ */
+function image_legacy_init() {
+
+}
+
+/**
+ * Implementation of hook_perm
+ */
+function image_perm() {
+  return array('view original images', 'create images', 'edit own images', 'edit any images', 'delete own images', 'delete any images');
+}
+
+/**
+ * Creates an image filename.
+ *
+ * @param $filepath
+ *   The full path and filename of the original image file,relative to Drupal
+ *   root, eg 'sites/default/files/images/myimage.jpg'.
+ *
+ * @return
+ *   A full path and filename with derivative image label inserted if required.
+ */
+function _image_filename($filepath, $label = IMAGE_ORIGINAL, $temp = FALSE) {
+  // Get default path for a new file.
+  $path = file_directory_path() . '/' . variable_get('image_default_path', 'images');
+  if ($temp) {
+    $path .= '/temp';
+  }
+
+  $original_path = dirname($filepath);
+  $filename = basename($filepath);
+
+  if ($label && ($label != IMAGE_ORIGINAL)) {
+    // Keep resized images in the same path, where original is (does not
+    // apply to temporary files, these still use the default path).
+    if (!$temp && $original_path != '.') {
+      $path = $original_path;
+    }
+    // Insert the resized name in non-original images.
+    $pos = strrpos($filename, '.');
+    if ($pos === FALSE) {
+      // The file had no extension - which happens in really old image.module
+      // versions, so figure out the extension.
+      $image_info = image_get_info(file_create_path($path . '/' . $filename));
+      $filename = $filename . '.' . $label . '.' . $image_info['extension'];
+    }
+    else {
+      $filename = substr($filename, 0, $pos) . '.' . $label . substr($filename, $pos);
+    }
+  }
+
+  return file_create_path($path . '/' . $filename);
+}
+
+/**
+ * Helper function to return the defined sizes (or proper defaults).
+ *
+ * @param $size
+ *   An optional string to return only the image size with the specified key.
+ * @param $aspect_ratio
+ *   Float value with the ratio of image height / width. If a size has only one
+ *   dimension provided this will be used to compute the other.
+ *
+ * @return
+ *   An associative array with width, height, and label fields for the size.
+ *   If a $size parameter was specified and it cannot be found FALSE will be
+ *   returned.
+ */
+function image_get_sizes($size = NULL, $aspect_ratio = NULL) {
+  $defaults = array(
+    IMAGE_ORIGINAL => array('width' => '', 'height' => '', 'label' => t('Original'), 'operation' => 'scale', 'link' => IMAGE_LINK_SHOWN),
+    IMAGE_THUMBNAIL => array('width' => 100, 'height' => 100, 'label' => t('Thumbnail'), 'operation' => 'scale', 'link' => IMAGE_LINK_SHOWN),
+    IMAGE_PREVIEW => array('width' => 640, 'height' => 640, 'label' => t('Preview'), 'operation' => 'scale', 'link' => IMAGE_LINK_SHOWN),
+  );
+
+  $sizes = array();
+  foreach (variable_get('image_sizes', $defaults) as $key => $val) {
+    // Only return sizes with a label.
+    if (!empty($val['label'])) {
+      // For a size with only one dimension specified, compute the other
+      // dimension based on an aspect ratio.
+      if ($aspect_ratio && (empty($val['width']) || empty($val['height']))) {
+        if (empty($val['height']) && !empty($val['width'])) {
+          $val['height'] = (int)round($val['width'] * $aspect_ratio);
+        }
+        elseif (empty($val['width']) && !empty($val['height'])) {
+          $val['width'] = (int)round($val['height'] / $aspect_ratio);
+        }
+      }
+      $sizes[$key] = $val;
+    }
+  }
+
+  // If they requested a specific size return only that.
+  if (isset($size)) {
+    // Only return an array if it's available.
+    return isset($sizes[$size]) ? $sizes[$size] : FALSE;
+  }
+
+  return $sizes;
+}
+
+/**
+ * Helper function to preserve backwards compatibility. This has been
+ * deprecated in favor of image_get_sizes().
+ *
+ * @TODO: Remove this in a future version.
+ */
+function _image_get_sizes($size = NULL, $aspect_ratio = NULL) {
+  return image_get_sizes($size, $aspect_ratio);
+}
+
+/**
+ * Is a given size a built-in, required size?
+ *
+ * @param $size
+ *   One of the keys in the array returned by image_get_sizes().
+ *
+ * @return boolean
+ */
+function _image_is_required_size($size) {
+  return in_array($size, array(IMAGE_THUMBNAIL, IMAGE_PREVIEW, IMAGE_ORIGINAL));
+}
+
