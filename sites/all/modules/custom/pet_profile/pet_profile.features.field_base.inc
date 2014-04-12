@@ -39,6 +39,32 @@ function pet_profile_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
+  // Exported field_base: 'field_petprofile_friendly'
+  $field_bases['field_petprofile_friendly'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_petprofile_friendly',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Friendly/Healthy',
+        0 => 'Not At This Time',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_petprofile_pettype'
   $field_bases['field_petprofile_pettype'] = array(
     'active' => 1,

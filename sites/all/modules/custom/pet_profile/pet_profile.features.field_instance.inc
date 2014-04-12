@@ -57,6 +57,43 @@ function pet_profile_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-pet_profile-field_petprofile_friendly'
+  $field_instances['node-pet_profile-field_petprofile_friendly'] = array(
+    'bundle' => 'pet_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Is an animal good around people and healthy enough to visit other places.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_petprofile_friendly',
+    'label' => 'Friendly',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 2,
     ),
   );
@@ -139,13 +176,15 @@ function pet_profile_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Friendly');
+  t('Is an animal good around people and healthy enough to visit other places.');
   t('Pet Type');
   t('Profile Image');
 
