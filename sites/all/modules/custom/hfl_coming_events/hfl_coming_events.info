@@ -1,7 +1,7 @@
 name = HFL Coming Events
 description = Content Type and fields
 core = 7.x
-package = Content Type
+package = Home For Life
 version = 7.x-1.1
 project = hfl_coming_events
 dependencies[] = addressfield
