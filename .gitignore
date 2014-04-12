@@ -45,3 +45,4 @@ web/
 *.sass-cache
 main.css
 styleguide/*.html
+resources

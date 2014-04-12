@@ -24,9 +24,20 @@ category: Objects
 .feature {}
 
 .feature-hd {
-  background: #aaaaaa;
+
+}
+
+.feature-hd_solid{
+  background: #0064B1;
   padding: 8px 14px;
 }
+
+.feature-md > img {
+  width: 100%;
+  max-width: 100%;
+}
+
+
 
 .feature-bd { padding: 8px 14px; }
 
