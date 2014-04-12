@@ -1,0 +1,33 @@
+/* ---------------------------------------------------------------------
+ Feature
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Feature
+name: feature
+category: Objects
+---
+
+```html_example
+<div class="feature">
+  <div class="feature-hd"><h3 class="hdg hdg_3">Lorem Ipsum</h3></div>
+  <div class="feature-md"><img src="//placekitten.com/200/200" alt="" /></div>
+  <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing...</div>
+  <div class="feature-ft"><a href="#" class="button tiny">Tiny Button</a></div>
+</div>
+```
+
+*/
+
+
+.feature {}
+
+.feature-hd {
+  background: #aaaaaa;
+  padding: 8px 14px;
+}
+
+.feature-bd { padding: 8px 14px; }
+
+.feature-ft { padding: 0 14px 8px 14px; }

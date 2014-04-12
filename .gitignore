@@ -45,3 +45,6 @@ web/
 *.sass-cache
 main.css
 styleguide/*.html
+homeforlife.css
+foundation.min.js
+scripts.js
