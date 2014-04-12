@@ -1,0 +1,12 @@
+name = HFL Frontpage slide show
+description = View containing the Frontpage sideshow
+core = 7.x
+package = Views
+version = 7.x-1.0
+project = hfl_frontpage_slide_show
+dependencies[] = ctools
+dependencies[] = views
+dependencies[] = hfl_slide_content_type
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = front_slideshow

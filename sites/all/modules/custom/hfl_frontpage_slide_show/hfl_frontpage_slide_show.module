@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Frontpage slide show feature.
+ */
+
+include_once 'hfl_frontpage_slide_show.features.inc';
