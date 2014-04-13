@@ -11,9 +11,18 @@ category: components
 
 ```html_example
 <div class="mission">
-  <div class="inner big-12">
-    <h2>What Is Third Door?</h2>
-    <p class="big-6">Most shelters and rescues offer two options for animals: adoption or euthanasia. Home for Life offers a third option for cats and dogs who are old, or who have disabilities, health or temperament problems. We created "The Third Door," a new concept in animal rescue and welfare where special animals have options previously unavailable. Home for Life animals enjoy a quality life, where they can be themselves, run and play, and be loved and cherished for as long as they live.</p>
+<div class="inner">
+  <div class="row">
+    <div class="medium-6 columns">
+      <h2>What Is The Third Door?</h2>
+      <p>Most shelters and rescues offer two options for animals: adoption or euthanasia. Home for Life offers a third option for cats and dogs who are old, or who have disabilities, health or temperament problems. We created "The Third Door," a new concept in animal rescue and welfare where special animals have options previously unavailable. Home for Life animals enjoy a quality life, where they can be themselves, run and play, and be loved and cherished for as long as they live.</p>
+    </div>
+    <div class="medium-6 columns cta">
+      <a href="#" class="button">
+        <h3>Learn More</h3>
+      </a>
+    </div>
+  </div>
   </div>
 </div>
 ```
@@ -22,14 +31,20 @@ category: components
 
 .mission{
   background: #aaa url('http://placekitten.com/1200/400') center center no-repeat;
+  color: $white;
 
   .inner{
     background: rgba(155, 89, 182, .8);
     padding: 2em;
   }
-}
 
-.mission,
-.mission h2{
-  color: #FFFFFF;
+  h2,h3{
+    color: $white;
+  }
+
+  .cta {
+    text-align: center;
+    color: $white;
+    padding-top: 3em;
+  }
 }
