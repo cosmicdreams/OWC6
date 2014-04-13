@@ -221,7 +221,7 @@
         <?php print render($page['front_mission']); ?>
       </div>
       <div class="medium-6 columns cta">
-        <a href="/about-us" class="button">
+        <a href="/what-makes-home-life-different" class="button">
           <h3>Learn More</h3>
         </a>
       </div>
