@@ -56,6 +56,10 @@ gulp.task('connect', function() {
 
 // gulp.task('default', ['connect', 'watch']);
 
+gulp.task('watch', function () {
+    gulp.watch(['./scss/custom/**/*.scss'], ['build']);
+});
+
 gulp.task('theme-sass', function() {
   gulp.src('./scss/homeforlife.scss')
     .pipe(sass({ style: 'expanded' }))
