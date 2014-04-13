@@ -231,7 +231,7 @@
 
   </div>
   <div class="medium-6 columns cta">
-    <a href="#https://secure18.visi.com/homeforlife.org/donrform.php" class="button">
+    <a href="https://secure18.visi.com/homeforlife.org/donrform.php" class="button">
       <h3>Save an animal in need</h3>
       <span>Donate Today</span>
     </a>
