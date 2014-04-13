@@ -92,6 +92,7 @@ regions[sidebar_second]         = Right sidebar
 regions[callout_one]            = Callout one
 regions[callout_two]            = Callout two
 regions[callout_three]          = Callout three
+
 ; regions[footer_firstcolumn]   = Footer one
 ; regions[footer_secondcolumn]  = Footer two
 ; regions[footer_thirdcolumn]   = Footer three
@@ -108,6 +109,9 @@ regions[front_triptych_right]   = Front triptych right
 regions[front_events]           = Front events
 regions[front_news]             = Front news
 regions[front_mission]          = Front mission
+regions[page_bottom_triptych_left]   = Content Bottom
+regions[page_bottom_triptych_center] = Content Bottom
+regions[page_bottom_triptych_right]  = Content Bottom
 
 
 ; Panel Layouts
