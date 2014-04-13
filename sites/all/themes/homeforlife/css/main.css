@@ -1587,8 +1587,7 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {
@@ -2073,6 +2072,19 @@ category: components
   display: none;
 }
 
+@media all and (min-width: 960px) {
+  .slideshow-wrapper .orbit-container .orbit-slides-container[style] {
+    height: 600px;
+  }
+  .slideshow-wrapper .orbit-container .orbit-slides-container[style] li {
+    height: 600px;
+  }
+}
+@media all and (min-width: 960px) {
+  .slideshow-wrapper .orbit-container .orbit-slides-container li {
+    height: 600px;
+  }
+}
 /* ---------------------------------------------------------------------
  Media list
 ------------------------------------------------------------------------ */
@@ -2464,7 +2476,7 @@ category: comp-noah
 }
 
 .row_triptych {
-  margin-top: -100px;
+  margin-top: -25px;
   position: relative;
   z-index: 1;
 }
@@ -2627,7 +2639,7 @@ category: components
 
 */
 .homeDonate {
-  background: #aaaaaa url("http://placekitten.com/1200/400") center center no-repeat;
+  background: #aaaaaa url("http://placekitten.com/1201/400") center center no-repeat;
   color: #ecf0f1;
   max-width: none;
 }
@@ -3026,6 +3038,84 @@ category: components
 */
 .content-image {
   margin: 0px auto;
+}
+
+/* ---------------------------------------------------------------------
+Mailing List
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Mailing List
+name: mailing list
+category: components
+---
+
+
+```html_example
+
+<div class="row globalMailingList">
+  <div class="small-12 columns">
+
+  </div>
+</div>
+
+
+```
+
+*/
+.globalMailingList {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 20px 0px;
+  max-width: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Blog Page
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Blog Page
+name: Blog Page
+category: components
+---
+
+```html_example
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Mark Luinenburg Photographs A Winter to Remember at Home for Life</h1>
+    <h4 class="post-sub-header">04/12/2014 - 19:59 by Admin</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="small-8 columns">
+    <p>Home for Life does not have a better friend than photographer Mark Luinenburg, who, since 2000, has donated his time and talent to document our cats and dogs at the sanctuary. He brings our mission to life with his beautiful photos. Read about Mark and see some of his legendary photos of the Home for Life animals from the last several years at the blog dedicated to him here.</p>
+  <p>On virtually the only "warm" day we had in January this year, Mark bravely ventured out to Home for Life to capture a winter to remember. The amount of snow and sub-zero temperatures have been unprecedented, conditions we haven't seen in nearly 15 years. See Mark's Picassa album of his favorites from his January 29, 2014 shoot at the sanctuary here and our favorites at the slideshow below</p>
+  </div>
+  <div class="small-4 columns">
+    <img class="content-image" src="http://placekitten.com/300/200" alt="Cat" />
+    <h2>Tags:</h2>
+    <ul>
+      <li><a>Animal Update</a></li>
+      <li><a>News</a></li>
+      <li><a>Photography</a></li>
+    </ul>
+  </div>
+</div>
+
+
+```
+
+*/
+.content-image {
+  margin: 0px auto;
+}
+
+.post-sub-header {
+  color: #7f8c8d;
+  font-style: italic;
 }
 
 /* ---------------------------------------------------------------------

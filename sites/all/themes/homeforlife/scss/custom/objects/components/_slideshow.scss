@@ -62,7 +62,7 @@ $include-html-orbit-classes: $include-html-classes;
   }
 }
 
-@media all (min-width:960px){
+@media all and (min-width:960px){
   .slideshow-wrapper .orbit-container{
     .orbit-slides-container[style] {
       height: 600px;
@@ -71,9 +71,10 @@ $include-html-orbit-classes: $include-html-classes;
         height: 600px;
       }
     }
+  }
 }
 
-@media all (min-width:960px){
+@media all and (min-width:960px){
   .slideshow-wrapper .orbit-container .orbit-slides-container li{
     height: 600px;
   }
