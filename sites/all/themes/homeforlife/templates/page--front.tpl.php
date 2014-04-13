@@ -171,6 +171,8 @@
     <!--/.footer-columns-->
   <?php endif; ?>
 
+<?php if (!empty($page['front_mission']) ): ?>
+<!--.front_mission -->
   <div class="mission">
     <div class="inner">
     <div class="row">
@@ -185,6 +187,9 @@
     </div>
     </div>
   </div>
+  <!--/.front_mission -->
+  <?php endif; ?>
+
 
   <!--.donate-->
   <section class="donate panel row" role="contentinfo">
