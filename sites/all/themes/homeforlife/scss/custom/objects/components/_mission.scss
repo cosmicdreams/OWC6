@@ -21,8 +21,12 @@ category: components
 */
 
 .mission{
-  background: $current-redish-2;
+  background: url('http://placekitten.com/2400/800');
   padding: 2em;
+
+  .big-12{
+    background: rgba(255,0,0,0.1);
+  }
 }
 
 .mission,
