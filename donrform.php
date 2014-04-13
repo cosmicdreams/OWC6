@@ -10,10 +10,62 @@ v0.89.22
 <!-- InstanceEndEditable -->
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <!-- InstanceBeginEditable name="stylesheets" -->
-<link href="formstyles.css" rel="stylesheet" type="text/css">
-<link href="popup.css" rel="stylesheet" type="text/css">
+<link href="https://secure18.visi.com/homeforlife.org/formstyles.css" rel="stylesheet" type="text/css">
+<link href="https://secure18.visi.com/homeforlife.org/popup.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 <style type="text/css" media="screen">
-#photoChosen { border: solid 2px #5577aa; background:#ddd; width: 80px; height: 50px;  }
+
+  #header {
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+  }
+  #topnav {
+    width: 1024px;
+    padding: 0;
+  margin: 0 auto;
+    padding-top: 50px;
+  }
+
+
+
+  #topnav > ul {
+    margin: 0 auto;
+    height: 45px;
+    background: #34495e;
+    line-height: 45px;
+    position: absolute;
+    top: 85px;
+    width: 100%;
+  }
+  .logo {
+    width: 200px;
+
+  }
+
+  .logo svg {
+    height: 100%;
+    width: 100%;
+  }
+  #container {
+    margin: 0 auto;
+    border-top: none;
+    width: 1024px;
+    padding: 85px 0 0;
+  }
+
+  h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Oswald', Helvetica, sans-serif;
+    color: #3498DB;
+  }
+
+  .hdg_7 {
+  }
+
+
+
+  #photoChosen { border: solid 2px #5577aa; background:#ddd; width: 80px; height: 50px;  }
 @import url(../scripts/menu2.css);
 .formhead {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -73,12 +125,44 @@ textarea.LV_invalid_field:active,
 	color: #Cc0000;
 }
 -->
+body { font-family: 'Merriweather', serif;}
+#content { width: 650px; margin: 0 auto; float: left;}
+
+.dfaq { width: 310px; float: right;}
+
+.dfaq p { font-family: 'Merriweather' !important; color: black !important;}
 
 #content ul.cards { margin: 0; padding: 0; list-style:none; }
 #content ul.cards li { float: left; margin: 3px;  border: solid 2px #5577aa; height: 70px; overflow: hidden; padding: 0; background:#5577aa; }
 #content ul.cards li a { font-size: 10px; cursor:pointer; font-family: Arial; text-decoration: none; color:white; font-weight: bold; text-align: center; display: block; }
 #content ul.cards li:hover { border-color: #ddd; }
+#content td p,
+#content td div {
+  font-family: 'Merriweather', serif;
+  margin: 0 15px 0 0;
+  padding: 0;
+}
 
+#content td {
+  height: 50px;
+}
+
+#content tr {
+  padding-bottom: 20px;
+}
+
+#content td input[type="text"] {
+  margin-bottom: 0;
+}
+
+#content td {
+  padding: 0;
+  margin: 0;
+}
+
+#amount {
+  display: inline;
+}
 
 #tooltip{
 	position:absolute;
@@ -89,6 +173,420 @@ textarea.LV_invalid_field:active,
 	display:none;
 	}
 
+/* Standard Forms */
+form {
+  margin: 0 0 1rem;
+}
+
+/* Using forms within rows, we need to set some defaults */
+form .row .row {
+  margin: 0 -0.5rem;
+}
+form .row .row .column,
+form .row .row .columns {
+  padding: 0 0.5rem;
+}
+form .row .row.collapse {
+  margin: 0;
+}
+form .row .row.collapse .column,
+form .row .row.collapse .columns {
+  padding: 0;
+}
+form .row .row.collapse input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+form .row input.column,
+form .row input.columns,
+form .row textarea.column,
+form .row textarea.columns {
+  padding-left: 0.5rem;
+}
+
+/* Label Styles */
+label {
+  font-size: 0.875rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+  /* Styles for required inputs */
+}
+label.right {
+  float: none;
+  text-align: right;
+}
+label.inline {
+  margin: 0 0 1rem 0;
+  padding: 0.5625rem 0;
+}
+label small {
+  text-transform: capitalize;
+  color: #676767;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  select {
+    background: #fafafa;
+  }
+
+  select:hover {
+    background: #f3f3f3;
+  }
+}
+
+/* Attach elements to the beginning or end of an input */
+.prefix,
+.postfix {
+  display: block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  font-size: 0.875rem;
+  height: 2.3125rem;
+  line-height: 2.3125rem;
+}
+
+/* Adjust padding, alignment and radius if pre/post element is a button */
+.postfix.button {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  line-height: 2.125rem;
+  border: none;
+}
+
+.prefix.button {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  line-height: 2.125rem;
+  border: none;
+}
+
+.prefix.button.radius {
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.postfix.button.radius {
+  border-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.prefix.button.round {
+  border-radius: 0;
+  border-bottom-left-radius: 1000px;
+  border-top-left-radius: 1000px;
+}
+
+.postfix.button.round {
+  border-radius: 0;
+  border-bottom-right-radius: 1000px;
+  border-top-right-radius: 1000px;
+}
+
+/* Separate prefix and postfix styles when on span or label so buttons keep their own */
+span.prefix, label.prefix {
+  background: #f2f2f2;
+  border-right: none;
+  color: #333333;
+  border-color: #cccccc;
+}
+span.prefix.radius, label.prefix.radius {
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+span.postfix, label.postfix {
+  background: #f2f2f2;
+  border-left: none;
+  color: #333333;
+  border-color: #cccccc;
+}
+span.postfix.radius, label.postfix.radius {
+  border-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* We use this to get basic styling on all basic form elements */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
+  border-color: #999999;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  background: #fafafa;
+  border-color: #999999;
+  outline: none;
+}
+input[type="text"][disabled], fieldset[disabled] input[type="text"],
+input[type="password"][disabled], fieldset[disabled]
+input[type="password"],
+input[type="date"][disabled], fieldset[disabled]
+input[type="date"],
+input[type="datetime"][disabled], fieldset[disabled]
+input[type="datetime"],
+input[type="datetime-local"][disabled], fieldset[disabled]
+input[type="datetime-local"],
+input[type="month"][disabled], fieldset[disabled]
+input[type="month"],
+input[type="week"][disabled], fieldset[disabled]
+input[type="week"],
+input[type="email"][disabled], fieldset[disabled]
+input[type="email"],
+input[type="number"][disabled], fieldset[disabled]
+input[type="number"],
+input[type="search"][disabled], fieldset[disabled]
+input[type="search"],
+input[type="tel"][disabled], fieldset[disabled]
+input[type="tel"],
+input[type="time"][disabled], fieldset[disabled]
+input[type="time"],
+input[type="url"][disabled], fieldset[disabled]
+input[type="url"],
+textarea[disabled], fieldset[disabled]
+textarea {
+  background-color: #dddddd;
+}
+input[type="text"].radius,
+input[type="password"].radius,
+input[type="date"].radius,
+input[type="datetime"].radius,
+input[type="datetime-local"].radius,
+input[type="month"].radius,
+input[type="week"].radius,
+input[type="email"].radius,
+input[type="number"].radius,
+input[type="search"].radius,
+input[type="tel"].radius,
+input[type="time"].radius,
+input[type="url"].radius,
+textarea.radius {
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+/* Respect enforced amount of rows for textarea */
+textarea[rows] {
+  height: auto;
+}
+
+/* Add height value for select elements to match text input height */
+select {
+  -webkit-appearance: none !important;
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  border: 1px solid #cccccc;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: normal;
+  border-radius: 0;
+  height: 2.3125rem;
+}
+select.radius {
+  border-radius: 3px;
+}
+select:hover {
+  background-color: #f3f3f3;
+  border-color: #999999;
+}
+
+/* Adjust margin for form elements below */
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  margin: 0 0 1rem 0;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  vertical-align: baseline;
+}
+
+/* Normalize file input width */
+input[type="file"] {
+  width: 100%;
+}
+
+/* We add basic fieldset styling */
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 1.25rem;
+  margin: 1.125rem 0;
+}
+fieldset legend {
+  font-weight: bold;
+  background: white;
+  padding: 0 0.1875rem;
+  margin: 0;
+  margin-left: -0.1875rem;
+}
+
+/* Error Handling */
+[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
+  display: block;
+  padding: 0.375rem 0.5625rem 0.5625rem;
+  margin-top: -1px;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+  background: #f04124;
+  color: white;
+}
+[data-abide] span.error, [data-abide] small.error {
+  display: none;
+}
+
+span.error, small.error {
+  display: block;
+  padding: 0.375rem 0.5625rem 0.5625rem;
+  margin-top: -1px;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+  background: #f04124;
+  color: white;
+}
+
+.error input,
+.error textarea,
+.error select {
+  margin-bottom: 0;
+}
+.error input[type="checkbox"],
+.error input[type="radio"] {
+  margin-bottom: 1rem;
+}
+.error label,
+.error label.error {
+  color: #f04124;
+}
+.error small.error {
+  display: block;
+  padding: 0.375rem 0.5625rem 0.5625rem;
+  margin-top: -1px;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+  background: #f04124;
+  color: white;
+}
+.error > label > small {
+  color: #676767;
+  background: transparent;
+  padding: 0;
+  text-transform: capitalize;
+  font-style: normal;
+  font-size: 60%;
+  margin: 0;
+  display: inline;
+}
+.error span.error-message {
+  display: block;
+}
+
+input.error,
+textarea.error {
+  margin-bottom: 0;
+}
+
+label.error {
+  color: #f04124;
+}
 </style>
 
 <!-- InstanceEndEditable -->
@@ -112,12 +610,12 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 </script>
 <!-- InstanceParam name="href" type="text" value="formstyles.css" -->
 
-<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="http://homeforlife.org/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://homeforlife.org/js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="http://homeforlife.org/js/main.js"></script>
 <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-<script type="text/javascript" src="js/livevalidation_standalone.compressed.js"></script>
-<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="http://homeforlife.org/js/livevalidation_standalone.compressed.js"></script>
+<script type="text/javascript" src="http://homeforlife.org/js/popup.js"></script>
 <script>
 	$(document).ready(function () {
 
@@ -174,6 +672,14 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 			  $('#photo').val("cards/"+$(this).attr("title"));
 			   $('#caption').val($(this).attr("id"));
 			});
+    $('.dfaq p strong').each(function(){
+      var $this = $(this);
+      var $parent = $this.parent();
+      $parent.addClass('question');
+//      $answer.css('color','blue');
+//      $answer.wrap('<div class="answer"></div>');
+      $(this).css('font-size', '16px');
+    });
 
 	});
 </script>
@@ -258,11 +764,25 @@ if (is_dir($dir)) {
 </div>
 <div id="header">
   <div id="topnav">
-    <ul>
-      <li><a href="http://www.homeforlife.org/index.html">Home</a></li>
-      <li><a href="http:/www.homeforlife.org/contact.htm">Contact Us</a></li>
-    </ul>
-  <div id="hfl"><a href="http://www.homeforlife.org/index.html"><img src="hflname.gif" width="246" height="46" border="0"></a></div>
+<!--    <ul>-->
+<!--      <li><a href="http://www.homeforlife.org/index.html">Home</a></li>-->
+<!--      <li><a href="http:/www.homeforlife.org/contact.htm">Contact Us</a></li>-->
+<!--    </ul>-->
+    <div class="logo">
+      <a href="/" title="link to home">
+        <svg class="logoGraphic" version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 100 34">
+          <g id="V1">
+            <polygon fill="#666666" points="4.153,15.62 3.504,13.964 39.111,0 74.323,13.965 73.667,15.619 39.108,1.912 	"/>
+            <g id="Text_6_">
+              <text transform="matrix(1 0 0 1 71.7729 23.6045)"><tspan x="0" y="0" fill="#2BB673" font-family="'SourceCodePro-Regular'" font-size="11.8596">FO</tspan><tspan x="14.231" y="0" fill="#2BB673" font-family="'SourceCodePro-Regular'" font-size="11.8596" letter-spacing="-1">R</tspan><tspan x="-0.237" y="9.488" fill="#2BB673" font-family="'SourceCodePro-Regular'" font-size="11.8596">LIFE</tspan></text>
+              <text transform="matrix(1 0 0 1 19.4419 33.2402)"><tspan x="0" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911" letter-spacing="-2">H</tspan><tspan x="13.462" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911" letter-spacing="-1">O</tspan><tspan x="27.134" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911" letter-spacing="-3">M</tspan><tspan x="39.032" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911">E</tspan></text>
+            </g>
+            <polygon fill="#4D4D4D" points="9.754,19.969 11.927,18.355 13.535,16.82 14.313,15.667 14.537,14.755 14.982,14.114 15.31,12.93 15.656,13.212 15.683,13.618 15.986,14.495 16.672,13.185 16.87,13.09 17.049,13.322 16.988,14.834 17.012,15.2 17.18,15.27 17.771,15.556 18.05,16.077 18.361,16.454 18.999,16.859 20.313,17.544 20.34,17.95 20.115,18.291 19.839,18.432 19.644,18.568 19.658,18.771 19.431,19.03 18.455,19.056 17.508,18.916 17.043,19.273 16.685,19.998 16.689,20.071 16.376,20.867 15.777,22.252 15.54,22.961 14.783,23.828 13.995,25.43 13.459,25.955 13.176,27.197 13.021,28.511 13.265,29.718 13.226,31.554 13.772,31.803 14.409,32.167 14.842,32.545 15.026,32.859 15.08,33.059 14.726,33.247 13.823,33.144 12.902,32.799 12.504,32.336 12.095,31.712 12.027,30.698 11.964,29.765 11.441,28.659 11.153,28.026 8.524,27.715 8.361,19.86 	"/>
+            <path fill="#808080" d="M11.304,23.926l0.511,1.191v0.454l0.283,1.079l0.284,1.07v0.857l-0.284,2.212v0.964l-0.283,0.851v0.624H2.058l-0.454-0.283L0.98,32.492l-0.709-0.908l-0.085-0.34c0,0-0.249-0.438-0.17-0.681c0.09-0.275,0.022-0.688,0.17-0.936c0.134-0.224,0.745-0.968,0.964-1.106c0.241-0.151,0.681-0.341,0.964-0.341c0.199,0,0.604-0.055,0.795,0c0.177,0.051,0.564,0.222,0.624,0.396c0.068,0.2,0.432,0.588,0.396,0.795c-0.029,0.168-0.529,0.603-0.681,0.68c-0.172,0.088-0.441-0.394-0.624-0.453c-0.175-0.058-0.576-0.089-0.737,0c-0.117,0.065-0.247,0.325-0.284,0.453c-0.055,0.191,0,0.794,0,0.794l0.34,0.453l0.624,0.568h1.077h1.022l-0.114-0.511V30.79L4.27,30.109v-0.736v-0.681l0.454-0.51l0.794-1.135v-0.737l0.056-1.191l0.397-0.568l-0.057-0.624l-0.396-0.284H4.667L4.27,23.529l-0.567-0.624V21.94l-0.284-0.681l0.454-1.19L3.76,19.728l-0.341-0.397l-0.454-0.568h0.568h1.021h0.284h0.397h1.191h0.851l0.738,0.17l1.134,0.568l1.134,1.02l0.568,0.965l0.454,1.361"/>
+          </g>
+        </svg>
+      </a>
+    </div>
   </div>
 
   </div>
@@ -396,7 +916,7 @@ on the Sanctuary commences within 60-90 days of your transaction.
   <div id="popupContact">
 		<div id="donot">NOTE: This is an auto-generated email. Please do not reply.</div>
 		<div id="lovin"></div>
-		<div id="logo"><a href="http://www.homeforlife.org/index.html"><img src="hflname.gif" border="0" height="46" width="246"></a></div>
+		<div id="logo"><a href="http://www.homeforlife.org/index.html"><img src="http:/www.homeforlife.org/hflname.gif" border="0" height="46" width="246"></a></div>
 		<a id="popupContactClose">x</a>
 		<h2><span class="from"></span> made a donation to Home for Life as a gift to you!</h2>
 		<h2>Thank you for giving a Home for Life to animals who otherwise would have nowhere else to turn.</h2>
@@ -937,7 +1457,8 @@ on the Sanctuary commences within 60-90 days of your transaction.
 		<p><input name="dtype" id="dtype" value="This is a one-time donation."   type="radio" checked="checked"> This is a one-time donation.</p>
 		<div id="onetime" style="display: none; ">
 		<h2>Please accept my donation in the amount of: $<input type="text" name="amount" id="amount" size="5">
-		  <script type="text/javascript"> var amount = new LiveValidation('amount'); amount.add(Validate.Numericality); </script></h2>
+		  <script type="text/javascript"> var amount = new LiveValidation('amount'); amount.add(Validate.Numericality); </script>
+    </h2>
 		 </div>
 
 		<p><input name="dtype" id="dtype2" value="I'd like to Be a Sponsor" type="radio"> I'd like to Be a Sponsor.</p>

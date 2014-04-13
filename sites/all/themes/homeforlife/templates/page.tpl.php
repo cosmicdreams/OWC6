@@ -58,23 +58,19 @@
           <?php print render($page['navigation']); ?>
         </nav> <!-- /#main-menu -->
 
-
     </section>
+
     <?php endif; ?>
     <!-- End title, slogan and menu -->
 
-    <?php if (!empty($page['header'])): ?>
-      <!--.l-header-region -->
-      <section class="l-header-region row">
-        <div class="large-12 columns">
-          <?php print render($page['header']); ?>
-        </div>
-      </section>
-      <!--/.l-header-region -->
-    <?php endif; ?>
+    <?php print render($page['header']); ?>
 
-  </header>
-  <!--/.l-header -->
+    <div class="header-image">
+      <div class="inner big-12">
+          <?php print views_embed_view('header_image_view','block'); ?>
+          
+      </div>
+    </div>
 
   <?php if (!empty($page['featured'])): ?>
     <!--/.featured -->
