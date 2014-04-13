@@ -20,7 +20,11 @@ function hfl_triptych_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -28,6 +32,9 @@ function hfl_triptych_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -65,6 +72,9 @@ function hfl_triptych_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'image_link' => '',
           'image_style' => '',
         ),
@@ -115,7 +125,11 @@ function hfl_triptych_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'link',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'link_default',
         'weight' => 2,
       ),
@@ -173,7 +187,11 @@ function hfl_triptych_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'list_default',
         'weight' => 3,
       ),
