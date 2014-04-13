@@ -175,7 +175,7 @@
     <div class="inner">
     <div class="row">
       <div class="medium-6 columns">
-        <?php print render($page['front-mission']); ?>
+        <?php print render($page['front_mission']); ?>
       </div>
       <div class="medium-6 columns cta">
         <a href="#" class="button">
