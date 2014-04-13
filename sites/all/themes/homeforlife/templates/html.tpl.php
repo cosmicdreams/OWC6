@@ -69,8 +69,16 @@
   <?php print _zurb_foundation_add_reveals(); ?>
   <script>
     (function ($, Drupal, window, document, undefined) {
+            window.setTimeout(function(){
+        $(window).resize();
+      }, 200);
       $(document).foundation();
+
     })(jQuery, Drupal, this, this.document);
+
   </script>
+  <script>
+            //$(document).ready(function(){ window.setTimeout(function(){window.resize();}, 5000); alert('yay')});
+
 </body>
 </html>

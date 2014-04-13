@@ -51,14 +51,31 @@ $include-html-orbit-classes: $include-html-classes;
   .orbit-container .orbit-slides-container li{
     max-height: 600px;
     overflow: hidden;
+    height: 600px
     img{
       width: 100%;
-      display: none;
     }
   }
 
   .orbit-slide-number{
     display: none;
+  }
+}
+
+@media all (min-width:960px){
+  .slideshow-wrapper .orbit-container{
+    .orbit-slides-container[style] {
+      height: 600px;
+
+      li{
+        height: 600px;
+      }
+    }
+}
+
+@media all (min-width:960px){
+  .slideshow-wrapper .orbit-container .orbit-slides-container li{
+    height: 600px;
   }
 }
 
