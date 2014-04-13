@@ -101,7 +101,6 @@
     <div class="row">
       <div class="small-8 columns">
         <?php
-        dsm($content);
           // We hide the comments and links now so that we can render them later.
           hide($content['comments']);
           hide($content['links']);
