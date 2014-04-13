@@ -96,11 +96,11 @@
     <!--.triptych-->
     <div class="row">
       <ul class="large-block-grid-3">
-        <?php print render($page['triptych_left']); ?>
+        <li><?php print render($page['triptych_left']); ?></li>
 
-        <?php print render($page['triptych_center']); ?>
+        <li><?php print render($page['triptych_center']); ?></li>
 
-        <?php print render($page['triptych_right']); ?>
+        <li><?php print render($page['triptych_right']); ?></li>
       </ul>
     </div>
     <!--/.triptych -->
