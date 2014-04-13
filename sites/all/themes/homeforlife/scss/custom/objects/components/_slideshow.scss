@@ -62,6 +62,8 @@ $include-html-orbit-classes: $include-html-classes;
   }
 }
 
+.orbit-container .orbit-slides-container img { width: 100% !important; }
+
 @media all and (min-width:960px){
   .slideshow-wrapper .orbit-container{
     .orbit-slides-container[style] {
