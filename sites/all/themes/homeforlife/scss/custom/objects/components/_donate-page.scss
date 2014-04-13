@@ -1,0 +1,84 @@
+/* ---------------------------------------------------------------------
+ Donate Page
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Donate Page
+name: Donate Page
+category: components
+---
+
+```html_example
+<div class="header-image">
+  <div class="inner big-12">
+      <img src="http://placekitten.com/2400/800" alt="slide 1" />
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <h1>You can help.</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="small-6 columns">
+    <p>When you donate to Home for Life, 100% of your contribution goes directly to the care and feeding of sanctuary animals, like Anook.</p>
+    <p>
+    Anook, a chow chow from a northern Minnesota town near Bemidji, was abandoned by his owners. Anook also has a painful condition called entropia. The upper and lower eyelids of his eyes rolled inwards, causing irritation and after many years, Anook was almost blind.
+    </p>
+  </div>
+  <div class="small-6 columns">
+    <img class="content-image" src="http://placekitten.com/300/200" alt="Anook" />
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <p>
+    Anook couldn't be adopted, and when Home for Life volunteers heard about him, they put together a team to transport him several hundred miles to the sanctuary, where he received the treatment he needed to live a long, happy life.  Our administrative staff is composed entirely of volunteers like the ones who transported Anook. Even our newsletter and website are underwritten by donations and volunteer hours. Home for Life has been an Approved Charity of the <a>Minnesota Charities Review Council</a> since 2005.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h2>Special Funds</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <p>
+    Our special funds allow supporters to earmark donations for specific projects:
+    </p>
+    <div class="row">
+      <div class="small-6 columns"><strong>Emergency Medical Fund:</strong> <p>The Emergency Fund provides care for animals admitted to the sanctuary with a serious or life threatening injury or illness.</p></div>
+      <div class="small-6 columns"><strong>Capital Campaign Fund:</strong> <p>Donations to this fund will allow Home for Life to complete our original vision for the animal sanctuary. Our final phase includes a dog training and exercise building that is still unfinished. This facility will allow our paraplegic and frail dogs a place to play when the weather is bad and a training facility for younger dogs involved in our Renaissance Program. Dogs trained in the Renaissance Program can eventually become certified therapy dogs.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="homeDonate">
+<div class="inner">
+<div class="row">
+  <div class="medium-6 columns">
+    <h2>Donate to Home for Life</h2>
+    <p>
+      Your donation provides the animals of Home for Life with food, veterinary care, toys and a beautiful facility to roam freely. 100% of donations go to helping these animals receive the medical care they need, as well as the affection and freedom to help them recover from illness, disability, mistreatment or neglect. With your help, these incredible animals can lead the full, safe and happy lives they deserve.
+    </p>
+  </div>
+  <div class="medium-6 columns cta">
+    <a href="#" class="button">
+      <h3>Save an animal in need</h3>
+      <span>Donate Today</span>
+    </a>
+  </div>
+  </div>
+</div>
+</div>
+
+```
+
+*/
+
+.content-image{
+  margin: 0px auto;
+}
