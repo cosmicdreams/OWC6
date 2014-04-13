@@ -58,23 +58,17 @@
           <?php print render($page['navigation']); ?>
         </nav> <!-- /#main-menu -->
 
-
     </section>
+
     <?php endif; ?>
     <!-- End title, slogan and menu -->
 
-    <?php if (!empty($page['header'])): ?>
-      <!--.l-header-region -->
-      <section class="l-header-region row">
-        <div class="large-12 columns">
+    <div class="header-image">
+      <div class="inner big-12">
           <?php print render($page['header']); ?>
-        </div>
-      </section>
-      <!--/.l-header-region -->
-    <?php endif; ?>
-
-  </header>
-  <!--/.l-header -->
+          <img src="http://placekitten.com/2400/800" alt="slide 1" />
+      </div>
+    </div>
 
   <?php if (!empty($page['featured'])): ?>
     <!--/.featured -->

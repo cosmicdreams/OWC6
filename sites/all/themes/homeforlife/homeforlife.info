@@ -14,6 +14,7 @@ base theme = zurb_foundation
 ;   file will be used instead of the module's file.
 ; - Remove a module's stylesheet. If you specify the name of a Drupal core or
 ;   contrib module's stylesheets, Drupal will remove that stylesheet if you do
+
 ;   NOT include a file with that name with your theme.
 ;
 ; stylesheets[MEDIA][] = FILE
@@ -30,7 +31,6 @@ base theme = zurb_foundation
 ; stylesheets[all][] = css/app.css
 ; Comment the app.css file (above) if you're using sass to preprocess css:
 stylesheets[all][] = css/homeforlife.css
-stylesheets[all][] = css/main.css
 
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
@@ -80,34 +80,21 @@ scripts[] = js/scripts.js
 ; You'll use this variable in page.tpl.php:
 ;   <?php print render($page['header']); ?>
 
-regions[header]                 = Header
-regions[navigation]             = Navigation
-regions[help]                   = Help
-regions[highlighted]            = Highlighted
-regions[featured]               = Featured
-regions[content]                = Content
-regions[sidebar_first]          = Left sidebar
-regions[sidebar_second]         = Right sidebar
-regions[callout_one]            = Callout one
-regions[callout_two]            = Callout two
-regions[callout_three]          = Callout three
-; regions[footer_firstcolumn]   = Footer one
-; regions[footer_secondcolumn]  = Footer two
-; regions[footer_thirdcolumn]   = Footer three
-; regions[footer_fourthcolumn]  = Footer four
-regions[donate]                 = Donate
-regions[footer]                 = Footer
-
-; Front page regions
-
-regions[front_carousel]         = Front carousel
-regions[front_triptych_left]    = Front triptych left
-regions[front_triptych_center]  = Front triptych center
-regions[front_triptych_right]   = Front triptych right
-regions[front_events]           = Front events
-regions[front_news]             = Front news
-regions[front-mission]          = Front mission
-
+regions[header]              = Header
+regions[help]                = Help
+regions[highlighted]         = Highlighted
+regions[featured]            = Featured
+regions[content]             = Content
+regions[sidebar_first]       = Left Sidebar
+regions[sidebar_second]      = Right Sidebar
+regions[triptych_left]      = Callout one
+regions[triptych_center]     = Callout two
+regions[triptych_right]       = Callout three
+regions[footer_firstcolumn]  = Footer one
+regions[footer_secondcolumn] = Footer two
+regions[footer_thirdcolumn]  = Footer three
+regions[footer_fourthcolumn] = Footer four
+regions[footer]              = Footer
 
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
