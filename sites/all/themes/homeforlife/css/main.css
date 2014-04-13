@@ -2068,6 +2068,7 @@ category: components
 }
 .slideshow-wrapper .orbit-container .orbit-slides-container li img {
   width: 100%;
+  display: none;
 }
 .slideshow-wrapper .orbit-slide-number {
   display: none;
@@ -2237,9 +2238,9 @@ category: components
   background-color: #34495e;
   color: #ecf0f1;
   padding: 20px 0px;
-  max-width: none;
   border: none;
   margin-bottom: 0;
+  max-width: inherit;
 }
 .globalFooter ul {
   margin: 0 auto;
@@ -2528,6 +2529,7 @@ category: components
 }
 .mission h2, .mission h3 {
   color: #ecf0f1;
+  font-family: "Oswald";
 }
 .mission .cta {
   text-align: center;

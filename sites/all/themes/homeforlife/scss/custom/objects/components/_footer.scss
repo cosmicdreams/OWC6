@@ -42,9 +42,10 @@ category: components
   background-color: $navy;
   color: $white;
   padding: 20px 0px;
-  max-width: none;
   border: none;
   margin-bottom: 0;
+  max-width: inherit;
+
 
   ul {
     margin: 0 auto;
