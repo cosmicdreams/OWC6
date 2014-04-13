@@ -69,6 +69,15 @@ gulp.task('theme-sass', function() {
     ;
 });
 
+gulp.task('guide-sass', function() {
+  gulp.src('./scss/homeforlife.scss')
+    .pipe(sass({ style: 'expanded' }))
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./styleguide/css'))
+  ;
+});
+
 gulp.task('custom-sass', function() {
   gulp.src('./scss/custom/main.scss')
     .pipe(sass({ style: 'expanded' }))
@@ -97,6 +106,7 @@ gulp.task('build', function() {
   gulp.run('clean-styleguide');
   // gulp.run('theme-sass');
   gulp.run('custom-sass');
+  gulp.run('guide-sass');
   gulp.run('copy-script');
   gulp.run('hologram');
 });
