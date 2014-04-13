@@ -1,0 +1,11 @@
+name = HFL Header Image
+description = Creates a view for the header image
+core = 7.x
+package = Home For Life
+version = 7.x-1.0
+project = hfl_header_image
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = header_image_view
+features_exclude[dependencies][ctools] = ctools

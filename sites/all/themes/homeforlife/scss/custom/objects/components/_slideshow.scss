@@ -47,8 +47,18 @@ category: components
 */
 $include-html-orbit-classes: $include-html-classes;
 
-.orbit-slide-number{
-  display: none;
+.slideshow-wrapper{
+  .orbit-container .orbit-slides-container li{
+    max-height: 300px;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+
+  .orbit-slide-number{
+    display: none;
+  }
 }
 
 // All configuration options for orbit *

@@ -6,4 +6,5 @@ version = 7.x-1.0
 project = hfl_mission_block
 dependencies[] = fe_block
 features[fe_block_boxes][] = front_mission_block
+features[fe_block_settings][] = block-front_mission_block
 features[features_api][] = api:2
