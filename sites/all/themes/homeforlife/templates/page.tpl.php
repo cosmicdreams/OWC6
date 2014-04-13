@@ -53,17 +53,11 @@
         <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
       <?php endif; ?>
 
-      <?php if ($alt_main_menu): ?>
-        <nav id="main-menu" class="navigation" role="navigation">
-          <?php print ($alt_main_menu); ?>
-        </nav> <!-- /#main-menu -->
-      <?php endif; ?>
 
-      <?php if ($alt_secondary_menu): ?>
-        <nav id="secondary-menu" class="navigation" role="navigation">
-          <?php print $alt_secondary_menu; ?>
-        </nav> <!-- /#secondary-menu -->
-      <?php endif; ?>
+        <nav id="main-menu" class="navigation" role="navigation">
+          <?php print render($page['navigation']); ?>
+        </nav> <!-- /#main-menu -->
+
 
     </section>
     <?php endif; ?>
@@ -93,17 +87,17 @@
   <?php endif; ?>
 
 
-    <!--.triptych-->
+    <!--.front-triptych-->
     <div class="row">
       <ul class="large-block-grid-3">
-        <?php print render($page['triptych_left']); ?>
+        <?php print render($page['front_triptych_left']); ?>
 
-        <?php print render($page['triptych_center']); ?>
+        <?php print render($page['front_triptych_center']); ?>
 
-        <?php print render($page['triptych_right']); ?>
+        <?php print render($page['front_triptych_right']); ?>
       </ul>
     </div>
-    <!--/.triptych -->
+    <!--/.front-triptych -->
 
 
   <?php if ($messages && !$zurb_foundation_messages_modal): ?>
@@ -173,32 +167,33 @@
   </main>
   <!--/.main-->
 
-  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
+  <?php if (!empty($page['front_events']) || !empty($page['front_news']) ): ?>
     <!--.footer-columns -->
-    <section class="row l-footer-columns">
-      <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first large-3 columns">
-          <?php print render($page['footer_firstcolumn']); ?>
+    <section class="row front-events-news-columns">
+      <?php if (!empty($page['front-events'])): ?>
+        <div class="front-events large-6 columns">
+          <?php print render($page['front_events']); ?>
         </div>
       <?php endif; ?>
-      <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second large-3 columns">
-          <?php print render($page['footer_secondcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_thirdcolumn'])): ?>
-        <div class="footer-third large-3 columns">
-          <?php print render($page['footer_thirdcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_fourthcolumn'])): ?>
-        <div class="footer-fourth large-3 columns">
-          <?php print render($page['footer_fourthcolumn']); ?>
+      <?php if (!empty($page['front-news'])): ?>
+        <div class="footer-second large-6 columns">
+          <?php print render($page['front-news']); ?>
         </div>
       <?php endif; ?>
     </section>
     <!--/.footer-columns-->
   <?php endif; ?>
+
+  <!--.donate-->
+  <section class="donate panel row" role="contentinfo">
+    <?php if (!empty($page['donate'])): ?>
+      <div class="donate large-12 columns">
+        <?php print render($page['donate']); ?>
+      </div>
+    <?php endif; ?>
+  </section>
+  <!--/.donate-->
+
 
   <!--.l-footer-->
   <footer class="l-footer panel row" role="contentinfo">
@@ -213,7 +208,7 @@
         &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
       </div>
     <?php endif; ?>
-  </footer>
+
   <!--/.footer-->
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
