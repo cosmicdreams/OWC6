@@ -1,6 +1,16 @@
 <?php
 
 /**
+ *
+ *
+ *  THIS FILE WAS REMOVED. LI elements for this view now being added
+ *  via the page.tpl.php file rather than in the view.
+ *
+ *
+ *
+ */
+
+/**
  * @file
  * Main view template.
  *
