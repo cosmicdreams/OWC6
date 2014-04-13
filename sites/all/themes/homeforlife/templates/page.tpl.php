@@ -67,8 +67,8 @@
 
     <div class="header-image">
       <div class="inner big-12">
-        
-          <img src="http://placekitten.com/2400/800" alt="slide 1" />
+          <?php print views_embed_view('header_image_view','block'); ?>
+          
       </div>
     </div>
 
