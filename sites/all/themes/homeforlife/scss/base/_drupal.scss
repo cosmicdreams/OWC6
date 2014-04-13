@@ -29,3 +29,9 @@
 .item-list .pager li {
   padding: 0;
 }
+
+// Fix autocomplete throbber appearance
+html.js input.form-autocomplete {
+  background-position: -9999px -9999px;
+}
+
