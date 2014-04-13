@@ -7,7 +7,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="slideshow-wrapper #slideshow-wrapper">
+<div class="slideshow-wrapper" id="slideshow-wrapper">
   <div class="preloader"></div>
 <ul data-orbit
       data-options="animation:fade;

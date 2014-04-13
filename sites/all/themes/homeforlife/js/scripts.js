@@ -11,10 +11,10 @@
             wrapperHeight = container.height();
             overlap = (wrapperHeight - imageHeight) / 2;
             container.find('img').css('margin-top', overlap);
+        alert("test");
         }
 
         $(window).bind("load resize", centerImage);
-
         var el = document.getElementById('slideshow-wrapper');
         if (el.addEventListener) {
             el.addEventListener("webkitTransitionEnd", centerImage, false); // Webkit event
