@@ -3235,6 +3235,15 @@ category: components
   padding-bottom: 100px;
 }
 
+.not-front aside .block-menu {
+  border-width: 1px;
+  background-color: #f4f4f4;
+  border-color: gainsboro;
+  border-radius: 3px;
+  margin-top: 150px;
+  padding: 25px;
+}
+
 .isVisuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
