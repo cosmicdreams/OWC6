@@ -3,7 +3,7 @@
 
   <!--.l-header region -->
   <header role="banner" class="globalHeader l-header">
-     <div class="row row_topHead">
+    <div class="row row_topHead">
       <div class="small-1 large-2 columns columns_fullHeight">
         <div class="logo">
           <a href="/" title="link to home">
@@ -21,76 +21,43 @@
           </a>
         </div>
       </div>
-    <?php if ($top_bar): ?>
-      <!--.top-bar -->
-      <?php if ($top_bar_classes): ?>
-      <div class="<?php print $top_bar_classes; ?>">
-      <?php endif; ?>
-        <nav class="top-bar"<?php print $top_bar_options; ?>>
-          <ul class="title-area">
-            <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
-          </ul>
-          <section class="top-bar-section">
-            <?php if ($top_bar_main_menu) :?>
-              <?php print $top_bar_main_menu; ?>
-            <?php endif; ?>
-            <?php if ($top_bar_secondary_menu) :?>
-              <?php print $top_bar_secondary_menu; ?>
-            <?php endif; ?>
-          </section>
-        </nav>
-      <?php if ($top_bar_classes): ?>
-      </div>
-      <?php endif; ?>
-      <!--/.top-bar -->
-    <?php endif; ?>
-
-    <!-- Title, slogan and menu -->
-    <?php if ($alt_header): ?>
-    <section class="row <?php print $alt_header_classes; ?>">
-
-      <?php if ($linked_logo): print $linked_logo; endif; ?>
-
-      <?php if ($site_name): ?>
-        <?php if ($title): ?>
-          <div id="site-name" class="element-invisible">
-            <strong>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </strong>
+      <div class="small-5 large-3 columns donateWrap pull-right">
+        <div class="vAlign">
+          <div class="vAlign-middle">
+            <a href="#" class="button button_noMarg button_donate">Donate</a>
           </div>
-        <?php else: /* Use h1 when the content title is empty */ ?>
-          <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
-        <?php endif; ?>
-      <?php endif; ?>
-
-      <?php if ($site_slogan): ?>
-        <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
-      <?php endif; ?>
-
-
-        <nav id="main-menu" class="navigation" role="navigation">
-          <?php print render($page['navigation']); ?>
-        </nav> <!-- /#main-menu -->
-
-
-    </section>
-    <?php endif; ?>
-    <!-- End title, slogan and menu -->
-
-    <?php if (!empty($page['header'])): ?>
-      <!--.l-header-region -->
-      <section class="l-header-region row">
-        <div class="large-12 columns">
-          <?php print render($page['header']); ?>
         </div>
-      </section>
-      <!--/.l-header-region -->
-    <?php endif; ?>
+        <div>
+        </div>
+      </div>
+    </div>
 
+    <?php if ($top_bar): ?>
+    <div class="row row_fullWidth">
+      <div class="contain-to-grid sticky mainNav">
+        <?php if ($top_bar_classes): ?>
+        <div class="<?php print $top_bar_classes; ?>">
+          <?php endif; ?>
+          <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
+            <ul class="title-area">
+              <li class="name"></li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+            </ul>
+            <section class="top-bar-section">
+              <?php if ($top_bar_main_menu) :?>
+                <?php print $top_bar_main_menu; ?>
+              <?php endif; ?>
+
+            </section>
+          </nav>
+          <?php if ($top_bar_classes): ?>
+        </div>
+
+      <?php endif; ?>
+      </div>
+    </div>
   </header>
+  <?php endif; ?>
   <!--/.l-header -->
 
   <?php if (!empty($page['featured'])): ?>
