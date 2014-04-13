@@ -1,0 +1,67 @@
+/* ---------------------------------------------------------------------
+ Header
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Global Header
+name: global-header
+category: comp-noah
+---
+```html_example
+
+<header class="globalHeader">
+
+  <div class="row">
+    <div class="small-1 large-2 columns columns_fullHeight">
+      <div class="logo">
+      </div>
+    </div>
+    <div class="small-5 large-3 columns columns_fullHeight pull-right">
+      <div class="vAlign">
+        <div class="vAlign-middle">
+          <a href="#" class="button button_noMarg">Default Button</a>
+        </div>
+      </div>
+    <div>
+  </div>
+  <div class="row">
+    <
+  </div>
+</header>
+```
+
+*/
+
+.globalHeader {
+  background: red;
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
+  background: blue;
+  height: 100%;
+}
+
+
+.vAlign {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.vAlign-middle {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.columns_fullHeight,
+.row_fullHeight {
+  height: 100%;
+}
+
+.button_noMarg {
+  margin: 0;
+}
