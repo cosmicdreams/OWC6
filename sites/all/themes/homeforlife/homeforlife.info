@@ -81,37 +81,33 @@ scripts[] = js/scripts.js
 ; You'll use this variable in page.tpl.php:
 ;   <?php print render($page['header']); ?>
 
-regions[header]              = Header
-regions[help]                = Help
-regions[highlighted]         = Highlighted
-regions[featured]            = Featured
-regions[content]             = Content
-regions[sidebar_first]       = Left Sidebar
-regions[sidebar_second]      = Right Sidebar
-regions[triptych_left]      = Callout one
-regions[triptych_center]     = Callout two
-regions[triptych_right]       = Callout three
-regions[footer_firstcolumn]  = Footer one
-regions[footer_secondcolumn] = Footer two
-regions[footer_thirdcolumn]  = Footer three
-regions[footer_fourthcolumn] = Footer four
-regions[footer]              = Footer
+regions[header]                 = Header
+regions[navigation]             = Navigation
+regions[help]                   = Help
+regions[highlighted]            = Highlighted
+regions[featured]               = Featured
+regions[content]                = Content
+regions[sidebar_first]          = Left sidebar
+regions[sidebar_second]         = Right sidebar
+regions[callout_one]            = Callout one
+regions[callout_two]            = Callout two
+regions[callout_three]          = Callout three
+; regions[footer_firstcolumn]   = Footer one
+; regions[footer_secondcolumn]  = Footer two
+; regions[footer_thirdcolumn]   = Footer three
+; regions[footer_fourthcolumn]  = Footer four
+regions[donate]                 = Donate
+regions[footer]                 = Footer
 
-; Various page elements output by the theme can be toggled on and off. The
-; "features" control which of these check boxes display on the
-; admin/appearance config page. This is useful for suppressing check boxes
-; for elements not used by your sub-theme. To add a check box, uncomment the
-; entry for it below. See the Drupal 7 Theme Guide for more info:
-; http://drupal.org/node/171205#features
+; Front page regions
 
-; features[] = logo
-; features[] = name
-; features[] = slogan
-; features[] = node_user_picture
-; features[] = comment_user_picture
-; features[] = favicon
-; features[] = main_menu
-; features[] = secondary_menu
+regions[front_carousel]         = Front carousel
+regions[front_triptych_left]    = Front triptych left
+regions[front_triptych_center]  = Front triptych center
+regions[front_triptych_right]   = Front triptych right
+regions[front_events]           = Front events
+regions[front_news]             = Front news
+
 
 ; Panel Layouts
 plugins[panels][layouts] = layouts
