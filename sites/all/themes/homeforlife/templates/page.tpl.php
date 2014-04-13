@@ -222,13 +222,23 @@
 
 
   <!--.donate-->
-  <section class="donate panel row" role="contentinfo">
-    <?php if (!empty($page['donate'])): ?>
-      <div class="donate large-12 columns">
-        <?php print render($page['donate']); ?>
-      </div>
-    <?php endif; ?>
-  </section>
+<div class="homeDonate">
+<div class="inner">
+<div class="row">
+  <div class="medium-6 columns">
+
+  <?php print render($page['donate']); ?>
+
+  </div>
+  <div class="medium-6 columns cta">
+    <a href="#" class="button">
+      <h3>Save an animal in need</h3>
+      <span>Donate Today</span>
+    </a>
+  </div>
+  </div>
+</div>
+</div>
   <!--/.donate-->
 
 

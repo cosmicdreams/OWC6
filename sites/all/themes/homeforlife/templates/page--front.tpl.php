@@ -121,7 +121,7 @@
 
           <li><?php print render($page['front_triptych_center']); ?></li>
 
-          <li><?php print render($page['front_triptych_right']); ?></li>
+          <li><?php print render($page['front_trheader-imageiptych_right']); ?></li>
         </ul>
       </div>
     <?php endif; ?>
