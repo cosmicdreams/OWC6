@@ -1,0 +1,7 @@
+name = HFL pets view
+description = Creates a block view displaying pets based upon a contextual filter (i.e. - dogs, cats, etc)
+core = 7.x
+package = Views
+version = 7.x-1.0
+project = hfl_pets_view
+features[features_api][] = api:2
