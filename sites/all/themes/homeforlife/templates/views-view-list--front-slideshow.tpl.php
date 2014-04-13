@@ -8,12 +8,14 @@
  */
 ?>
 <div class="slideshow-wrapper" id="slideshow-wrapper">
-  <div class="preloader"></div>
 <ul data-orbit
       data-options="animation:fade;
                     pause_on_hover:false;
+                    resume_on_mouseout: true;
+                    slide_number: false;
+                    timer_speed: 5000;
                     timer:true;
-                    animation_speed:900;
+                    animation_speed:800;
                     navigation_arrows:true;
                     captions:false;
                     bullets:false;">
