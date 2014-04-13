@@ -198,7 +198,7 @@
 
 
   <!--.l-footer-->
-  <footer class="l-footer panel row" role="contentinfo">
+  <footer class="l-footer globalFooter panel row" role="contentinfo">
     <?php if (!empty($page['footer'])): ?>
       <div class="footer large-12 columns">
         <?php print render($page['footer']); ?>

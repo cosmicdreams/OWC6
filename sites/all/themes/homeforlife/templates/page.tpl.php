@@ -98,7 +98,7 @@
     <div class="header-image">
       <div class="inner big-12">
           <?php print views_embed_view('header_image_view','block'); ?>
-          
+
       </div>
     </div>
 
@@ -192,7 +192,7 @@
 
 
   <!--.l-footer-->
-  <footer class="l-footer panel row" role="contentinfo">
+  <footer class="l-footer panel globalFooter row" role="contentinfo">
     <?php if (!empty($page['footer'])): ?>
       <div class="footer large-12 columns">
         <?php print render($page['footer']); ?>
