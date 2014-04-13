@@ -109,9 +109,9 @@ regions[front_triptych_right]   = Front triptych right
 regions[front_events]           = Front events
 regions[front_news]             = Front news
 regions[front_mission]          = Front mission
-regions[page_bottom_triptych_left]   = Content Bottom
-regions[page_bottom_triptych_center] = Content Bottom
-regions[page_bottom_triptych_right]  = Content Bottom
+regions[page_bottom_triptych_left]   = Content Bottom Left
+regions[page_bottom_triptych_center] = Content Bottom Center
+regions[page_bottom_triptych_right]  = Content Bottom Right
 
 
 ; Panel Layouts
