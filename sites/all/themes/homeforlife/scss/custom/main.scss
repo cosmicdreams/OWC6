@@ -8,6 +8,10 @@ $purple: #9B59B6;
 $navy: #34495E;
 $white: #ecf0f1;
 
+body{
+  letter-spacing: 0.02rem;
+}
+
 /* Reusable Objects */
 @import
   "landmarks/_globalFooter.scss",
