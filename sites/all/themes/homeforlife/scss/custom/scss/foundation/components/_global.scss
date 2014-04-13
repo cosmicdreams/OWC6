@@ -166,7 +166,7 @@ $base-line-height: 150% !default;
 // We use these to control various global styles
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: font-family: 'Merriweather', georgia, serif;
 $body-font-weight: normal !default;
 $body-font-style: normal !default;
 
@@ -255,11 +255,11 @@ $cursor-text-value: text !default;
   // Meta styles are included in all builds, as they are a dependancy of the Javascript.
   // Used to provide media query values for javascript components.
   // Forward slash placed around everything to convince PhantomJS to read the value.
-  
+
   meta.foundation-version {
     font-family: "/5.2.2/";
   }
-  
+
   meta.foundation-mq-small {
     font-family: "/" + unquote($small-up) + "/";
     width: lower-bound($small-range);

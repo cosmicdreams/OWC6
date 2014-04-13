@@ -969,7 +969,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", georgia, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1292,7 +1292,7 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Oswald";
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -1587,8 +1587,7 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {
