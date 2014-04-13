@@ -1587,7 +1587,8 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-  }
+}
+
   p,
   h2,
   h3 {
@@ -2560,6 +2561,7 @@ category: components
 .mission {
   background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission.jpg") center center no-repeat;
   color: #ecf0f1;
+  background-size: cover;
 }
 .mission .inner {
   background: rgba(155, 89, 182, 0.8);
@@ -2646,6 +2648,7 @@ category: components
   background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission2.jpg") center center no-repeat;
   color: #ecf0f1;
   max-width: none;
+  background-size: cover;
 }
 .homeDonate .inner {
   background: rgba(39, 174, 96, 0.8);
@@ -3199,6 +3202,29 @@ category: components
   line-height: 1;
 }
 
+.row_featuredpet .view-content ul li {
+  width: 33%;
+  float: left;
+  padding: 20px 20px;
+}
+
+.row_featuredpet > .block {
+  width: 100%;
+}
+
+.row_featuredpet > .medium-block-grid-3 li {
+  width: 100%;
+}
+
+.row_featuredpet .view-content li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .row_featuredpet .view-content ul li {
+    width: 100% !important;
+  }
+}
 .isVisuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
