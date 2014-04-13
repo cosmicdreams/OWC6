@@ -232,17 +232,13 @@
 <?php endif; ?>
 
   <!--.page-bottom-triptych  Hey Wilbur -->
-  <?php if (!empty($page['page_bottom_triptych_left']) || !empty($page['page_bottom_triptych_center']) || !empty($page['page_bottom_triptych_right'])): ?>
+
       <div class="row row_triptych">
           <ul class="medium-block-grid-3 large-block-grid-3">
-              <li><?php print render($page['page_bottom_triptych_left']); ?></li>
-
-              <li><?php print render($page['page_bottom_triptych_center']); ?></li>
-
-              <li><?php print render($page['page_bottom_triptych_right']); ?></li>
+              <li><?php print render($page['front_featured_pets']); ?></li>
           </ul>
       </div>
-  <?php endif; ?>
+
   <!--/.front-triptych -->
 
   <!--.donate-->
@@ -282,6 +278,11 @@
           <li><a href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">+1 us on Google Plus</a></li>
           <li><a href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Pin us on Pinterest</a></li>
           <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="inline-list">
+          <li>&copy; <?php print(date('Y')); ?> Home For Life. All rights reserved.</li>
         </ul>
       </div>
     </div>
