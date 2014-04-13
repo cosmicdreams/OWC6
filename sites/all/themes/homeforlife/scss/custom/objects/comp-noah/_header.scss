@@ -153,9 +153,30 @@ category: comp-noah
 }
 
 .row_triptych .block {
-  background: hsla(0, 0%, 100%, .9);
+  background: white;
   border: 1px solid #ccc;
 }
+
+.home-blog-list .views-field-field-image {
+  float: left;
+  margin: 0 10px 0;
+}
+
+.home-blog-list .views-row {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+
+.home-blog-list .view-field-title a {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.views-field-title {
+  margin-bottom: 7px;
+}
+
+
 
 @media only screen and (max-width: 40em) {
   .logo {
