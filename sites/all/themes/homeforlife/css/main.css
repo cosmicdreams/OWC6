@@ -2389,6 +2389,7 @@ category: comp-noah
 */
 .globalHeader {
   width: 100%;
+  letter-spacing: 0.06em;
 }
 
 .row_topHead {
@@ -2451,7 +2452,8 @@ category: comp-noah
 
 .mainNav .top-bar-section ul li > a {
   font-family: 'Oswald';
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .top-bar.expanded .toggle-topbar a span {
