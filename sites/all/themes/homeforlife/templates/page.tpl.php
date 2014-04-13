@@ -63,9 +63,11 @@
     <?php endif; ?>
     <!-- End title, slogan and menu -->
 
+    <?php print render($page['header']); ?>
+
     <div class="header-image">
       <div class="inner big-12">
-          <?php print render($page['header']); ?>
+        
           <img src="http://placekitten.com/2400/800" alt="slide 1" />
       </div>
     </div>
