@@ -106,6 +106,7 @@ regions[front_triptych_center]  = Front triptych center
 regions[front_triptych_right]   = Front triptych right
 regions[front_events]           = Front events
 regions[front_news]             = Front news
+regions[front-mission]          = Front mission
 
 
 ; Various page elements output by the theme can be toggled on and off. The
