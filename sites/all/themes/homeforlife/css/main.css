@@ -2542,6 +2542,14 @@ category: components
 ```
 
 */
+.view-header-image-view .views-row {
+  max-height: 400px;
+  overflow: hidden;
+}
+.view-header-image-view .views-row img {
+  width: 100%;
+}
+
 .medialist {
   list-style: none;
 }

@@ -136,7 +136,7 @@
 
     <?php print render($page['header']); ?>
 
-    <div class="header-image">
+    <div class="header-image" id="header-image">
       <div class="inner big-12">
           <?php print views_embed_view('header_image_view','block'); ?>
 

@@ -4,7 +4,7 @@
     attach: function(context, settings) {
       // Get your Yeti started.
       //* Assistance from http://is.gd/t0qfL3 */
-        var imageHeight, wrapperHeight, overlap, container = $('.slideshow-wrapper');
+        var imageHeight, wrapperHeight, overlap, container = $('.slideshow-wrapper,.header-image');
 
         function centerImage() {
             imageHeight = container.find('img').height();
