@@ -20,14 +20,22 @@ function hfl_pet_profile_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -35,6 +43,9 @@ function hfl_pet_profile_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 400,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -57,6 +68,51 @@ function hfl_pet_profile_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-pet_profile-field_petprofile_featured'
+  $field_instances['node-pet_profile-field_petprofile_featured'] = array(
+    'bundle' => 'pet_profile',
+    'default_value' => array(
+      0 => array(
+        'value' => 'No',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_petprofile_featured',
+    'label' => 'Featured',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 3,
     ),
   );
@@ -71,7 +127,11 @@ function hfl_pet_profile_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'list_default',
         'weight' => 3,
       ),
@@ -176,13 +236,14 @@ function hfl_pet_profile_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Featured');
   t('Friendly');
   t('Is an animal good around people and healthy enough to visit other places.');
   t('Pet Type');

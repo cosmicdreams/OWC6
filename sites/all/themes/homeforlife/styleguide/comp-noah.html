@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
-  <head>.
+  <head>
     <title>OWC: Styleguide</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/homeforlife.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./styles/hologram.css">
-
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   <body>
 
   <div class="off-canvas-wrap" data-offcanvas>
@@ -25,18 +26,20 @@
         <ul class="off-canvas-list">
           <li><label>Objects</label></li>
             
+            <li><a href="#global-header">Global Header</a></li>
+            
             <li><a href="#triptych">Triptych</a></li>
             
             <li><label>Pages</label></li>
 
             
-            <li><a href="comp-noah.html">comp-noah</a></li>
-            
-            <li><a href="objects.html">Objects</a></li>
-            
             <li><a href="wysiwyg.html">Wysiwyg</a></li>
             
             <li><a href="components.html">components</a></li>
+            
+            <li><a href="objects.html">Objects</a></li>
+            
+            <li><a href="comp-noah.html">comp-noah</a></li>
             
         </ul>
       </aside>
@@ -45,20 +48,116 @@
 
 
 
-<h1 id="triptych">Triptych</h1>
+<h1 id="global-header">Global Header</h1>
 <div class="codeExample"><div class="exampleOutput">
-<div class="row display">
-  <div class="columns">/div>
-  <div class="columns"></div>
-  <div class="columns"></div>
-</div>
+<header class="globalHeader">
 
+  <div class="row">
+    <div class="small-1 large-2 columns columns_fullHeight">
+      <div class="logo">
+      </div>
+    </div>
+    <div class="small-5 large-3 columns columns_fullHeight pull-right">
+      <div class="vAlign">
+        <div class="vAlign-middle">
+          <a href="#" class="button button_noMarg">Default Button</a>
+        </div>
+      </div>
+    <div>
+  </div>
+  <div class="row">
+    <
+  </div>
+</header>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">&quot;globalHeader&quot;</span><span class="nt">&gt;</span>
 
-</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row display&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;columns&quot;</span><span class="nt">&gt;</span>/div&gt;
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;columns&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;columns&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;small-1 large-2 columns columns_fullHeight&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;logo&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;small-5 large-3 columns columns_fullHeight pull-right&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vAlign&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;vAlign-middle&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button button_noMarg&quot;</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+    <span class="err">&lt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</pre></div></div></div>
+<h1 id="triptych">Triptych</h1>
+<div class="codeExample"><div class="exampleOutput"> <div class="row">
+      <ul class="large-block-grid-3">
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7" style="color: " >Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7">Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7" >Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+</div><div class="codeBlock"><div class="highlight"><pre> <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;large-block-grid-3&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box box_opaqueLight&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature&quot;</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-hd feature-hd_simple&quot;</span><span class="nt">&gt;&lt;h3</span> <span class="na">class=</span><span class="s">&quot;hdg_7&quot;</span> <span class="na">style=</span><span class="s">&quot;color: &quot;</span> <span class="nt">&gt;</span>Meet the Animals<span class="nt">&lt;/h3&gt;&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-md&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://placekitten.com/300/80&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-bd&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit<span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-ft&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box box_opaqueLight&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature&quot;</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-hd feature-hd_simple&quot;</span><span class="nt">&gt;&lt;h3</span> <span class="na">class=</span><span class="s">&quot;hdg_7&quot;</span><span class="nt">&gt;</span>Meet the Animals<span class="nt">&lt;/h3&gt;&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-md&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://placekitten.com/300/80&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-bd&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit<span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-ft&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;box box_opaqueLight&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature&quot;</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-hd feature-hd_simple&quot;</span><span class="nt">&gt;&lt;h3</span> <span class="na">class=</span><span class="s">&quot;hdg_7&quot;</span> <span class="nt">&gt;</span>Meet the Animals<span class="nt">&lt;/h3&gt;&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-md&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://placekitten.com/300/80&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-bd&quot;</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit<span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;feature-ft&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;</span>Default Button<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 </pre></div></div></div>
 </div>
 </div>

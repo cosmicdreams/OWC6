@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------------------
+ Triptych
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Triptych
+name: triptych
+category: comp-noah
+---
+
+```html_example
+ <div class="row">
+      <ul class="large-block-grid-3">
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7" style="color: " >Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7">Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7" >Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+```
+
+*/
+
+.feature-hd_simple {
+  background: none;
+  padding: none;
+}
+
+.feature-md > img {
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.feature {
+  font-family: 'Merriweather', georgia, serif;
+}
+
+.feature-ft {
+  text-align: center;
+}
