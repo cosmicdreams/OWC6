@@ -2560,6 +2560,7 @@ category: components
 .mission {
   background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission.jpg") center center no-repeat;
   color: #ecf0f1;
+  background-size: cover;
 }
 .mission .inner {
   background: rgba(155, 89, 182, 0.8);
@@ -2600,6 +2601,13 @@ category: components
 }
 .view-header-image-view .views-row img {
   width: 100%;
+}
+
+.block-constant-contact .form-type-checkbox input {
+  margin-top: 10px;
+}
+.block-constant-contact .form-type-checkbox label {
+  display: inline;
 }
 
 .medialist {
@@ -2646,6 +2654,7 @@ category: components
   background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission2.jpg") center center no-repeat;
   color: #ecf0f1;
   max-width: none;
+  background-size: cover;
 }
 .homeDonate .inner {
   background: rgba(39, 174, 96, 0.8);
