@@ -36,7 +36,10 @@ category: comp-noah
       </div>
     <div>
   </div>
-  <div class="row">
+  </div>
+  </div>
+  <div class="row row_fullWidth">
+  <div class="contain-to-grid">
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
@@ -63,6 +66,7 @@ category: comp-noah
     </ul>
   </section>
 </nav>
+</div>
   </div>
 </header>
 ```
@@ -103,4 +107,8 @@ category: comp-noah
 
 .button_noMarg {
   margin: 0;
+}
+
+.row_fullWidth {
+  max-width: none;
 }

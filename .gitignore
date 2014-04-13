@@ -43,10 +43,8 @@ npm-debug.log
 tools/node/
 web/
 *.sass-cache
-main.css
 styleguide/objects.html
 styleguide/wysiwyg.html
-homeforlife.css
 foundation.min.js
 scripts.js
 Layout1.html
@@ -54,3 +52,5 @@ sites/all/themes/homeforlife/styleguide/objects.html
 sites/all/themes/homeforlife/styleguide/wysiwyg.html
 components.html
 comp-noah.html
+sites/all/themes/homeforlife/styleguide/css/homeforlife.css
+sites/all/themes/homeforlife/styleguide/css/main.css

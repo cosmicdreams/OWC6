@@ -1,0 +1,2451 @@
+@charset "UTF-8";
+/* Reusable Objects */
+/* ---------------------------------------------------------------------
+ Block Grid
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Block Grid
+name: block-grid
+category: Objects
+---
+
+```html_example
+      
+<!-- Grid -->
+<ul class="small-block-grid-4">
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+</ul>
+      
+```
+```html_example
+
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+  <li><img class="th" src="//placekitten.com/300/200"></li>
+</ul>
+```
+
+*/
+/* ---------------------------------------------------------------------
+ Box
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Box
+name: box
+category: Objects
+---
+
+```html_example
+  <div class="box"></div>
+```
+
+*/
+.box {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ---------------------------------------------------------------------
+ Breadcrumbs
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Breadcrumbs
+name: breadcrumbs
+category: Objects
+---
+
+
+```html_example
+<nav class="breadcrumbs">
+  <a href="#">Home</a>
+  <a href="#">Features</a>
+  <a class="unavailable" href="#">Gene Splicing</a>
+  <a class="current" href="#">Cloning</a>
+</nav>
+```
+*/
+/* ---------------------------------------------------------------------
+ Button
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Button
+name: button
+category: Objects
+---
+
+
+```html_example
+<a href="#" class="button">Default Button</a>
+<a href="#" class="button tiny">Tiny Button</a>
+<a href="#" class="button small">Small Button</a>
+<a href="#" class="button large">Large Button</a>
+
+<a href="#" class="button secondary">Secondary Button</a>
+<a href="#" class="button success">Success Button</a>
+<a href="#" class="button alert">Alert Button</a>
+
+<a href="#" class="button radius">Radius Button</a>
+<a href="#" class="button round">Round Button</a>
+
+<a href="#" class="button disabled">Disabled Button</a>
+<a href="#" class="button expand">Expanded Button</a>
+```
+*/
+/* ---------------------------------------------------------------------
+ Button Group
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Button Group
+name: button-group
+category: Objects
+---
+
+
+```html_example
+
+<ul class="button-group">
+<li><a href="#" class="button">Button 1</a></li>
+<li><a href="#" class="button">Button 2</a></li>
+<li><a href="#" class="button">Button 3</a></li>
+</ul>
+
+<ul class="button-group radius">
+  <li><a href="#" class="button">Button 1</a></li>
+  <li><a href="#" class="button">Button 2</a></li>
+  <li><a href="#" class="button">Button 3</a></li>
+  <li><a href="#" class="button">Button 4</a></li>
+</ul>
+
+<ul class="button-group round">
+  <li><a href="#" class="button">Button 1</a></li>
+  <li><a href="#" class="button">Button 2</a></li>
+  <li><a href="#" class="button">Button 3</a></li>
+  <li><a href="#" class="button">Button 4</a></li>
+</ul>
+
+```
+*/
+/* ---------------------------------------------------------------------
+ Clearing Lightbox
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Clearing Lightbox
+name: clearing-lightbox
+category: Objects
+---
+
+### Basic Image Clearing
+
+```html_example
+<ul class="clearing-thumbs" data-clearing>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/100/100"></a></li>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/101/100"></a></li>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+</ul>
+```
+
+### Featured Image Clearing
+
+```html_example
+<ul class="clearing-thumbs clearing-feature" data-clearing>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+  <li class="clearing-featured-img"><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+  <li><a href="//placekitten.com/300/200"><img src="//placekitten.com/103/100"></a></li>
+</ul>
+```
+
+
+
+*/
+/* ---------------------------------------------------------------------
+ Clearing Lightbox
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Dropdown Button
+name: dropdown-button
+category: Objects
+---
+
+```html_example
+<a href="#" data-dropdown="drop1" class="button dropdown">Dropdown Button</a><br>
+<ul id="drop1" data-dropdown-content class="f-dropdown">
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+```
+*/
+/* ---------------------------------------------------------------------
+ Feature
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Feature
+name: feature
+category: Objects
+---
+
+```html_example
+<div class="feature">
+  <div class="feature-hd"><h3 class="hdg hdg_3">Lorem Ipsum</h3></div>
+  <div class="feature-md"><img src="//placekitten.com/200/200" alt="" /></div>
+  <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing...</div>
+  <div class="feature-ft"><a href="#" class="button tiny">Tiny Button</a></div>
+</div>
+```
+
+*/
+.feature-hd {
+  background: #aaaaaa;
+  padding: 8px 14px;
+}
+
+.feature-bd {
+  padding: 8px 14px;
+}
+
+.feature-ft {
+  padding: 0 14px 8px 14px;
+}
+
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Grid
+name: grid
+category: Objects
+---
+
+
+```html_example
+      
+<!-- Grid -->
+<div class="row display">
+  <div class="small-2 large-4 columns"><span class="show-for-small">2</span><span class="hide-for-small">4</span></div>
+  <div class="small-4 large-4 columns">4</div>
+  <div class="small-6 large-4 columns"><span class="show-for-small">6</span><span class="hide-for-small">4</span></div>
+</div>
+<div class="row display">
+  <div class="large-3 columns"><span class="show-for-small">full</span><span class="hide-for-small">3</span></div>
+  <div class="large-6 columns"><span class="show-for-small">full</span><span class="hide-for-small">6</span></div>
+  <div class="large-3 columns"><span class="show-for-small">full</span><span class="hide-for-small">3</span></div>
+</div>
+<div class="row display">
+  <div class="small-6 large-2 columns"><span class="show-for-small">6</span><span class="hide-for-small">2</span></div>
+  <div class="small-6 large-8 columns"><span class="show-for-small">6</span><span class="hide-for-small">8</span></div>
+  <div class="small-12 large-2 columns"><span class="show-for-small">full</span><span class="hide-for-small">2</span></div>
+</div>
+<div class="row display">
+  <div class="small-3 columns">3</div>
+  <div class="small-9 columns">9</div>
+</div>
+<div class="row display">
+  <div class="large-4 columns"><span class="show-for-small">full</span><span class="hide-for-small">4</span></div>
+  <div class="large-8 columns"><span class="show-for-small">full</span><span class="hide-for-small">8</span></div>
+</div>
+<div class="row display">
+  <div class="small-6 large-5 columns"><span class="show-for-small">6</span><span class="hide-for-small">5</span></div>
+  <div class="small-6 large-7 columns"><span class="show-for-small">6</span><span class="hide-for-small">7</span></div>
+</div>
+<div class="row display">
+  <div class="large-6 columns"><span class="show-for-small">full</span><span class="hide-for-small">6</span></div>
+  <div class="large-6 columns"><span class="show-for-small">full</span><span class="hide-for-small">6</span></div>
+</div>
+      
+```
+*/
+/* ---------------------------------------------------------------------
+ Heading
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Heading
+name: heading
+category: Objects
+---
+
+```html_example
+
+<h1 class="hdg hdg_1">hdg_1. Lorem ipsum dolor sit amet.</h1>
+<h2 class="hdg hdg_2">hdg_2. Lorem ipsum dolor sit amet.</h2>
+<h3 class="hdg hdg_3">hdg_3. Lorem ipsum dolor sit amet.</h3>
+<h4 class="hdg hdg_4">hdg_4. Lorem ipsum dolor sit amet.</h4>
+<h5 class="hdg hdg_5">hdg_5. Lorem ipsum dolor sit amet.</h5>
+<h6 class="hdg hdg_6">hdg_6. Lorem ipsum dolor sit amet.</h6>
+
+```
+*/
+.hdg_1, .hdg_2, .hdg_3, .hdg_4, .hdg_5, .hdg_6, .hdg_7 {
+  font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+.hdg_7 {
+  color: #3498DB;
+}
+
+/* ---------------------------------------------------------------------
+ Heading
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Heading
+name: heading
+category: Objects
+---
+
+```html_example
+<ul class="inline-list">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+  <li><a href="#">Link 4</a></li>
+  <li><a href="#">Link 5</a></li>
+</ul>
+```
+*/
+/* ---------------------------------------------------------------------
+ Label
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Label
+name: label
+category: Objects
+---
+
+```html_example
+<span class="label">Regular Label</span>
+<span class="success round label">success round label</span>
+
+```
+*/
+/* ---------------------------------------------------------------------
+ Media
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Media
+name: media
+category: Objects
+---
+
+```html_example
+
+<div class="media">
+  <div class="media-img">
+    <img src="//placekitten.com/200/300" alt="" />
+  </div>
+  <div class="media-bd">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+```
+
+```html_example
+
+<div class="media">
+  <div class="media-img media-img_inverse">
+    <img src="//placekitten.com/200/300" alt="" />
+  </div>
+  <div class="media-bd">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+```
+
+*/
+/* standard */
+.media {
+  overflow: hidden;
+}
+
+.media-img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.media-bd {
+  overflow: hidden;
+}
+
+/* inverse */
+.media-img_inverse {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+/* ---------------------------------------------------------------------
+ Orbit
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Orbit
+name: orbit
+category: Objects
+---
+
+
+```html_example
+<ul data-orbit
+    data-options="animation:slide;
+                  pause_on_hover:true;
+                  animation_speed:500;
+                  navigation_arrows:true;
+                  bullets:false;">
+
+  <li>
+  <img src="//placekitten.com/300/200" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="//placekitten.com/300/200" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="//placekitten.com/300/200" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+```
+```html_example
+
+<ul class="example-orbit-content" data-orbit>
+  <li data-orbit-slide="headline-1">
+    <div>
+      <h2>Headline 1</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-2">
+    <div>
+      <h2>Headline 2</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-3">
+    <div>
+      <h2>Headline 3</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+</ul>
+```
+
+*/
+/* ---------------------------------------------------------------------
+ Pagination
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Pagination
+name: pagination
+category: Objects
+---
+
+
+```html_example
+      
+<h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a title="Go to first page" href="/admin/appearance/styleguide?page=0%2C0">« first</a></li>
+<li class="pager-previous"><a title="Go to previous page" href="/admin/appearance/styleguide?page=0%2C7">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a title="Go to page 5" href="/admin/appearance/styleguide?page=0%2C4">5</a></li>
+<li class="pager-item"><a title="Go to page 6" href="/admin/appearance/styleguide?page=0%2C5">6</a></li>
+<li class="pager-item"><a title="Go to page 7" href="/admin/appearance/styleguide?page=0%2C6">7</a></li>
+<li class="pager-item"><a title="Go to page 8" href="/admin/appearance/styleguide?page=0%2C7">8</a></li>
+<li class="pager-current">9</li>
+<li class="pager-item"><a title="Go to page 10" href="/admin/appearance/styleguide?page=0%2C9">10</a></li>
+<li class="pager-item"><a title="Go to page 11" href="/admin/appearance/styleguide?page=0%2C10">11</a></li>
+<li class="pager-item"><a title="Go to page 12" href="/admin/appearance/styleguide?page=0%2C11">12</a></li>
+<li class="pager-item"><a title="Go to page 13" href="/admin/appearance/styleguide?page=0%2C12">13</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a title="Go to next page" href="/admin/appearance/styleguide?page=0%2C9">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/admin/appearance/styleguide?page=0%2C19">last »</a></li>
+</ul></div>
+
+```
+
+*/
+/* ---------------------------------------------------------------------
+ Orbit
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Pricing Table
+name: pricing-table
+category: Objects
+---
+
+```html_example
+<ul class="pricing-table">
+  <li class="title">Standard</li>
+  <li class="price">$99.99</li>
+  <li class="description">An awesome description</li>
+  <li class="bullet-item">1 Database</li>
+  <li class="bullet-item">5GB Storage</li>
+  <li class="bullet-item">20 Users</li>
+  <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+</ul>
+```
+*/
+/* ---------------------------------------------------------------------
+ Side Nav
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Side Nav
+name: side-nav
+category: Objects
+---
+
+
+```html_example
+<ul class="side-nav">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+  <li><a href="#">Link 4</a></li>
+</ul>
+```
+
+```html_example
+<ul class="side-nav">
+  <li class="active"><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li class="divider"></li>
+  <li><a href="#">Link 3</a></li>
+  <li><a href="#">Link 4</a></li>
+</ul>
+```
+
+*/
+/* ---------------------------------------------------------------------
+ Split Button
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Split Button
+name: split-button
+category: Objects
+---
+
+
+```html_example
+<a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
+<ul id="drop" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+```
+
+### Mix in other button styles
+
+```html_example
+<a href="#" class="large alert radius button split">Split Button <span data-dropdown="drop"></span></a><br>
+<ul id="drop" class="f-dropdown" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+```
+
+*/
+/* ---------------------------------------------------------------------
+ Table
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Table
+name: table
+category: Objects
+---
+
+Table
+
+```html_example
+
+<table>
+  <thead>
+    <tr>
+      <th width="200">Table Header</th>
+      <th>Table Header</th>
+      <th width="150">Table Header</th>
+      <th width="150">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+    <tr>
+      <td>Content Goes Here</td>
+      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+      <td>Content Goes Here</td>
+      <td>Content Goes Here</td>
+    </tr>
+  </tbody>
+</table>
+
+```
+*/
+/* ---------------------------------------------------------------------
+ Thumbnail
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Thumbnail
+name: thumbnail
+category: Objects
+---
+
+
+Basic Thumbnail
+
+```html_example
+<a class="th" href="//placekitten.com/300/200">
+  <img src="//placekitten.com/300/200">
+</a>
+```
+
+```html_example
+<a class="th radius" href="//placekitten.com/300/200">
+  <img src="//placekitten.com/300/200">
+</a>
+```
+*/
+/* ---------------------------------------------------------------------
+ WYSIWYG
+Original Author: Anthony Ticknor
+Contributors: N/A
+
+Quarantine styles applied to areas where content is dynamic and
+generated by a content editor / CMS. 
+
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Wysiwyg
+name: wysiwyg
+category: Wysiwyg
+---
+
+
+```html_example
+
+<div class="wysiwyg">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed libero ligula. Duis turpis erat, pellentesque vel hendrerit ac, pretium vitae lectus. Quisque et lobortis purus. Morbi vel tortor eu lectus sollicitudin tristique ac ac ipsum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed libero ligula. Duis turpis erat, pellentesque vel hendrerit ac, pretium vitae lectus. Quisque et lobortis purus. Morbi vel tortor eu lectus sollicitudin tristique ac ac ipsum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed libero ligula. Duis turpis erat, pellentesque vel hendrerit ac, pretium vitae lectus. Quisque et lobortis purus. Morbi vel tortor eu lectus sollicitudin tristique ac ac ipsum.</p>
+    <p>Horizontal rule sample below this paragraph.</p>
+    <hr />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed libero ligula. Duis turpis erat, pellentesque vel hendrerit ac, pretium vitae lectus. Quisque et lobortis purus. Morbi vel tortor eu lectus sollicitudin tristique ac ac ipsum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed libero ligula. Duis turpis erat, pellentesque vel hendrerit ac, pretium vitae lectus. Quisque et lobortis purus. Morbi vel tortor eu lectus sollicitudin tristique ac ac ipsum.</p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <address>
+        Sample address<br/>
+        PO Box 12345<br/>
+        Bloomington, MN, 55431
+    </address>
+    <blockquote>
+        Sample blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed libero ligula. Duis turpis erat, pellentesque vel hendrerit ac, pretium vitae lectus. Quisque et lobortis purus. Morbi vel tortor eu lectus sollicitudin tristique ac ac ipsum.
+    </blockquote>
+
+    <ul>
+        <li>
+            Sample of <a href="#">anchor</a> text
+        </li>
+        <li>
+            Sample of <strong>strong</strong> text
+        </li>
+        <li>
+            Sample of <b>bold</b> text
+        </li>
+        <li>
+            Sample of <em>emphasis</em> text
+        </li>
+        <li>
+            Sample of <i>italic</i> text
+        </li>
+        <li>
+            Sample of <del>deleted</del> text
+        </li>
+        <li>
+            Sample of <strike>strikethrough</strike> text
+        </li>
+        <li>
+            Sample of <s>ssss</s> text
+        </li>
+        <li>
+            Sample of <u>underlined</u> text
+        </li>
+        <li>
+            Sample of <ins>inserted</ins> text
+        </li>
+        <li>
+            Sample of <sup>superscript</sup> text
+        </li>
+        <li>
+            Sample of <sub>subscript</sub> text
+        </li>
+        <li>
+            Sample of <big>big</big> text
+        </li>
+        <li>
+            Sample of <small>small</small> text
+        </li>
+        <li>
+            Sample of <span>span</span> text
+        </li>
+        <li>
+            Sample of <abbr title="Abbreviation">abbr</abbr> text
+        </li>
+        <li>
+            Sample of <acronym title="Acronym">acronym</acronym> text
+        </li>
+        <li>
+            Sample of <cite>citation</cite> text
+        </li>
+        <li>
+            Sample of <dfn>definition</dfn> text
+        </li>
+        <li>
+            Sample of <q>quotes</q> text
+        </li>
+        <li>
+            Sample of <q>quotes <q>within quotes</q></q> text
+        </li>
+        <li>
+            Sample of <bdo>bi-directional override</bdo> text
+        </li>
+        <li>
+            Sample of <blink>blinking</blink> text
+        </li>
+    </ul>
+                <pre><strong>Sample of preformatted text:</strong><br/>
+Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Donec quis tellus nec arcu porta dapibus.
+Nunc non massa vitae nibh auctor semper.</pre>
+                <pre>
+<strong>// Sample of some preformatted text with intentional line breaks:</strong>
+
+class TestClass
+{
+    protected $myVariable;
+
+    public function __construct()
+    {
+        // Perform some construction logic
+    }
+}
+                </pre>
+                <pre><strong>Sample of preformatted text with a really long word:</strong>
+My email address:
+testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeemail@eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexample.com</pre>
+                <ul>
+                    <li>
+                        Sample of <code>code</code> text
+                    </li>
+                    <li>
+                        Sample of <samp>sample</samp> text
+                    </li>
+                    <li>
+                        Sample of <tt>teletype</tt> text
+                    </li>
+                    <li>
+                        Sample of <kbd>keyboard</kbd> text
+                    </li>
+                    <li>
+                        Sample of <var>variable</var> text
+                    </li>
+                </ul>
+
+               <ol>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                </ol>
+                <ol>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula
+                        <ol>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                        </ol>
+                    </li>
+                    <li>Phasellus sed libero ligula</li>
+                </ol>
+                <ol>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula
+                        <ul>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                        </ul>
+                    </li>
+                    <li>Phasellus sed libero ligula</li>
+                </ol>
+                <ul>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                </ul>
+                <ul>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula
+                        <ul>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                        </ul>
+                    </li>
+                    <li>Phasellus sed libero ligula</li>
+                </ul>
+                <ul>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula</li>
+                    <li>Phasellus sed libero ligula
+                        <ol>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                            <li>Phasellus sed libero ligula</li>
+                        </ol>
+                    </li>
+                    <li>Phasellus sed libero ligula</li>
+                </ul>
+                <dl>
+                    <dt>Definition Term</dt>
+                    <dd>Definition Description</dd>
+                    <dd>Definition Description</dd>
+                    <dt>Definition Term</dt>
+                    <dd>Definition Description</dd>
+                    <dd>Definition Description</dd>
+                </dl>
+    <!-- Tables -->
+    <table>
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">Company Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dignissim Pellentesque</td>
+                <td>123 First Street<br/>
+                    Cityville, Minnesota, 55555</td>
+                <td>(555) 555-1234</td>
+            </tr>
+            <tr>
+                <td>Dona Nobis Pachem, LLC</td>
+                <td>123 Second Street<br/>
+                    Cityville, Minnesota, 55555</td>
+                <td>(555) 555-1234</td>
+            </tr>
+            <tr>
+                <td>Pellentesque Dignissim</td>
+                <td>123 First Street<br/>
+                    Cityville, Minnesota, 55555</td>
+                <td>(555) 555-1234</td>
+            </tr>
+            <tr>
+                <td>Pachem Nobis Dona, LLC</td>
+                <td>123 Second Street<br/>
+                    Cityville, Minnesota, 55555</td>
+                <td>(555) 555-1234</td>
+            </tr>
+        </tbody>
+    </table>
+
+```
+*/
+meta.foundation-version {
+  font-family: "/5.1.0/";
+}
+
+meta.foundation-mq-small {
+  font-family: "/only screen and (max-width: 40em)/";
+  width: 0em;
+}
+
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em;
+}
+
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em;
+}
+
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em;
+}
+
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em;
+}
+
+meta.foundation-data-attribute-namespace {
+  font-family: false;
+}
+
+html, body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object,
+embed {
+  height: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+select {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+@media only screen and (max-width: 40em) {
+  .small-only-text-left {
+    text-align: left !important;
+  }
+
+  .small-only-text-right {
+    text-align: right !important;
+  }
+
+  .small-only-text-center {
+    text-align: center !important;
+  }
+
+  .small-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen {
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  .small-text-right {
+    text-align: right !important;
+  }
+
+  .small-text-center {
+    text-align: center !important;
+  }
+
+  .small-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .medium-only-text-left {
+    text-align: left !important;
+  }
+
+  .medium-only-text-right {
+    text-align: right !important;
+  }
+
+  .medium-only-text-center {
+    text-align: center !important;
+  }
+
+  .medium-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .medium-text-left {
+    text-align: left !important;
+  }
+
+  .medium-text-right {
+    text-align: right !important;
+  }
+
+  .medium-text-center {
+    text-align: center !important;
+  }
+
+  .medium-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .large-only-text-left {
+    text-align: left !important;
+  }
+
+  .large-only-text-right {
+    text-align: right !important;
+  }
+
+  .large-only-text-center {
+    text-align: center !important;
+  }
+
+  .large-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .large-text-left {
+    text-align: left !important;
+  }
+
+  .large-text-right {
+    text-align: right !important;
+  }
+
+  .large-text-center {
+    text-align: center !important;
+  }
+
+  .large-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  .xlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  .xlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  .xlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  .xlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.063em) {
+  .xlarge-text-left {
+    text-align: left !important;
+  }
+
+  .xlarge-text-right {
+    text-align: right !important;
+  }
+
+  .xlarge-text-center {
+    text-align: center !important;
+  }
+
+  .xlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+  .xxlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  .xxlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  .xxlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  .xxlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.063em) {
+  .xxlarge-text-left {
+    text-align: left !important;
+  }
+
+  .xxlarge-text-right {
+    text-align: right !important;
+  }
+
+  .xxlarge-text-center {
+    text-align: center !important;
+  }
+
+  .xxlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+/* Typography resets */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default Link Styles */
+a {
+  color: #008cba;
+  text-decoration: none;
+  line-height: inherit;
+}
+a:hover, a:focus {
+  color: #0078a0;
+}
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+p.lead {
+  font-size: 1.21875rem;
+  line-height: 1.6;
+}
+p aside {
+  font-size: 0.875rem;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  color: #6f6f6f;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 2.125rem;
+}
+
+h2 {
+  font-size: 1.6875rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.subheader {
+  line-height: 1.4;
+  color: #6f6f6f;
+  font-weight: normal;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25rem 0 1.1875rem;
+  height: 0;
+}
+
+/* Helpful Typography Defaults */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: bold;
+  color: #bd260d;
+}
+
+/* Lists */
+ul,
+ol,
+dl {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  list-style-position: outside;
+  font-family: inherit;
+}
+
+ul {
+  margin-left: 1.1rem;
+}
+ul.no-bullet {
+  margin-left: 0;
+}
+ul.no-bullet li ul,
+ul.no-bullet li ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* Unordered Lists */
+ul li ul,
+ul li ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+ul.square li ul, ul.circle li ul, ul.disc li ul {
+  list-style: inherit;
+}
+ul.square {
+  list-style-type: square;
+  margin-left: 1.1rem;
+}
+ul.circle {
+  list-style-type: circle;
+  margin-left: 1.1rem;
+}
+ul.disc {
+  list-style-type: disc;
+  margin-left: 1.1rem;
+}
+ul.no-bullet {
+  list-style: none;
+}
+
+/* Ordered Lists */
+ol {
+  margin-left: 1.4rem;
+}
+ol li ul,
+ol li ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+dl dd {
+  margin-bottom: 0.75rem;
+}
+
+/* Abbreviations */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #222222;
+  border-bottom: 1px dotted #dddddd;
+  cursor: help;
+}
+
+abbr {
+  text-transform: none;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 0 0 1.25rem;
+  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  border-left: 1px solid #dddddd;
+}
+blockquote cite {
+  display: block;
+  font-size: 0.8125rem;
+  color: #555555;
+}
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited {
+  color: #555555;
+}
+
+blockquote,
+blockquote p {
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+/* Microformats */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.25rem 0;
+  border: 1px solid #dddddd;
+  padding: 0.625rem 0.75rem;
+}
+.vcard li {
+  margin: 0;
+  display: block;
+}
+.vcard .fn {
+  font-weight: bold;
+  font-size: 0.9375rem;
+}
+
+.vevent .summary {
+  font-weight: bold;
+}
+.vevent abbr {
+  cursor: default;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.0625rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.3125rem;
+  }
+
+  h3 {
+    font-size: 1.6875rem;
+  }
+
+  h4 {
+    font-size: 1.4375rem;
+  }
+}
+/*
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .hide-on-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .hide-for-print {
+    display: none !important;
+  }
+
+  .show-for-print {
+    display: inherit !important;
+  }
+}
+table {
+  background: white;
+  margin-bottom: 1.25rem;
+  border: solid 1px #dddddd;
+}
+table thead,
+table tfoot {
+  background: whitesmoke;
+}
+table thead tr th,
+table thead tr td,
+table tfoot tr th,
+table tfoot tr td {
+  padding: 0.5rem 0.625rem 0.625rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #222222;
+  text-align: left;
+}
+table tr th,
+table tr td {
+  padding: 0.5625rem 0.625rem;
+  font-size: 0.875rem;
+  color: #222222;
+}
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: #f9f9f9;
+}
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td {
+  display: table-cell;
+  line-height: 1.125rem;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg default
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+wysiwyg paragraphs
+------------------------------------------------------------------------ */
+.wysiwyg p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg headings
+------------------------------------------------------------------------ */
+.wysiwyg h1 {
+  font-size: 2.125rem;
+}
+
+.wysiwyg h2 {
+  font-size: 1.6875rem;
+}
+
+.wysiwyg h3 {
+  font-size: 1.375rem;
+}
+
+.wysiwyg h4 {
+  font-size: 1.125rem;
+}
+
+.wysiwyg h5 {
+  font-size: 1.125rem;
+}
+
+.wysiwyg h6 {
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg sections
+------------------------------------------------------------------------ */
+.wysiwyg blockquote {
+  margin: 0 24px 12px 24px;
+  padding: 12px;
+  background: #eeeeee;
+  font-style: italic;
+}
+
+.wysiwyg address {
+  margin: 0 0 12px 0;
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg anchors
+------------------------------------------------------------------------ */
+.wysiwyg a:link {
+  color: #008cba;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+.wysiwyg a:focus,
+.wysiwyg a:hover {
+  color: #0078a0;
+}
+
+.wysiwyg a img {
+  border: none;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg text formatting
+------------------------------------------------------------------------ */
+.wysiwyg strong,
+.wysiwyg b {
+  font-weight: bold;
+}
+
+.wysiwyg em,
+.wysiwyg i {
+  font-style: italic;
+}
+
+.wysiwyg del,
+.wysiwyg strike,
+.wysiwyg s {
+  text-decoration: line-through;
+}
+
+.wysiwyg u,
+.wysiwyg ins {
+  text-decoration: underline;
+}
+
+.wysiwyg sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.wysiwyg sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.wysiwyg big {
+  font-size: larger;
+}
+
+.wysiwyg small {
+  font-size: smaller;
+}
+
+.wysiwyg abbr,
+.wysiwyg acronym {
+  border-bottom: dotted 1px;
+}
+
+.wysiwyg cite,
+.wysiwyg dfn {
+  font-style: italic;
+}
+
+.wysiwyg q {
+  font-style: italic;
+}
+
+.wysiwyg q::before {
+  content: open-quote;
+}
+
+.wysiwyg q::after {
+  content: close-quote;
+}
+
+.wysiwyg q:lang(en) {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.wysiwyg bdo {
+  direction: rtl;
+}
+
+.wysiwyg blink {
+  text-decoration: blink;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg computer output
+------------------------------------------------------------------------ */
+.wysiwyg pre {
+  margin: 0 0 12px 0;
+  font-family: "Lucida Console", Monaco, monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.wysiwyg code,
+.wysiwyg samp,
+.wysiwyg tt,
+.wysiwyg kbd {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.wysiwyg var {
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg lists
+------------------------------------------------------------------------ */
+.wysiwyg ul,
+.wysiwyg ol,
+.wysiwyg dl {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.wysiwyg ul {
+  list-style-type: disc;
+  margin: 0 0 12px 0;
+}
+
+.wysiwyg ol {
+  list-style-type: decimal;
+  margin: 0 0 12px 0;
+}
+
+.wysiwyg dt {
+  font-weight: bold;
+}
+
+.wysiwyg li,
+.wysiwyg dd {
+  margin: 0 0 0 24px;
+}
+
+/* nested lists have no top/bottom margins */
+.wysiwyg ul ul,
+.wysiwyg ul ol,
+.wysiwyg ul dl,
+.wysiwyg ol ul,
+.wysiwyg ol ol,
+.wysiwyg ol dl,
+.wysiwyg dl ul,
+.wysiwyg dl ol,
+.wysiwyg dl dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 2 deep unordered lists use a circle */
+.wysiwyg ol ul,
+.wysiwyg ul ul {
+  list-style-type: circle;
+}
+
+/* 3 deep (or more) unordered lists use a square */
+.wysiwyg ol ol ul,
+.wysiwyg ol ul ul,
+.wysiwyg ul ol ul,
+.wysiwyg ul ul ul {
+  list-style-type: square;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg tables
+------------------------------------------------------------------------ */
+.wysiwyg table {
+  background: white;
+  margin-bottom: 1.25rem;
+  border: solid 1px #dddddd;
+}
+.wysiwyg table thead,
+.wysiwyg table tfoot {
+  background: whitesmoke;
+}
+.wysiwyg table thead tr th,
+.wysiwyg table thead tr td,
+.wysiwyg table tfoot tr th,
+.wysiwyg table tfoot tr td {
+  padding: 0.5rem 0.625rem 0.625rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #222222;
+  text-align: left;
+}
+.wysiwyg table tr th,
+.wysiwyg table tr td {
+  padding: 0.5625rem 0.625rem;
+  font-size: 0.875rem;
+  color: #222222;
+}
+.wysiwyg table tr.even, .wysiwyg table tr.alt, .wysiwyg table tr:nth-of-type(even) {
+  background: #f9f9f9;
+}
+.wysiwyg table thead tr th,
+.wysiwyg table tfoot tr th,
+.wysiwyg table tbody tr td,
+.wysiwyg table tr td,
+.wysiwyg table tfoot tr td {
+  display: table-cell;
+  line-height: 1.125rem;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg horizontal rule
+------------------------------------------------------------------------ */
+.wysiwyg hr {
+  margin: 0 0 12px 0;
+  background: #666666;
+  color: #666666;
+  height: 1px;
+  border: none;
+  line-height: 1px;
+  font-size: 1px;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg media
+------------------------------------------------------------------------ */
+.wysiwyg img,
+.wysiwyg video,
+.wysiwyg audio {
+  max-width: 100% !important;
+}
+
+/* ---------------------------------------------------------------------
+wysiwyg undefined elements
+------------------------------------------------------------------------ */
+.wysiwyg html,
+.wysiwyg head,
+.wysiwyg body,
+.wysiwyg title,
+.wysiwyg meta,
+.wysiwyg link,
+.wysiwyg style,
+.wysiwyg script,
+.wysiwyg noscript,
+.wysiwyg base,
+.wysiwyg basefont,
+.wysiwyg div,
+.wysiwyg span,
+.wysiwyg header,
+.wysiwyg hgroup,
+.wysiwyg footer,
+.wysiwyg main,
+.wysiwyg section,
+.wysiwyg article,
+.wysiwyg aside,
+.wysiwyg nav,
+.wysiwyg figcaption,
+.wysiwyg figure,
+.wysiwyg menu,
+.wysiwyg command,
+.wysiwyg summary,
+.wysiwyg details,
+.wysiwyg canvas
+.wysiwyg applet,
+.wysiwyg object,
+.wysiwyg embed,
+.wysiwyg source,
+.wysiwyg param,
+.wysiwyg track,
+.wysiwyg map,
+.wysiwyg area
+.wysiwyg iframe,
+.wysiwyg frame,
+.wysiwyg frameset,
+.wysiwyg noframes,
+.wysiwyg fieldset,
+.wysiwyg legend,
+.wysiwyg form,
+.wysiwyg label,
+.wysiwyg isindex,
+.wysiwyg input,
+.wysiwyg select,
+.wysiwyg option,
+.wysiwyg optgroup,
+.wysiwyg textarea,
+.wysiwyg button,
+.wysiwyg datalist,
+.wysiwyg meter,
+.wysiwyg progress,
+.wysiwyg output,
+.wysiwyg keygen,
+.wysiwyg ruby,
+.wysiwyg rt,
+.wysiwyg rp,
+.wysiwyg mark,
+.wysiwyg time,
+.wysiwyg wbr,
+.wysiwyg br,
+.wysiwyg dir,
+.wysiwyg font,
+.wysiwyg center {
+  /* nil */
+}
+
+/* ---------------------------------------------------------------------
+ Slideshow
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Slideshow
+name: slideshow
+category: components
+---
+
+
+```html_example
+<div class="slideshow-wrapper">
+  <div class="preloader"></div>
+  <ul data-orbit
+      data-options="animation:fade;
+                    pause_on_hover:true;
+                    timer:false;
+                    animation_speed:900;
+                    navigation_arrows:true;
+                    captions:false;
+                    bullets:false;">
+
+    <li>
+      <img src="http://placekitten.com/2400/800" alt="slide 1" />
+    </li>
+    <li class="active">
+      <img src="http://placekitten.com/2401/800" alt="slide 2" />
+    </li>
+    <li>
+      <img src="http://placekitten.com/2402/800" alt="slide 3" />
+    </li>
+  </ul>
+</div>
+```
+
+*/
+.orbit-slide-number {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
+ Media list
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Media List
+name: media list
+category: components
+---
+
+
+```html_example
+<div class="media-list">
+  <div class="media first">
+    <div class="media-img">
+      <img src="http://placekitten.com/400/300" alt="media first" />
+    </div>
+    <div class="media-bd">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  <div class="media middle">
+    <div class="media-img">
+      <img src="http://placekitten.com/401/300" alt="media middle" />
+    </div>
+    <div class="media-bd">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  <div class="media last">
+    <div class="media-img">
+      <img src="http://placekitten.com/399/300" alt="media last" />
+    </div>
+    <div class="media-bd">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+```
+
+*/
+.media-img img {
+  width: 200px;
+}
+
+@media all and (max-width: 400px) {
+  .media-img {
+    float: inherit;
+    margin: 0;
+  }
+  .media-img img {
+    width: 100%;
+  }
+}
+/* ---------------------------------------------------------------------
+ Featured Pet
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Featured Pet
+name: featured pet
+category: components
+---
+
+```html_example
+ <div class="row">
+      <ul class="large-block-grid-3">
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <a href="#">
+                        <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                        <div class="feature-ft">Featured Pet 1</div>
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <a href="#">
+                        <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                        <div class="feature-ft">Featured Pet 2</div>
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <a href="#">
+                        <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                        <div class="feature-ft">Featured Pet 3</div>
+                      </a>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+```
+
+*/
+.feature-hd_simple {
+  background: none;
+  padding: none;
+}
+
+.feature-md > img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.feature {
+  font-family: 'Merriweather', georgia, serif;
+}
+
+.feature-ft {
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+Footer
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Footer
+name: footer
+category: components
+---
+
+
+```html_example
+
+<div class="row globalFooter">
+  <div class="small-12 columns">
+    <div class="row">
+      <ul class="inline-list">
+        <li>P.O. Box 847, Stillwater, MN 55082</li>
+        <li>T: 1-800-252-5918</li>
+        <li><a href="mailto:info@homeforlife.org">info@homeforlife.org</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul class="inline-list">
+        <li><a href="https://twitter.com/HFLAnimals" class="webicon twitter small">Tweet us on Twitter</a></li>
+        <li><a href="https://www.youtube.com/user/homeforlifesanctuary" class="webicon youtube small">Watch us on YouTube</a></li>
+        <li><a href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">+1 us on Google Plus</a></li>
+        <li><a href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Pin us on Pinterest</a></li>
+        <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+```
+
+*/
+.globalFooter {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 20px 0px;
+  max-width: none;
+}
+.globalFooter ul {
+  margin: 0 auto;
+  display: table;
+  padding: 10px 0px;
+}
+.globalFooter a {
+  color: #3498db;
+}
+
+/* ---------------------------------------------------------------------
+ Triptych
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Triptych
+name: triptych
+category: comp-noah
+---
+
+```html_example
+ <div class="row">
+      <ul class="large-block-grid-3">
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7" style="color: " >Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7">Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <div class="feature-hd feature-hd_simple"><h3 class="hdg_7" >Meet the Animals</h3></div>
+                      <div class="feature-md"><img src="http://placekitten.com/300/80"></div>
+                      <div class="feature-bd">Lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit lorem ipsum dolor sit amet adispiscing elit</div>
+                      <div class="feature-ft"><a href="#" class="button">Default Button</a></div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+```
+
+*/
+.feature-hd_simple {
+  background: none;
+  padding: none;
+}
+
+.feature-md > img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.feature {
+  font-family: 'Merriweather', georgia, serif;
+}
+
+.feature-ft {
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Header
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Global Header
+name: global-header
+category: comp-noah
+---
+```html_example
+
+<header class="globalHeader">
+
+  <div class="row">
+    <div class="small-1 large-2 columns columns_fullHeight">
+      <div class="logo">
+        <svg class="logoGraphic" version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 100 34">
+          <g id="V1">
+              <polygon fill="#666666" points="4.153,15.62 3.504,13.964 39.111,0 74.323,13.965 73.667,15.619 39.108,1.912 	"/>
+              <g id="Text_6_">
+                  <text transform="matrix(1 0 0 1 71.7729 23.6045)"><tspan x="0" y="0" fill="#2BB673" font-family="'SourceCodePro-Regular'" font-size="11.8596">FO</tspan><tspan x="14.231" y="0" fill="#2BB673" font-family="'SourceCodePro-Regular'" font-size="11.8596" letter-spacing="-1">R</tspan><tspan x="-0.237" y="9.488" fill="#2BB673" font-family="'SourceCodePro-Regular'" font-size="11.8596">LIFE</tspan></text>
+                  <text transform="matrix(1 0 0 1 19.4419 33.2402)"><tspan x="0" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911" letter-spacing="-2">H</tspan><tspan x="13.462" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911" letter-spacing="-1">O</tspan><tspan x="27.134" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911" letter-spacing="-3">M</tspan><tspan x="39.032" y="0" fill="#00AEEF" font-family="'SourceCodePro-Regular'" font-size="26.0911">E</tspan></text>
+              </g>
+              <polygon fill="#4D4D4D" points="9.754,19.969 11.927,18.355 13.535,16.82 14.313,15.667 14.537,14.755 14.982,14.114 15.31,12.93 15.656,13.212 15.683,13.618 15.986,14.495 16.672,13.185 16.87,13.09 17.049,13.322 16.988,14.834 17.012,15.2 17.18,15.27 17.771,15.556 18.05,16.077 18.361,16.454 18.999,16.859 20.313,17.544 20.34,17.95 20.115,18.291 19.839,18.432 19.644,18.568 19.658,18.771 19.431,19.03 18.455,19.056 17.508,18.916 17.043,19.273 16.685,19.998 16.689,20.071 16.376,20.867 15.777,22.252 15.54,22.961 14.783,23.828 13.995,25.43 13.459,25.955 13.176,27.197 13.021,28.511 13.265,29.718 13.226,31.554 13.772,31.803 14.409,32.167 14.842,32.545 15.026,32.859 15.08,33.059 14.726,33.247 13.823,33.144 12.902,32.799 12.504,32.336 12.095,31.712 12.027,30.698 11.964,29.765 11.441,28.659 11.153,28.026 8.524,27.715 8.361,19.86 	"/>
+              <path fill="#808080" d="M11.304,23.926l0.511,1.191v0.454l0.283,1.079l0.284,1.07v0.857l-0.284,2.212v0.964l-0.283,0.851v0.624H2.058l-0.454-0.283L0.98,32.492l-0.709-0.908l-0.085-0.34c0,0-0.249-0.438-0.17-0.681c0.09-0.275,0.022-0.688,0.17-0.936c0.134-0.224,0.745-0.968,0.964-1.106c0.241-0.151,0.681-0.341,0.964-0.341c0.199,0,0.604-0.055,0.795,0c0.177,0.051,0.564,0.222,0.624,0.396c0.068,0.2,0.432,0.588,0.396,0.795c-0.029,0.168-0.529,0.603-0.681,0.68c-0.172,0.088-0.441-0.394-0.624-0.453c-0.175-0.058-0.576-0.089-0.737,0c-0.117,0.065-0.247,0.325-0.284,0.453c-0.055,0.191,0,0.794,0,0.794l0.34,0.453l0.624,0.568h1.077h1.022l-0.114-0.511V30.79L4.27,30.109v-0.736v-0.681l0.454-0.51l0.794-1.135v-0.737l0.056-1.191l0.397-0.568l-0.057-0.624l-0.396-0.284H4.667L4.27,23.529l-0.567-0.624V21.94l-0.284-0.681l0.454-1.19L3.76,19.728l-0.341-0.397l-0.454-0.568h0.568h1.021h0.284h0.397h1.191h0.851l0.738,0.17l1.134,0.568l1.134,1.02l0.568,0.965l0.454,1.361"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="small-5 large-3 columns columns_fullHeight pull-right">
+      <div class="vAlign">
+        <div class="vAlign-middle">
+          <a href="#" class="button button_noMarg button_cta">Do IT!</a>
+        </div>
+      </div>
+    <div>
+  </div>
+  </div>
+  </div>
+  <div class="row row_fullWidth">
+  <div class="contain-to-grid">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
+  </div>
+</header>
+```
+
+*/
+.globalHeader {
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
+  height: 70px;
+}
+
+.logo > .logoGraphic {
+  height: 100%;
+  width: 100%;
+}
+
+.vAlign {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.vAlign-middle {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.columns_fullHeight,
+.row_fullHeight {
+  height: 100%;
+}
+
+.button_noMarg {
+  margin: 0;
+}
+
+.row_fullWidth {
+  max-width: none;
+}
+
+/* ---------------------------------------------------------------------
+ Mission
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Mission
+name: mission
+category: components
+---
+
+```html_example
+<div class="mission">
+  <div class="big-12">
+    <h2>What Is Third Door?</h2>
+    <p>Most shelters and rescues offer two options for animals: adoption or euthanasia. Home for Life offers a third option for cats and dogs who are old, or who have disabilities, health or temperament problems. We created "The Third Door," a new concept in animal rescue and welfare where special animals have options previously unavailable. Home for Life animals enjoy a quality life, where they can be themselves, run and play, and be loved and cherished for as long as they live.</p>
+  </div>
+</div>
+```
+
+*/
+.mission {
+  background: url("http://placekitten.com/2400/800");
+  padding: 2em;
+}
+.mission .big-12 {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.mission,
+.mission h2 {
+  color: #FFFFFF;
+}
+
+.medialist {
+  list-style: none;
+}
+
+.isVisuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
