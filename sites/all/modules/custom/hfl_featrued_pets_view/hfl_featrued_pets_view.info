@@ -1,0 +1,7 @@
+name = HFL Featrued Pets View
+description = A block that creates a view of featured pets
+core = 7.x
+package = Views
+version = 7.x-1.0
+project = hfl_featrued_pets_view
+features[features_api][] = api:2
