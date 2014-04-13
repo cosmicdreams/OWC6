@@ -1,0 +1,56 @@
+/* ---------------------------------------------------------------------
+Footer
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Footer
+name: footer
+category: components
+---
+
+
+```html_example
+
+<div class="row globalFooter">
+  <div class="small-12 columns">
+    <div class="row">
+      <ul class="inline-list">
+        <li>P.O. Box 847, Stillwater, MN 55082</li>
+        <li>T: 1-800-252-5918</li>
+        <li><a href="mailto:info@homeforlife.org">info@homeforlife.org</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul class="inline-list">
+        <li><a href="https://twitter.com/HFLAnimals" class="webicon twitter small">Like us on Facebook</a></li>
+        <li><a href="https://www.youtube.com/user/homeforlifesanctuary" class="webicon youtube small">Like us on Facebook</a></li>
+        <li><a href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">Like us on Facebook</a></li>
+        <li><a href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Like us on Facebook</a></li>
+        <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+```
+
+*/
+
+.globalFooter {
+  background-color: $navy;
+  color: $white;
+  padding: 20px 0px;
+  max-width: none;
+
+  ul {
+    margin: 0 auto;
+    display: table;
+    padding: 10px 0px;
+  }
+
+  a {
+    color: $blue;
+  }
+}

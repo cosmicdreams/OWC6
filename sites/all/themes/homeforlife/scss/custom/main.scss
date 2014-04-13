@@ -1,6 +1,13 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
+$green: #1ABC9C;
+$green2: #2ECC71;
+$blue: #3498DB;
+$purple: #9B59B6;
+$navy: #34495E;
+$white: #ecf0f1;
+
 /* Reusable Objects */
 @import
   "landmarks/_globalFooter.scss",
@@ -41,6 +48,7 @@
   "objects/components/_slideshow.scss",
   "objects/components/_media-list.scss",
   "objects/components/_featured-pets.scss",
+  "objects/components/_footer.scss",
   "objects/comp-noah/_triptych.scss",
   "objects/comp-noah/_header.scss";
 
