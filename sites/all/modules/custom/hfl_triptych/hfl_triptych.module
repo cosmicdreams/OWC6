@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Triptych feature.
+ */
+
+include_once 'hfl_triptych.features.inc';
