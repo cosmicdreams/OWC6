@@ -55,7 +55,7 @@ function hfl_triptych_blocks_view_views_default_views() {
   $handler->display->display_options['fields']['field_triptych_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_triptych_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_triptych_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'triptych',
     'image_link' => '',
   );
   /* Field: Triptych message */
@@ -72,10 +72,16 @@ function hfl_triptych_blocks_view_views_default_views() {
   $handler->display->display_options['fields']['field_triptych_link']['table'] = 'field_data_field_triptych_link';
   $handler->display->display_options['fields']['field_triptych_link']['field'] = 'field_triptych_link';
   $handler->display->display_options['fields']['field_triptych_link']['label'] = '';
+  $handler->display->display_options['fields']['field_triptych_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_triptych_link']['alter']['text'] = '[field_triptych_link]';
+  $handler->display->display_options['fields']['field_triptych_link']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_triptych_link']['alter']['path'] = '[field_triptych_link-url]';
+  $handler->display->display_options['fields']['field_triptych_link']['alter']['link_class'] = 'button';
   $handler->display->display_options['fields']['field_triptych_link']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_triptych_link']['element_class'] = 'feature-ft';
   $handler->display->display_options['fields']['field_triptych_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_triptych_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_triptych_link']['type'] = 'link_title_plain';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
