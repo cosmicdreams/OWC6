@@ -4868,7 +4868,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333;
+  background: #34495e;
 }
 .contain-to-grid .top-bar {
   margin-bottom: 0;
@@ -4902,7 +4902,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333333;
+  background: #34495e;
   margin-bottom: 0;
 }
 .top-bar ul {
@@ -4995,7 +4995,7 @@ meta.foundation-mq-topbar {
   background: transparent;
 }
 .top-bar.expanded .title-area {
-  background: #333333;
+  background: #34495e;
 }
 .top-bar.expanded .toggle-topbar a {
   color: #888888;
@@ -5016,13 +5016,13 @@ meta.foundation-mq-topbar {
   width: 100%;
   height: auto;
   display: block;
-  background: #333333;
+  background: #34495e;
   font-size: 16px;
   margin: 0;
 }
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #1a1a1a;
+  border-top: solid 1px #1a242f;
   clear: both;
   height: 1px;
   width: 100%;
@@ -5036,7 +5036,7 @@ meta.foundation-mq-topbar {
   font-family: "Merriweather", georgia, serif;
   font-size: 0.8125rem;
   font-weight: normal;
-  background: #333333;
+  background: #34495e;
 }
 .top-bar-section ul li > a.button {
   background: #008cba;
@@ -5150,7 +5150,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: #34495e;
     *zoom: 1;
     overflow: visible;
   }
@@ -5177,7 +5177,7 @@ meta.foundation-mq-topbar {
     top: 7px;
   }
   .top-bar.expanded {
-    background: #333333;
+    background: #34495e;
   }
 
   .contain-to-grid .top-bar {
@@ -5209,7 +5209,7 @@ meta.foundation-mq-topbar {
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
-    background: #333333;
+    background: #34495e;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background: #272727;
@@ -5278,13 +5278,13 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #4e4e4e;
+    border-right: solid 1px #45617c;
     clear: none;
     height: 45px;
     width: 0;
   }
   .top-bar-section .has-form {
-    background: #333333;
+    background: #34495e;
     padding: 0 15px;
     height: 45px;
   }

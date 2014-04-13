@@ -30,6 +30,7 @@ base theme = zurb_foundation
 ; stylesheets[all][] = css/app.css
 ; Comment the app.css file (above) if you're using sass to preprocess css:
 stylesheets[all][] = css/homeforlife.css
+stylesheets[all][] = css/main.css
 
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
@@ -86,9 +87,9 @@ regions[featured]            = Featured
 regions[content]             = Content
 regions[sidebar_first]       = Left Sidebar
 regions[sidebar_second]      = Right Sidebar
-regions[triptych_left]      = Callout one
+regions[triptych_left]       = Callout one
 regions[triptych_center]     = Callout two
-regions[triptych_right]       = Callout three
+regions[triptych_right]      = Callout three
 regions[footer_firstcolumn]  = Footer one
 regions[footer_secondcolumn] = Footer two
 regions[footer_thirdcolumn]  = Footer three

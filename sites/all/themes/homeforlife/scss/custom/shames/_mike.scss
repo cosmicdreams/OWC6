@@ -5,7 +5,9 @@ $current-sandy-brown: #e5e0c9;
 $current-grey: #eee;
 $current-white: #fff;
 
-
 .medialist {
   list-style:none;
 }
+
+@import
+  "objects/components/_donate.scss";
