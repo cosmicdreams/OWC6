@@ -26,3 +26,7 @@
   };
 
 })(jQuery, Drupal);
+
+jQuery(function($){
+  $('.block-constant-contact-1 form input[type="checkbox"]').prop('checked', true);
+}, jQuery);

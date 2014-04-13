@@ -221,7 +221,7 @@
         <?php print render($page['front_mission']); ?>
       </div>
       <div class="medium-6 columns cta">
-        <a href="/what-makes-home-life-different" class="button">
+        <a href="#" class="button">
           <h3>Learn More</h3>
         </a>
       </div>
@@ -253,6 +253,7 @@
 </div>
 
 
+  <!--/.donate-->
   <div class="row globalFooter">
     <div class="small-12 columns">
       <div class="row">
@@ -277,9 +278,23 @@
         </ul>
       </div>
     </div>
+    <?php if (!empty($page['footer'])): ?>
+      <div class="footer large-12 columns">
+        <?php print render($page['footer']); ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($site_name) :?>
+      <div class="copyright large-12 columns">
+        &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+      </div>
+    <?php endif; ?>
   </div>
 
+  <!--.l-footer-->
 
+
+  <!--/.footer-->
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
