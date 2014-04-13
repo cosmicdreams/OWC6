@@ -1587,7 +1587,8 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-  }
+}
+
   p,
   h2,
   h3 {
@@ -2443,7 +2444,6 @@ category: comp-noah
 
 .mainNav {
   background-color: #34495e;
-  margin-bottom: 25px;
 }
 
 .mainNav .topBar {
@@ -2460,6 +2460,17 @@ category: comp-noah
   -webkit-box-shadow: none;
   box-shadow: none;
   color: white !important;
+}
+
+.row_triptych {
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+}
+
+.row_triptych .block {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
 }
 
 @media only screen and (max-width: 40em) {

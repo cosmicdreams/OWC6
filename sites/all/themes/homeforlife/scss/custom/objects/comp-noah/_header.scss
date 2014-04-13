@@ -129,7 +129,6 @@ category: comp-noah
 }
 .mainNav {
   background-color: $navy;
-  margin-bottom: 25px;
 }
 
 .mainNav .topBar {
@@ -145,6 +144,17 @@ category: comp-noah
 .top-bar.expanded .toggle-topbar a span {
   box-shadow: none;
   color: white !important;
+}
+
+.row_triptych {
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+}
+
+.row_triptych .block {
+  background: hsla(0, 0%, 100%, .9);
+  border: 1px solid #ccc;
 }
 
 @media only screen and (max-width: 40em) {
