@@ -1,0 +1,82 @@
+<?php
+// $Id: context_keywords.module,v 1.1.2.1 2010/12/08 07:09:05 mikegfx Exp $
+/**
+ * @file context_keywords.module
+ *    Adds referral url keyword conditions to Context
+ */
+
+
+/**
+* Your module should generate it's content here. This will be displayed within your module
+*/
+
+function context_keywords_ctools_plugin_api($module, $api) {
+  if ($module == 'context' && $api == 'plugins') {
+    return array('version' => 3);
+  }
+}
+
+/**
+ * Make module compatible with context 3
+ * Implement hook_context_plugins().
+ */
+function context_keywords_context_plugins() {
+  $plugins = array();
+  $plugins['context_condition_keywords'] = array(
+    'handler' => array(
+      'path' => drupal_get_path('module', 'context_keywords'),
+      'file' =>  'context_condition_keywords.inc',
+      'class' => 'context_condition_keywords',
+      'parent' => 'context_condition',
+    ),
+  );
+
+  return $plugins;
+}
+
+/**
+ * Make module compatible with context 3
+ * Implement hook_context_registry().
+ */
+function context_keywords_context_registry() {
+  $registry['conditions'] = array(
+    'keywords' => array(
+      'title' => t('Keywords'),
+      'description' => t("Set context based on the keywords from the referring search engine. Put keyword combinations on a separate line. You can use the * character as a wildcard and ~ to exclude one or more keywords. Contexts with <default> will activate if no other contexts with keywords are active.  To test, simply add ?keywords= with a search engine results url or with a series of keywords seperated by a '+' symbol(ex. ?keywords=context+keywords)."),
+      'plugin' => 'context_condition_keywords',
+    ),
+  );
+  return $registry;
+}
+
+/**
+ * Implementation of hook_context_page_reaction()
+ * adds context based on the browser keywords string.
+ */
+function context_keywords_context_page_condition() {
+  if ($plugin = context_get_plugin('condition', 'keywords')) {
+    $plugin->execute();
+  }
+}
+
+/**
+ * Extract keywords from URL
+ */
+function context_keywords_provider_parse_url($url) {
+    $url = str_replace('#' , '?', $url);
+    $pieces = parse_url($url);
+    (isset($pieces['query'])) ? parse_str($pieces['query'], $query) : "";
+    $providers = array(
+        'ask' => 'q',
+        'bing' => 'q',
+        'google' => 'q',
+        'yahoo' => 'p'
+    );
+    (isset($pieces['host'])) ? preg_match('/(' . implode('|', array_keys($providers)) . ')\./', $pieces['host'], $matches) : "";
+    if (isset($matches[1]) && isset($query[$providers[$matches[1]]])) {
+      return $query[$providers[$matches[1]]];
+    }
+    else {
+      return '';
+    }
+}

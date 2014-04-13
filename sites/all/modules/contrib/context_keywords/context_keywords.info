@@ -1,0 +1,13 @@
+;$Id: context_keywords.info,v 1.1.2.1 2010/12/08 07:09:05 mikegfx Exp $
+name = "Context Keywords"
+description = "Provides conditional contexts based on the keywords from the referring search engine."
+package = "Context"
+dependencies[] = context
+core = 7.x
+php = 5.2
+; Information added by drupal.org packaging script on 2010-12-08
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "context_keywords"
+datestamp = "1291792590"
+

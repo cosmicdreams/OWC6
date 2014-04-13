@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * Implementation of hook_mail_alter().
+ */
+function contact_google_analytics_mail_alter(&$message) {
+  // TODO Let users decide which mail keys they want to attach our information.
+  $supported_email_keys = array('contact_page_mail', 'webform_submission');
+  // Create an array of allowed emails.
+  $allowed_emails = explode(',',variable_get('contact_google_analytics_allowed_recipients', 'all'));
+  // Loop through each allowed email and compare it to the "to" in the message.
+  foreach ($allowed_emails as $allowed_email) {
+    if (trim($allowed_email) == $message['to'] || $allowed_email == 'all') {
+      // If there is a match, continue processing the email footer.  trim added to remove spaces.
+      // Use strpos to catch the dynamic mail names rules generate.
+      if (strpos($message['id'], 'rules_action_mail') || in_array($message['id'], $supported_email_keys)) {
+        $body_footer = theme('contact_google_analytics_footer');
+        $body_footer = token_replace($body_footer);
+        $message['body'][] = $body_footer;
+      }
+    }
+  }
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function contact_google_analytics_theme() {
+  return array(
+    'contact_google_analytics_footer' => array(
+      'variables' => array(),
+    ),
+  );
+}
+
+/**
+ * Theme the email footer.
+ */
+function theme_contact_google_analytics_footer($footer) {
+  $footer = "\n\n";
+  $footer .= "================================================\n";
+  $footer .= t('Google Analytics Information')."\n";
+  $footer .= "================================================\n";
+  $footer .= t('Source:')." [ga_tokenizer:ga-source]\n";
+  $footer .= t('Campaign:')." [ga_tokenizer:ga-campaign]\n";
+  $footer .= t('Medium:')." [ga_tokenizer:ga-medium]\n";
+  $footer .= t('Content:')." [ga_tokenizer:ga-content]\n";
+  $footer .= t('Term:')." [ga_tokenizer:ga-term]\n";
+  $footer .= "\n";
+  $footer .= t('First Visit:')." [ga_tokenizer:ga-first-visit]\n";
+  $footer .= t('Previous Visit:')." [ga_tokenizer:ga-previous-visit]\n";
+  $footer .= t('Current Visit:')." [ga_tokenizer:ga-current-visit]\n";
+  $footer .= t('Times Visited:')." [ga_tokenizer:ga-times-visited]\n";
+  $footer .= "\n";
+  $footer .= t('Current IP:')." ".$_SERVER['REMOTE_ADDR']."\n";
+  $footer .= "================================================\n\n";
+
+  return $footer;
+}
+/**
+ * Implements hook_menu().
+ */
+function contact_google_analytics_menu() {
+  $items = array();
+   $items['admin/config/system/contact-google-analytics'] = array(
+     'title' => 'Contact google analytics',
+     'page callback' => 'drupal_get_form',
+     'page arguments' => array('contact_google_analytics_admin'),
+     'access arguments' => array('administer contact google analytics'),
+     'description' => 'Configure the contact google analytics module settings.'
+   );
+   return $items;
+}
+
+/**
+ * Menu callback for 'admin/config/contact-google-analytics'.
+ */
+function contact_google_analytics_admin() {
+  $form = array();
+
+  $form['contact_google_analytics_allowed_recipients'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Allowed Recipients'),
+    '#description' => t('The email addresses that are allowed to see the Contact Google Analytics footer.  Comma separated.  For all recipients to receive the footer, type: all.  For no recipients to receive the footer, leave blank.'),
+    '#default_value' => variable_get('contact_google_analytics_allowed_recipients', 'all'),
+    );
+  return system_settings_form($form);
+}
+
+/**
+ * Form submit callback for contact_google_analytics_admin form.
+ */
+function contact_google_analytics_admin_submit($form, &$form_state) {
+    $form_values = $form_state['values'];
+    variable_set('contact_google_analytics_allowed_recipients', $form_values['allowed_recipients']);
+}
