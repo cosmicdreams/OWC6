@@ -11,40 +11,67 @@ category: components
 
 
 ```html_example
-<ul data-orbit
-    data-options="animation:fade;
-                  pause_on_hover:true;
-                  timer:true;
-                  animation_speed:900;
-                  navigation_arrows:true;
-                  captions:false;
-                  bullets:false;">
+<div class="slideshow-wrapper">
+  <div class="preloader"></div>
+  <ul data-orbit
+      data-options="animation:fade;
+                    pause_on_hover:true;
+                    timer:false;
+                    animation_speed:900;
+                    navigation_arrows:true;
+                    captions:false;
+                    bullets:false;">
 
-  <li>
-  <img src="//placekitten.com/2400/800" alt="slide 1" />
-  </li>
-  <li class="active">
-    <img src="//placekitten.com/2401/800" alt="slide 2" />
-  </li>
-  <li>
-    <img src="//placekitten.com/2402/800" alt="slide 3" />
-  </li>
-</ul>
+    <li>
+      <img src="http://placekitten.com/2400/800" alt="slide 1" />
+    </li>
+    <li class="active">
+      <img src="http://placekitten.com/2401/800" alt="slide 2" />
+    </li>
+    <li>
+      <img src="http://placekitten.com/2402/800" alt="slide 3" />
+    </li>
+  </ul>
+</div>
 ```
 
 */
+$include-html-orbit-classes: $include-html-classes;
 
-#featured {
-  background: url(../images/foundation/orbit/spinner.gif) center center #f4f4f4 no-repeat;
-  height: 300px;
-}
-#featured img {
+.orbit-slide-number{
   display: none;
 }
 
-#featured.orbit {
-  background: none;
-}
-#featured.orbit img {
-  display: block;
-}
+// All configuration options for orbit *
+// We use these to control the caption styles
+$orbit-container-bg: #f5f5f5;
+$orbit-caption-bg: rgba(0,0,0,0.6);
+$orbit-caption-font-color: #fff;
+$orbit-caption-font-size: emCalc(14);
+$orbit-caption-position: "bottom";    // Supported values: "bottom", "under"
+//$orbit-caption-padding: emCalc(10,14);
+$orbit-caption-height: auto;
+
+// We use these to control the left/right nav styles
+$orbit-nav-bg: rgba(0,0,0,0.6);
+$orbit-nav-bg-hover: rgba(0,0,0,0.6);
+$orbit-nav-arrow-color: #fff;
+$orbit-nav-arrow-color-hover: #ccc;
+
+// We use these to control the timer styles
+$orbit-timer-bg: rgba(0,0,0,0.6);
+$orbit-timer-show-progress-bar: true;
+
+// We use these to control the bullet nav styles
+$orbit-bullet-nav-color: #999;
+$orbit-bullet-nav-color-active: #222;
+$orbit-bullet-radius: emCalc(18);
+
+// We use these to controls the style of slide numbers
+$orbit-slide-number-bg: rgba(0,0,0,0);
+$orbit-slide-number-font-color: #fff;
+$orbit-slide-number-padding: rem-calc(5px);
+
+// Graceful Loading Wrapper and preloader
+$wrapper-class: "slideshow-wrapper";
+$preloader-class: "preloader";
