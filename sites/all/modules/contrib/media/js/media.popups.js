@@ -95,7 +95,7 @@ Drupal.media.popups.mediaBrowser = function (onSelect, globalOptions, pluginOpti
 
 Drupal.media.popups.mediaBrowser.mediaBrowserOnLoad = function (e) {
   var options = e.data;
-  if (this.contentWindow.Drupal.media == undefined) return;
+  if (this.contentWindow.Drupal == undefined || this.contentWindow.Drupal.media == undefined) return;
 
   if (this.contentWindow.Drupal.media.browser.selectedMedia.length > 0) {
     var ok = (Drupal && Drupal.t) ? Drupal.t('OK') : 'OK';

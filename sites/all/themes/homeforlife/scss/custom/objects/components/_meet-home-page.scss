@@ -1,0 +1,67 @@
+/* ---------------------------------------------------------------------
+ Meet Home Page
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Meet Home Page
+name: Meet Home Page
+category: components
+---
+
+```html_example
+<div class="header-image">
+  <div class="inner big-12">
+      <img src="http://placekitten.com/2400/800" alt="slide 1" />
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Meet Our Tennants</h1>
+    <p>
+    Home for Life's animals come to us from all around the world, and each animal has a unique story and interesting history. Find out more about and sponsor one of these furry friends!
+    </p>
+  </div>
+</div>
+<div class="row">
+     <ul class="large-block-grid-3">
+         <li>
+             <div class="box box_opaqueLight">
+                 <div class="feature">
+                     <a href="#">
+                       <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                       <div class="feature-ft">Cats</div>
+                     </a>
+                 </div>
+             </div>
+         </li>
+         <li>
+             <div class="box box_opaqueLight">
+                 <div class="feature">
+                     <a href="#">
+                       <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                       <div class="feature-ft">Dogs</div>
+                     </a>
+                 </div>
+             </div>
+         </li>
+         <li>
+             <div class="box box_opaqueLight">
+                 <div class="feature">
+                     <a href="#">
+                       <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                       <div class="feature-ft">Other</div>
+                     </a>
+                 </div>
+             </div>
+         </li>
+     </ul>
+ </div>
+
+```
+
+*/
+
+.content-image{
+  margin: 0px auto;
+}
