@@ -147,7 +147,7 @@ category: comp-noah
 }
 
 .row_triptych {
-  margin-top: -150px;
+  margin-top: -100px;
   position: relative;
   z-index: 1;
 }
@@ -169,5 +169,28 @@ category: comp-noah
 
   .row_topHead {
     padding: 10px 0;
+  }
+  .row_triptych {
+    margin: 40px auto;
+    border: none;
+
+  }
+  .row_triptych .block {
+    border: none !important;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .row_triptych {
+    margin: 40px auto;
+    border: none;
+  }
+
+  .row_triptych > li {
+    padding: 0 40px;
+  }
+
+  .row_triptych .block {
+    border: none !important;
   }
 }

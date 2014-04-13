@@ -65,7 +65,7 @@
       <div class="small-5 large-3 columns donateWrap pull-right">
         <div class="vAlign">
           <div class="vAlign-middle">
-            <a href="#" class="button button_noMarg button_donate">Donate</a>
+            <a href="https://secure18.visi.com/homeforlife.org/donrform.php" class="button button_noMarg button_donate">Donate</a>
           </div>
         </div>
         <div>
@@ -231,7 +231,7 @@
 
   </div>
   <div class="medium-6 columns cta">
-    <a href="#" class="button">
+    <a href="https://secure18.visi.com/homeforlife.org/donrform.php" class="button">
       <h3>Save an animal in need</h3>
       <span>Donate Today</span>
     </a>
@@ -242,21 +242,26 @@
   <!--/.donate-->
 
 
-  <!--.l-footer-->
-  <footer class="l-footer globalFooter panel row" role="contentinfo">
-    <?php if (!empty($page['footer'])): ?>
-      <div class="footer large-12 columns">
-        <?php print render($page['footer']); ?>
+  <div class="row globalFooter">
+    <div class="small-12 columns">
+      <div class="row">
+        <ul class="inline-list">
+          <li>P.O. Box 847, Stillwater, MN 55082</li>
+          <li>T: 1-800-252-5918</li>
+          <li><a href="mailto:info@homeforlife.org">info@homeforlife.org</a></li>
+        </ul>
       </div>
-    <?php endif; ?>
-
-    <?php if ($site_name) :?>
-      <div class="copyright large-12 columns">
-        &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+      <div class="row">
+        <ul class="inline-list">
+          <li><a href="https://twitter.com/HFLAnimals" class="webicon twitter small">Tweet us on Twitter</a></li>
+          <li><a href="https://www.youtube.com/user/homeforlifesanctuary" class="webicon youtube small">Watch us on YouTube</a></li>
+          <li><a href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">+1 us on Google Plus</a></li>
+          <li><a href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Pin us on Pinterest</a></li>
+          <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
+        </ul>
       </div>
-    <?php endif; ?>
-
-  <!--/.footer-->
+    </div>
+  </div>
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>

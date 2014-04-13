@@ -1,0 +1,33 @@
+/* ---------------------------------------------------------------------
+Mailing List
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Mailing List
+name: mailing list
+category: components
+---
+
+
+```html_example
+
+<div class="row globalMailingList">
+  <div class="small-12 columns">
+
+  </div>
+</div>
+
+
+```
+
+*/
+
+.globalMailingList {
+  background-color: $navy;
+  color: $white;
+  padding: 20px 0px;
+  max-width: none;
+  border: none;
+  margin-bottom: 0;
+}
