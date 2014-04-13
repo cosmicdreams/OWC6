@@ -2065,10 +2065,8 @@ category: components
 .slideshow-wrapper .orbit-container .orbit-slides-container li {
   max-height: 600px;
   overflow: hidden;
-}
-.slideshow-wrapper .orbit-container .orbit-slides-container li img {
-  width: 100%;
-  display: none;
+  height: 600px img;
+  height-width: 100%;
 }
 .slideshow-wrapper .orbit-slide-number {
   display: none;

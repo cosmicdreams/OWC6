@@ -20,7 +20,7 @@
             el.addEventListener("transitionend", centerImage, false); // FF event
             el.addEventListener("oTransitionEnd", centerImage, false); // Opera event
 
-            $('.slideshow-wrapper img').css('display', 'block');
+            //$('.slideshow-wrapper img').css('display', 'block');
         }
     }
   };
