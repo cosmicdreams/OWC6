@@ -80,20 +80,14 @@ function hfl_pet_profile_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '0',
-        ),
-        'metatags' => array(
-          'weight' => '8',
-        ),
-        'path' => array(
-          'weight' => '6',
-        ),
-        'redirect' => array(
-          'weight' => '7',
         ),
       ),
       'display' => array(),

@@ -62,12 +62,13 @@ function hfl_pet_activity_field_default_field_instances() {
     'description' => 'Start typing the Title (name) of the pet for this activity.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'full',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 1,
       ),
       'teaser' => array(

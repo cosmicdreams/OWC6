@@ -19,7 +19,6 @@ features[field_base][] = field_petprofile_friendly
 features[field_base][] = field_petprofile_pettype
 features[field_base][] = field_petprofile_profileimage
 features[field_instance][] = node-pet_profile-body
-features[field_instance][] = node-pet_profile-field_petprofile_featured
 features[field_instance][] = node-pet_profile-field_petprofile_friendly
 features[field_instance][] = node-pet_profile-field_petprofile_pettype
 features[field_instance][] = node-pet_profile-field_petprofile_profileimage
