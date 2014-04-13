@@ -86,6 +86,7 @@
     <!--/.l-featured -->
   <?php endif; ?>
 
+    <?php print views_embed_view('front_slideshow','block'); ?>
 
     <!--.front-triptych-->
     <?php if (!empty($page['front_triptych_left']) || !empty($page['front_triptych_center']) || !empty($page['front_triptych_right'])): ?>
