@@ -95,7 +95,7 @@ gulp.task('copy-hologram', function(){
 gulp.task('build', function() {
   gulp.run('clean-styles');
   gulp.run('clean-styleguide');
-  gulp.run('theme-sass');
+  // gulp.run('theme-sass');
   gulp.run('custom-sass');
   gulp.run('copy-script');
   gulp.run('hologram');
