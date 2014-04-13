@@ -1587,7 +1587,8 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-  }
+}
+
   p,
   h2,
   h3 {
@@ -2066,9 +2067,14 @@ category: components
   max-height: 600px;
   overflow: hidden;
   height: 600px img;
+  height-width: 100%;
 }
 .slideshow-wrapper .orbit-slide-number {
   display: none;
+}
+
+.orbit-container .orbit-slides-container img {
+  width: 100% !important;
 }
 
 /* ---------------------------------------------------------------------
@@ -3206,6 +3212,43 @@ category: components
 .home-blog-list .views-field-title {
   font-size: 1.4rem !important;
   line-height: 1;
+}
+
+.row_featuredpet .view-content ul li {
+  width: 33%;
+  float: left;
+  padding: 20px 20px;
+}
+
+.row_featuredpet > .block {
+  width: 100%;
+}
+
+.row_featuredpet > .medium-block-grid-3 li {
+  width: 100%;
+}
+
+.row_featuredpet .view-content li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .row_featuredpet .view-content ul li {
+    width: 100%;
+  }
+}
+.not-front .main {
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+
+.not-front aside .block-menu {
+  border-width: 1px;
+  background-color: #f4f4f4;
+  border-color: gainsboro;
+  border-radius: 3px;
+  margin-top: 150px;
+  padding: 25px;
 }
 
 .isVisuallyHidden {

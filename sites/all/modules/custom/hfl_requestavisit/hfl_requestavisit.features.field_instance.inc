@@ -34,6 +34,9 @@ function hfl_requestavisit_field_default_field_instances() {
         'label' => 'above',
         'module' => 'addressfield',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -80,7 +83,11 @@ function hfl_requestavisit_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -114,6 +121,9 @@ function hfl_requestavisit_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -161,7 +171,11 @@ function hfl_requestavisit_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'email',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
         'type' => 'email_default',
         'weight' => 6,
       ),
@@ -194,7 +208,11 @@ function hfl_requestavisit_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 5,
       ),
@@ -229,6 +247,9 @@ function hfl_requestavisit_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -265,7 +286,11 @@ function hfl_requestavisit_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
         'type' => 'text_plain',
         'weight' => 3,
       ),

@@ -53,7 +53,7 @@ $include-html-orbit-classes: $include-html-classes;
     overflow: hidden;
     height: 600px
     img{
-      //width: 100%;
+      width: 100%;
     }
   }
 
@@ -61,6 +61,7 @@ $include-html-orbit-classes: $include-html-classes;
     display: none;
   }
 }
+
 
 @media all and (min-width:960px){
   .slideshow-wrapper .orbit-container{
@@ -113,3 +114,5 @@ $orbit-slide-number-padding: rem-calc(5px);
 // Graceful Loading Wrapper and preloader
 $wrapper-class: "slideshow-wrapper";
 $preloader-class: "preloader";
+
+.orbit-container .orbit-slides-container img { width: 100% !important; }

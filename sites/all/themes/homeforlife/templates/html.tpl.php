@@ -71,7 +71,7 @@
     (function ($, Drupal, window, document, undefined) {
             window.setTimeout(function(){
         $(window).resize();
-      }, 300);
+      }, 600);
       $(document).foundation();
 
     })(jQuery, Drupal, this, this.document);
