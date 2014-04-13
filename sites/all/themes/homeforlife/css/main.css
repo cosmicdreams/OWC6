@@ -2558,7 +2558,7 @@ category: components
 
 */
 .mission {
-  background: #aaaaaa url("http://placekitten.com/1200/400") center center no-repeat;
+  background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission.jpg") center center no-repeat;
   color: #ecf0f1;
 }
 .mission .inner {
@@ -2643,7 +2643,7 @@ category: components
 
 */
 .homeDonate {
-  background: #aaaaaa url("http://placekitten.com/1201/400") center center no-repeat;
+  background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission2.jpg") center center no-repeat;
   color: #ecf0f1;
   max-width: none;
 }
@@ -3184,6 +3184,21 @@ category: components
 ```
 
 */
+.home-blog-list .views-field-field-image {
+  float: left;
+  margin-right: 10px;
+}
+
+.home-blog-list .views-row {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.home-blog-list .views-field-title {
+  font-size: 1.4rem !important;
+  line-height: 1;
+}
+
 .isVisuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);

@@ -30,8 +30,9 @@ category: components
 */
 
 .mission{
-  background: #aaa url('http://placekitten.com/1200/400') center center no-repeat;
+  background: #aaa url('/sites/all/themes/homeforlife/assets/media/image/mission.jpg') center center no-repeat;
   color: $white;
+  background-size: cover;
 
   .inner{
     background: rgba(155, 89, 182, .8);
