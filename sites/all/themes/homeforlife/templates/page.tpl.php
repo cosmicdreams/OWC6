@@ -88,15 +88,17 @@
 
 
     <!--.front-triptych-->
-    <div class="row">
-      <ul class="large-block-grid-3">
-        <li><?php print render($page['triptych_left']); ?></li>
+    <?php if (!empty($page['front_triptych_left']) || !empty($page['front_triptych_center']) || !empty($page['front_triptych_right'])): ?>
+      <div class="row">
+        <ul class="large-block-grid-3">
+          <li><?php print render($page['front_triptych_left']); ?></li>
 
-        <li><?php print render($page['triptych_center']); ?></li>
+          <li><?php print render($page['front_triptych_center']); ?></li>
 
-        <li><?php print render($page['triptych_right']); ?></li>
-      </ul>
-    </div>
+          <li><?php print render($page['front_triptych_right']); ?></li>
+        </ul>
+      </div>
+    <?php endif; ?>
     <!--/.front-triptych -->
 
 
