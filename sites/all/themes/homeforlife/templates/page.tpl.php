@@ -92,21 +92,19 @@
     <!--/.l-featured -->
   <?php endif; ?>
 
-  <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
+
     <!--.triptych-->
-    <section class="l-triptych row">
-      <div class="triptych-first large-4 columns">
-        <?php print render($page['triptych_first']); ?>
-      </div>
-      <div class="triptych-middle large-4 columns">
-        <?php print render($page['triptych_middle']); ?>
-      </div>
-      <div class="triptych-last large-4 columns">
-        <?php print render($page['triptych_last']); ?>
-      </div>
-    </section>
+    <div class="row">
+      <ul class="large-block-grid-3">
+        <?php print render($page['triptych_left']); ?>
+
+        <?php print render($page['triptych_center']); ?>
+
+        <?php print render($page['triptych_right']); ?>
+      </ul>
+    </div>
     <!--/.triptych -->
-  <?php endif; ?>
+
 
   <?php if ($messages && !$zurb_foundation_messages_modal): ?>
     <!--/.l-messages -->
