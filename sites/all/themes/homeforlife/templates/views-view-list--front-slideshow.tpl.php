@@ -12,7 +12,7 @@
 <ul data-orbit
       data-options="animation:fade;
                     pause_on_hover:false;
-                    timer:false;
+                    timer:true;
                     animation_speed:900;
                     navigation_arrows:true;
                     captions:false;
