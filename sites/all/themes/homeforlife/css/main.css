@@ -2434,6 +2434,25 @@ category: components
   color: #FFFFFF;
 }
 
+/* ---------------------------------------------------------------------
+ Header Image
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Header Image
+name: header image
+category: components
+---
+
+```html_example
+<div class="header-image">
+  <div class="inner big-12">
+      <img src="http://placekitten.com/2400/800" alt="slide 1" />
+  </div>
+</div>
+```
+
+*/
 .medialist {
   list-style: none;
 }
