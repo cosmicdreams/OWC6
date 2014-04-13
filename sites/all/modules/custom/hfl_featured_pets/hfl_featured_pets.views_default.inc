@@ -54,7 +54,7 @@ function hfl_featured_pets_views_default_views() {
   $handler->display->display_options['fields']['field_petprofile_profileimage']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_petprofile_profileimage']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_petprofile_profileimage']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'triptych',
     'image_link' => '',
   );
   /* Field: Content: Body */

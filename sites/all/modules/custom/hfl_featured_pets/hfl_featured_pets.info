@@ -1,8 +1,8 @@
-name = admin
+name = HFL Featured Pets frontpage block
 description = A view of 3 featured pets
 core = 7.x
 package = Views
-version = 7.x-1.1
+version = 7.x-1.2
 project = hfl_featured_pets
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
