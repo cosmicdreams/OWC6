@@ -38,10 +38,11 @@ category: components
 
 .homeDonate {
   //background-color: $green;
-  background: #aaa url('http://placekitten.com/1201/400') center center no-repeat;
+  background: #aaa url("/sites/all/themes/homeforlife/assets/media/image/mission2.jpg") center center no-repeat;
   color: $white;
   //padding: 2em;
   max-width: none;
+  background-size: cover;
 
   .inner{
     background: rgba(39, 174, 96, 0.8);

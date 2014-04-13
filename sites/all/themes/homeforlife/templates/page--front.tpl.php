@@ -232,17 +232,13 @@
 <?php endif; ?>
 
   <!--.page-bottom-triptych  Hey Wilbur -->
-  <?php if (!empty($page['page_bottom_triptych_left']) || !empty($page['page_bottom_triptych_center']) || !empty($page['page_bottom_triptych_right'])): ?>
-      <div class="row row_triptych">
+
+      <div class="row row_featuredpet">
           <ul class="medium-block-grid-3 large-block-grid-3">
-              <li><?php print render($page['page_bottom_triptych_left']); ?></li>
-
-              <li><?php print render($page['page_bottom_triptych_center']); ?></li>
-
-              <li><?php print render($page['page_bottom_triptych_right']); ?></li>
+              <li><?php print render($page['front_featured_pets']); ?></li>
           </ul>
       </div>
-  <?php endif; ?>
+
   <!--/.front-triptych -->
 
   <!--.donate-->

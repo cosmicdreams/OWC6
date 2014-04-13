@@ -969,7 +969,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", georgia, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1292,7 +1292,7 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Oswald";
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -2067,9 +2067,14 @@ category: components
   max-height: 600px;
   overflow: hidden;
   height: 600px img;
+  height-width: 100%;
 }
 .slideshow-wrapper .orbit-slide-number {
   display: none;
+}
+
+.orbit-container .orbit-slides-container img {
+  width: 100% !important;
 }
 
 /* ---------------------------------------------------------------------
@@ -2210,19 +2215,17 @@ category: components
 <div class="row globalFooter">
   <div class="small-12 columns">
     <div class="row">
-      <ul class="inline-list">
-        <li>P.O. Box 847, Stillwater, MN 55082</li>
-        <li>T: 1-800-252-5918</li>
-        <li><a href="mailto:info@homeforlife.org">info@homeforlife.org</a></li>
-      </ul>
+        <div class="medium-4 columns">P.O. Box 847, Stillwater, MN 55082</div>
+        <div class="medium-4 columns">T: 1-800-252-5918</div>
+        <div class="medium-4 columns"><a href="mailto:info@homeforlife.org">info@homeforlife.org</a></div>
     </div>
     <div class="row">
       <ul class="inline-list">
-        <li><a href="https://twitter.com/HFLAnimals" class="webicon twitter small">Tweet us on Twitter</a></li>
-        <li><a href="https://www.youtube.com/user/homeforlifesanctuary" class="webicon youtube small">Watch us on YouTube</a></li>
-        <li><a href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">+1 us on Google Plus</a></li>
-        <li><a href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Pin us on Pinterest</a></li>
-        <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
+        <li><a target="_blank" href="https://twitter.com/HFLAnimals" class="webicon twitter small">Tweet us on Twitter</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/user/homeforlifesanctuary" class="webicon youtube small">Watch us on YouTube</a></li>
+        <li><a target="_blank" href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">+1 us on Google Plus</a></li>
+        <li><a target="_blank" href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Pin us on Pinterest</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
       </ul>
     </div>
   </div>
@@ -2239,6 +2242,7 @@ category: components
   border: none;
   margin-bottom: 0;
   max-width: inherit;
+  text-align: center;
 }
 .globalFooter ul {
   margin: 0 auto;
@@ -2560,8 +2564,9 @@ category: components
 
 */
 .mission {
-  background: #aaaaaa url("http://placekitten.com/1200/400") center center no-repeat;
+  background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission.jpg") center center no-repeat;
   color: #ecf0f1;
+  background-size: cover;
 }
 .mission .inner {
   background: rgba(155, 89, 182, 0.8);
@@ -2645,9 +2650,10 @@ category: components
 
 */
 .homeDonate {
-  background: #aaaaaa url("http://placekitten.com/1201/400") center center no-repeat;
+  background: #aaaaaa url("/sites/all/themes/homeforlife/assets/media/image/mission2.jpg") center center no-repeat;
   color: #ecf0f1;
   max-width: none;
+  background-size: cover;
 }
 .homeDonate .inner {
   background: rgba(39, 174, 96, 0.8);
@@ -3199,6 +3205,33 @@ category: components
 .home-blog-list .views-field-title {
   font-size: 1.4rem !important;
   line-height: 1;
+}
+
+.row_featuredpet .view-content ul li {
+  width: 33%;
+  float: left;
+  padding: 20px 20px;
+}
+
+.row_featuredpet > .block {
+  width: 100%;
+}
+
+.row_featuredpet > .medium-block-grid-3 li {
+  width: 100%;
+}
+
+.row_featuredpet .view-content li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .row_featuredpet .view-content ul li {
+    width: 100%;
+  }
+}
+.not-front .main {
+  margin-top: 40px !important;
 }
 
 .isVisuallyHidden {
