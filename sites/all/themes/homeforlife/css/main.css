@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  letter-spacing: 0.02rem;
+}
+
 /* Reusable Objects */
 /* ---------------------------------------------------------------------
  Block Grid
@@ -2455,6 +2459,64 @@ category: components
 */
 .medialist {
   list-style: none;
+}
+
+/* ---------------------------------------------------------------------
+Donate
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Donate
+name: donate
+category: components
+---
+
+
+```html_example
+
+<div class="homeDonate">
+<div class="inner big-12">
+<div class="row">
+  <div class="small-6 columns">
+    <h2>Donate to Home for Life</h2>
+    <p>
+      Your donation provides the animals of Home for Life with food, veterinary care, toys and a beautiful facility to roam freely. 100% of donations go to helping these animals receive the medical care they need, as well as the affection and freedom to help them recover from illness, disability, mistreatment or neglect. With your help, these incredible animals can lead the full, safe and happy lives they deserve.
+    </p>
+  </div>
+  <div class="small-6 columns cta">
+    <a href="#" class="button">
+      <h3>Save an animal in need</h3>
+      <span>Donate Today</span>
+    </a>
+  </div>
+  </div>
+</div>
+</div>
+
+
+```
+
+*/
+.homeDonate {
+  background: #aaaaaa url("http://placekitten.com/1200/400") center center no-repeat;
+  color: #ecf0f1;
+  max-width: none;
+}
+.homeDonate .inner {
+  background: rgba(26, 188, 156, 0.8);
+  padding: 2em;
+}
+.homeDonate h2, .homeDonate h3, .homeDonate h4 {
+  color: #ecf0f1;
+  font-family: "Oswald";
+}
+.homeDonate h4 {
+  font-weight: bold;
+}
+.homeDonate .cta {
+  text-align: center;
+  color: #ecf0f1;
+  padding-top: 2em;
 }
 
 .isVisuallyHidden {
