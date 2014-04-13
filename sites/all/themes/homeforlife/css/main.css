@@ -2238,6 +2238,8 @@ category: components
   color: #ecf0f1;
   padding: 20px 0px;
   max-width: none;
+  border: none;
+  margin-bottom: 0;
 }
 .globalFooter ul {
   margin: 0 auto;
