@@ -1,0 +1,139 @@
+/* ---------------------------------------------------------------------
+ Meet Page
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Meet Page
+name: Meet Page
+category: components
+---
+
+```html_example
+<div class="header-image">
+  <div class="inner big-12">
+      <img src="http://placekitten.com/2400/800" alt="slide 1" />
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Meow.</h1>
+    <p>At the sanctuary, we currently house about 100 cats in two main catteries. We also have a special, separate cattery for another 25 cats with feline leukemia. All of the cats at Home for Life benefit from our supporters’ generosity. Sponsor an animal or donate to Home for Life and help us provide care our feline friends. </p>
+  </div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Pickles</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Gumdrop</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Billy</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Cap'n Crunch</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Shooter</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Rimshot</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Dexter</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Pickles</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Gumdrop</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Billy</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Cap'n Crunch</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Shooter</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Rimshot</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//lorempizza.com/300/200"/>
+      <p>Dexter</p>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+<div class="homeDonate">
+<div class="inner">
+<div class="row">
+  <div class="medium-6 columns">
+    <h2>Donate to Home for Life</h2>
+    <p>
+      Your donation provides the animals of Home for Life with food, veterinary care, toys and a beautiful facility to roam freely. 100% of donations go to helping these animals receive the medical care they need, as well as the affection and freedom to help them recover from illness, disability, mistreatment or neglect. With your help, these incredible animals can lead the full, safe and happy lives they deserve.
+    </p>
+  </div>
+  <div class="medium-6 columns cta">
+    <a href="#" class="button">
+      <h3>Save an animal in need</h3>
+      <span>Donate Today</span>
+    </a>
+  </div>
+  </div>
+</div>
+</div>
+
+```
+
+*/
+
+.content-image{
+  margin: 0px auto;
+}
