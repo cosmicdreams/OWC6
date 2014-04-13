@@ -4,6 +4,7 @@ core = 7.x
 package = Home For Life
 version = 7.x-1.0
 project = hfl_faq
+dependencies[] = hfl_faq_views
 dependencies[] = ctools
 dependencies[] = faq
 dependencies[] = strongarm
