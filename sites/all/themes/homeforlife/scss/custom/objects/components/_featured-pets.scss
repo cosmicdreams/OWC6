@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------------------
+ Featured Pet
+------------------------------------------------------------------------ */
+
+/*doc
+---
+title: Featured Pet
+name: featured pet
+category: components
+---
+
+```html_example
+ <div class="row">
+      <ul class="large-block-grid-3">
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <a href="#">
+                        <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                        <div class="feature-ft">Featured Pet 1</div>
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <a href="#">
+                        <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                        <div class="feature-ft">Featured Pet 2</div>
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li>
+              <div class="box box_opaqueLight">
+                  <div class="feature">
+                      <a href="#">
+                        <div class="feature-md"><img src="http://placekitten.com/300/200"></div>
+                        <div class="feature-ft">Featured Pet 3</div>
+                      </a>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+```
+
+*/
+
+.feature-hd_simple {
+  background: none;
+  padding: none;
+}
+
+.feature-md > img {
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.feature {
+  font-family: 'Merriweather', georgia, serif;
+}
+
+.feature-ft {
+  text-align: center;
+}
