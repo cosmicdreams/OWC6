@@ -2061,7 +2061,14 @@ category: components
 ```
 
 */
-.orbit-slide-number {
+.slideshow-wrapper .orbit-container .orbit-slides-container li {
+  max-height: 300px;
+  overflow: hidden;
+}
+.slideshow-wrapper .orbit-container .orbit-slides-container li img {
+  width: 100%;
+}
+.slideshow-wrapper .orbit-slide-number {
   display: none;
 }
 
@@ -2567,7 +2574,7 @@ category: components
   max-width: none;
 }
 .homeDonate .inner {
-  background: rgba(26, 188, 156, 0.8);
+  background: rgba(39, 174, 96, 0.8);
   padding: 2em;
 }
 .homeDonate h2, .homeDonate h3, .homeDonate h4 {
@@ -2583,6 +2590,68 @@ category: components
   padding-top: 2em;
 }
 
+/* ---------------------------------------------------------------------
+ Pet-Grid
+------------------------------------------------------------------------ */
+/*doc
+---
+title: Pet-Grid
+name: pet-gird
+category: components
+---
+
+```html_example
+<div class="row">
+<div class="large-12 columns">
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Pickles</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Gumdrop</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Billy</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Cap'n Crunch</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Shooter</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Rimshot</p>
+    </a>
+  </li>
+  <li>
+    <a>
+      <img class="th" src="//placekitten.com/300/200"/>
+      <p>Dexter</p>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+```
+
+*/
 .isVisuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);

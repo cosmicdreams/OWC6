@@ -7,11 +7,11 @@
  * @ingroup views_templates
  */
 ?>
-<div class="slideshow-wrapper">
+<div class="slideshow-wrapper #slideshow-wrapper">
   <div class="preloader"></div>
 <ul data-orbit
       data-options="animation:fade;
-                    pause_on_hover:true;
+                    pause_on_hover:false;
                     timer:false;
                     animation_speed:900;
                     navigation_arrows:true;
@@ -20,10 +20,8 @@
   <?php if (!empty($title)) : ?>
     <h3><?php print $title; ?></h3>
   <?php endif; ?>
-  <?php print $list_type_prefix; ?>
     <?php foreach ($rows as $id => $row): ?>
       <li class="<?php print $classes_array[$id]; ?>"><?php print $row; ?></li>
     <?php endforeach; ?>
-  <?php print $list_type_suffix; ?>
 </ul>
 </div>
