@@ -8118,5 +8118,9 @@ th.hide-for-touch {
 }
 
 html.js input.form-autocomplete {
-  background-position: -9999px -9999px;
+  background-position-y: -9999px;
+}
+
+html.js input.form-autocomplete.throbbing {
+  background-position-y: -20px;
 }

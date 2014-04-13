@@ -2473,6 +2473,25 @@ category: comp-noah
   border: 1px solid #ccc;
 }
 
+.home-blog-list .views-field-field-image {
+  float: left;
+  margin: 0 10px 0;
+}
+
+.home-blog-list .views-row {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+
+.home-blog-list .view-field-title a {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.views-field-title {
+  margin-bottom: 7px;
+}
+
 @media only screen and (max-width: 40em) {
   .logo {
     width: 150px;
@@ -3167,6 +3186,21 @@ category: components
 ```
 
 */
+.home-blog-list .views-field-field-image {
+  float: left;
+  margin-right: 10px;
+}
+
+.home-blog-list .views-row {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.home-blog-list .views-field-title {
+  font-size: 1.4rem !important;
+  line-height: 1;
+}
+
 .isVisuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
