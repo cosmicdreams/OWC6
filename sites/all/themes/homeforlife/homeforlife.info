@@ -107,6 +107,7 @@ regions[front_triptych_center]  = Front triptych center
 regions[front_triptych_right]   = Front triptych right
 regions[front_events]           = Front events
 regions[front_news]             = Front news
+regions[front_mission]          = Front mission
 
 
 ; Panel Layouts
