@@ -1,6 +1,16 @@
 <?php
 
 /**
+ * Hide front page content (for only the front page).
+ * @param $vars
+ */
+function homeforlife_preprocess_page(&$vars) {
+    if (drupal_is_front_page()) {
+        unset($vars['page']['content']['system_main']['default_message']); //will remove message "no front page content is created"
+        drupal_set_title(''); //removes welcome message (page title)
+    }
+}
+/**
  * Implements template_preprocess_html().
  *
  */

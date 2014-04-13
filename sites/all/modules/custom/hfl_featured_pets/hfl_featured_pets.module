@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Featured Pets feature.
+ */
+
+include_once 'hfl_featured_pets.features.inc';
