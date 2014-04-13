@@ -12,3 +12,23 @@
   font-size: 1.4rem !important;
   line-height: 1;
 }
+
+.row_featuredpet .view-content ul li {
+  width: 33%;
+  float: left;
+  padding: 20px 20px;
+}
+
+.row_featuredpet > .block {
+  width: 100%;
+}
+
+.row_featuredpet > .medium-block-grid-3 li {
+  width: 100%;
+}
+
+.row_featuredpet .view-content li {
+  list-style-type: none ;
+}
+
+

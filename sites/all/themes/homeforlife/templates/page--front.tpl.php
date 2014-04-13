@@ -280,11 +280,6 @@
           <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
         </ul>
       </div>
-      <div class="row">
-        <ul class="inline-list">
-          <li>&copy; <?php print(date('Y')); ?> Home For Life. All rights reserved.</li>
-        </ul>
-      </div>
     </div>
     <?php if (!empty($page['footer'])): ?>
       <div class="footer large-12 columns">
