@@ -1587,7 +1587,8 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-  }
+}
+
   p,
   h2,
   h3 {
@@ -2468,7 +2469,7 @@ category: comp-noah
 }
 
 .row_triptych .block {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   border: 1px solid #ccc;
 }
 
