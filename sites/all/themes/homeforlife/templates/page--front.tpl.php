@@ -149,7 +149,7 @@
   <?php endif; ?>
 
   <main role="main" class="row l-main">
-    <div class="<?php print $main_grid; ?> main columns">
+    <div class="<?php print $main_grid; ?> medium-9 main columns">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
           <?php print render($page['highlighted']); ?>
