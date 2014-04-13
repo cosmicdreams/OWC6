@@ -57,7 +57,14 @@ function hfl_requestavisit_default_entityform_type() {
         "format" : "plain_text"
       }
     },
-    "weight" : "0"
+    "weight" : "0",
+    "rdf_mapping" : [],
+    "paths" : { "submit" : {
+        "source" : "eform\\/submit\\/requestavisit",
+        "alias" : "request-a-visit",
+        "language" : "und"
+      }
+    }
   }');
   return $items;
 }

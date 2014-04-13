@@ -60,7 +60,7 @@ function hfl_requestavisit_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'petprofile' => 'petprofile',
+    'pet_profile' => 'pet_profile',
   );
   /* Filter criterion: Content: Friendly (field_petprofile_friendly) */
   $handler->display->display_options['filters']['field_petprofile_friendly_value']['id'] = 'field_petprofile_friendly_value';
