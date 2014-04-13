@@ -57,7 +57,7 @@ gulp.task('connect', function() {
 // gulp.task('default', ['connect', 'watch']);
 
 gulp.task('watch', function () {
-    gulp.watch(['./scss/custom/**/*.scss'], ['build']);
+    gulp.watch(['./scss/**/*.scss'], ['build']);
 });
 
 gulp.task('theme-sass', function() {
@@ -82,6 +82,12 @@ gulp.task('copy-script', function() {
   gulp.src('./js/*')
     .pipe(gulp.dest('./styleguide/scripts'))
     ;
+});
+
+gulp.task('copy-hologram', function(){
+  gulp.src('./styleguide/**/*')
+    .pipe(gulp.dest('/Users/nblon/Dropbox/Public/styleguide'))
+  ;
 });
 
 
