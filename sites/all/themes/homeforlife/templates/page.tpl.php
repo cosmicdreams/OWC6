@@ -65,7 +65,7 @@
       <div class="small-5 large-3 columns donateWrap pull-right">
         <div class="vAlign">
           <div class="vAlign-middle">
-            <a href="#" class="button button_noMarg button_donate">Donate</a>
+            <a href="https://secure18.visi.com/homeforlife.org/donrform.php" class="button button_noMarg button_donate">Donate</a>
           </div>
         </div>
         <div>
@@ -231,7 +231,7 @@
 
   </div>
   <div class="medium-6 columns cta">
-    <a href="#" class="button">
+    <a href="#https://secure18.visi.com/homeforlife.org/donrform.php" class="button">
       <h3>Save an animal in need</h3>
       <span>Donate Today</span>
     </a>
