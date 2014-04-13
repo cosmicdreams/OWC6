@@ -1,12 +1,15 @@
-name = HFL FAQ
+name = admin
 description = FAQ Settings
 core = 7.x
 package = Home For Life
 version = 7.x-1.0
 project = hfl_faq
 dependencies[] = ctools
+dependencies[] = faq
 dependencies[] = strongarm
+dependencies[] = views
 features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[variable][] = faq_answer_label
 features[variable][] = faq_back_to_top
