@@ -21,29 +21,6 @@
             <?php if ($top_bar_secondary_menu) :?>
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
-          </section><!--.page -->
-<div role="document" class="page">
-
-  <!--.l-header region -->
-  <header role="banner" class="l-header">
-
-    <?php if ($top_bar): ?>
-      <!--.top-bar -->
-      <?php if ($top_bar_classes): ?>
-      <div class="<?php print $top_bar_classes; ?>">
-      <?php endif; ?>
-        <nav class="top-bar"<?php print $top_bar_options; ?>>
-          <ul class="title-area">
-            <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
-          </ul>
-          <section class="top-bar-section">
-            <?php if ($top_bar_main_menu) :?>
-              <?php print $top_bar_main_menu; ?>
-            <?php endif; ?>
-            <?php if ($top_bar_secondary_menu) :?>
-              <?php print $top_bar_secondary_menu; ?>
-            <?php endif; ?>
           </section>
         </nav>
       <?php if ($top_bar_classes): ?>
@@ -111,15 +88,17 @@
 
 
     <!--.front-triptych-->
-    <div class="row">
-      <ul class="large-block-grid-3">
-        <?php print render($page['front_triptych_left']); ?>
+    <?php if (!empty($page['front_triptych_left']) || !empty($page['front_triptych_center']) || !empty($page['front_triptych_right'])): ?>
+      <div class="row">
+        <ul class="large-block-grid-3">
+          <li><?php print render($page['front_triptych_left']); ?></li>
 
-        <?php print render($page['front_triptych_center']); ?>
+          <li><?php print render($page['front_triptych_center']); ?></li>
 
-        <?php print render($page['front_triptych_right']); ?>
-      </ul>
-    </div>
+          <li><?php print render($page['front_triptych_right']); ?></li>
+        </ul>
+      </div>
+    <?php endif; ?>
     <!--/.front-triptych -->
 
 
@@ -190,35 +169,49 @@
   </main>
   <!--/.main-->
 
-  
-
-
-  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
+  <?php if (!empty($page['front_events']) || !empty($page['front_news']) ): ?>
     <!--.footer-columns -->
-    <section class="row l-footer-columns">
-      <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first large-3 columns">
-          <?php print render($page['footer_firstcolumn']); ?>
+    <section class="row front-events-news-columns">
+      <?php if (!empty($page['front-events'])): ?>
+        <div class="front-events large-6 columns">
+          <?php print render($page['front_events']); ?>
         </div>
       <?php endif; ?>
-      <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second large-3 columns">
-          <?php print render($page['footer_secondcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_thirdcolumn'])): ?>
-        <div class="footer-third large-3 columns">
-          <?php print render($page['footer_thirdcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_fourthcolumn'])): ?>
-        <div class="footer-fourth large-3 columns">
-          <?php print render($page['footer_fourthcolumn']); ?>
+      <?php if (!empty($page['front-news'])): ?>
+        <div class="footer-second large-6 columns">
+          <?php print render($page['front-news']); ?>
         </div>
       <?php endif; ?>
     </section>
     <!--/.footer-columns-->
   <?php endif; ?>
+
+  <div class="mission">
+    <div class="inner">
+    <div class="row">
+      <div class="medium-6 columns">
+        <h2>What Is The Third Door?</h2>
+        <p>Most shelters and rescues offer two options for animals: adoption or euthanasia. Home for Life offers a third option for cats and dogs who are old, or who have disabilities, health or temperament problems. We created "The Third Door," a new concept in animal rescue and welfare where special animals have options previously unavailable. Home for Life animals enjoy a quality life, where they can be themselves, run and play, and be loved and cherished for as long as they live.</p>
+      </div>
+      <div class="medium-6 columns cta">
+        <a href="#" class="button">
+          <h3>Learn More</h3>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!--.donate-->
+  <section class="donate panel row" role="contentinfo">
+    <?php if (!empty($page['donate'])): ?>
+      <div class="donate large-12 columns">
+        <?php print render($page['donate']); ?>
+      </div>
+    <?php endif; ?>
+  </section>
+  <!--/.donate-->
+
 
   <!--.l-footer-->
   <footer class="l-footer panel row" role="contentinfo">
@@ -233,7 +226,7 @@
         &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
       </div>
     <?php endif; ?>
-  </footer>
+
   <!--/.footer-->
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>

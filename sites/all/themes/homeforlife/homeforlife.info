@@ -108,9 +108,6 @@ regions[front_events]           = Front events
 regions[front_news]             = Front news
 
 
-
-
-
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
 ; admin/appearance config page. This is useful for suppressing check boxes

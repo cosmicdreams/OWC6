@@ -86,22 +86,6 @@
     <!--/.l-featured -->
   <?php endif; ?>
 
-
-    <!--.front-triptych-->
-    <?php if (!empty($page['front_triptych_left']) || !empty($page['front_triptych_center']) || !empty($page['front_triptych_right'])): ?>
-      <div class="row">
-        <ul class="large-block-grid-3">
-          <li><?php print render($page['front_triptych_left']); ?></li>
-
-          <li><?php print render($page['front_triptych_center']); ?></li>
-
-          <li><?php print render($page['front_triptych_right']); ?></li>
-        </ul>
-      </div>
-    <?php endif; ?>
-    <!--/.front-triptych -->
-
-
   <?php if ($messages && !$zurb_foundation_messages_modal): ?>
     <!--/.l-messages -->
     <section class="l-messages row">
@@ -169,22 +153,6 @@
   </main>
   <!--/.main-->
 
-  <?php if (!empty($page['front_events']) || !empty($page['front_news']) ): ?>
-    <!--.footer-columns -->
-    <section class="row front-events-news-columns">
-      <?php if (!empty($page['front-events'])): ?>
-        <div class="front-events large-6 columns">
-          <?php print render($page['front_events']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['front-news'])): ?>
-        <div class="footer-second large-6 columns">
-          <?php print render($page['front-news']); ?>
-        </div>
-      <?php endif; ?>
-    </section>
-    <!--/.footer-columns-->
-  <?php endif; ?>
 
   <!--.donate-->
   <section class="donate panel row" role="contentinfo">
