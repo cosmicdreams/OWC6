@@ -1,0 +1,9 @@
+name = HFL Mission Block
+description = Create a mission block on front page
+core = 7.x
+package = Home For Life
+version = 7.x-1.0
+project = hfl_mission_block
+dependencies[] = fe_block
+features[fe_block_boxes][] = front_mission_block
+features[features_api][] = api:2

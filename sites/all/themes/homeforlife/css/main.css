@@ -2040,12 +2040,21 @@ category: components
 
     <li>
       <img src="http://placekitten.com/2400/800" alt="slide 1" />
+      <div class="orbit-caption">
+          Caption 1.
+      </div>
     </li>
     <li class="active">
       <img src="http://placekitten.com/2401/800" alt="slide 2" />
+      <div class="orbit-caption">
+          Caption 2.
+      </div>
     </li>
     <li>
       <img src="http://placekitten.com/2402/800" alt="slide 3" />
+      <div class="orbit-caption">
+          Caption 3.
+      </div>
     </li>
   </ul>
 </div>
@@ -2459,9 +2468,18 @@ category: components
 
 ```html_example
 <div class="mission">
-  <div class="inner big-12">
-    <h2>What Is Third Door?</h2>
-    <p class="big-6">Most shelters and rescues offer two options for animals: adoption or euthanasia. Home for Life offers a third option for cats and dogs who are old, or who have disabilities, health or temperament problems. We created "The Third Door," a new concept in animal rescue and welfare where special animals have options previously unavailable. Home for Life animals enjoy a quality life, where they can be themselves, run and play, and be loved and cherished for as long as they live.</p>
+<div class="inner">
+  <div class="row">
+    <div class="medium-6 columns">
+      <h2>What Is The Third Door?</h2>
+      <p>Most shelters and rescues offer two options for animals: adoption or euthanasia. Home for Life offers a third option for cats and dogs who are old, or who have disabilities, health or temperament problems. We created "The Third Door," a new concept in animal rescue and welfare where special animals have options previously unavailable. Home for Life animals enjoy a quality life, where they can be themselves, run and play, and be loved and cherished for as long as they live.</p>
+    </div>
+    <div class="medium-6 columns cta">
+      <a href="#" class="button">
+        <h3>Learn More</h3>
+      </a>
+    </div>
+  </div>
   </div>
 </div>
 ```
@@ -2469,15 +2487,19 @@ category: components
 */
 .mission {
   background: #aaaaaa url("http://placekitten.com/1200/400") center center no-repeat;
+  color: #ecf0f1;
 }
 .mission .inner {
   background: rgba(155, 89, 182, 0.8);
   padding: 2em;
 }
-
-.mission,
-.mission h2 {
-  color: #FFFFFF;
+.mission h2, .mission h3 {
+  color: #ecf0f1;
+}
+.mission .cta {
+  text-align: center;
+  color: #ecf0f1;
+  padding-top: 3em;
 }
 
 /* ---------------------------------------------------------------------
@@ -2517,15 +2539,15 @@ category: components
 ```html_example
 
 <div class="homeDonate">
-<div class="inner big-12">
+<div class="inner">
 <div class="row">
-  <div class="small-6 columns">
+  <div class="medium-6 columns">
     <h2>Donate to Home for Life</h2>
     <p>
       Your donation provides the animals of Home for Life with food, veterinary care, toys and a beautiful facility to roam freely. 100% of donations go to helping these animals receive the medical care they need, as well as the affection and freedom to help them recover from illness, disability, mistreatment or neglect. With your help, these incredible animals can lead the full, safe and happy lives they deserve.
     </p>
   </div>
-  <div class="small-6 columns cta">
+  <div class="medium-6 columns cta">
     <a href="#" class="button">
       <h3>Save an animal in need</h3>
       <span>Donate Today</span>
