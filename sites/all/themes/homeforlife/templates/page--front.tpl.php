@@ -115,7 +115,7 @@
 
     <!--.front-triptych-->
     <?php if (!empty($page['front_triptych_left']) || !empty($page['front_triptych_center']) || !empty($page['front_triptych_right'])): ?>
-      <div class="row">
+      <div class="row row_triptych">
         <ul class="large-block-grid-3">
           <li><?php print render($page['front_triptych_left']); ?></li>
 
