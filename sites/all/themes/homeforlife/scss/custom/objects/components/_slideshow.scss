@@ -53,7 +53,7 @@ $include-html-orbit-classes: $include-html-classes;
     overflow: hidden;
     height: 600px
     img{
-      width: 100%;
+      //width: 100%;
     }
   }
 
@@ -65,10 +65,10 @@ $include-html-orbit-classes: $include-html-classes;
 @media all and (min-width:960px){
   .slideshow-wrapper .orbit-container{
     .orbit-slides-container[style] {
-      height: 600px;
+      //height: 600px;
 
       li{
-        height: 600px;
+        //height: 600px;
       }
     }
   }
@@ -76,7 +76,7 @@ $include-html-orbit-classes: $include-html-classes;
 
 @media all and (min-width:960px){
   .slideshow-wrapper .orbit-container .orbit-slides-container li{
-    height: 600px;
+    //height: 600px;
   }
 }
 
