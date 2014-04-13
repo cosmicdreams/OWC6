@@ -175,11 +175,22 @@ category: comp-noah
     border: none;
 
   }
+  .row_triptych .block {
+    border: none !important;
+  }
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .row_triptych {
     margin: 40px auto;
     border: none;
+  }
+
+  .row_triptych > li {
+    padding: 0 40px;
+  }
+
+  .row_triptych .block {
+    border: none !important;
   }
 }
