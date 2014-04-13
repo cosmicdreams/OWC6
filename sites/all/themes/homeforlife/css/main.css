@@ -2067,6 +2067,7 @@ category: components
   max-height: 600px;
   overflow: hidden;
   height: 600px img;
+  height-width: 100%;
 }
 .slideshow-wrapper .orbit-slide-number {
   display: none;
