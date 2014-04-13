@@ -86,6 +86,15 @@ function hfl_pet_profile_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'metatags' => array(
+          'weight' => '8',
+        ),
+        'path' => array(
+          'weight' => '6',
+        ),
+        'redirect' => array(
+          'weight' => '7',
+        ),
       ),
       'display' => array(),
     ),
