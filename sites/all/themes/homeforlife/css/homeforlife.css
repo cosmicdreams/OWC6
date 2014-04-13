@@ -8112,3 +8112,7 @@ th.hide-for-touch {
 .item-list .pager li {
   padding: 0;
 }
+
+html.js input.form-autocomplete {
+  background-position: -9999px -9999px;
+}

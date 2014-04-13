@@ -2066,25 +2066,11 @@ category: components
   max-height: 600px;
   overflow: hidden;
   height: 600px img;
-  height-width: 100%;
 }
 .slideshow-wrapper .orbit-slide-number {
   display: none;
 }
 
-@media all and (min-width: 960px) {
-  .slideshow-wrapper .orbit-container .orbit-slides-container[style] {
-    height: 600px;
-  }
-  .slideshow-wrapper .orbit-container .orbit-slides-container[style] li {
-    height: 600px;
-  }
-}
-@media all and (min-width: 960px) {
-  .slideshow-wrapper .orbit-container .orbit-slides-container li {
-    height: 600px;
-  }
-}
 /* ---------------------------------------------------------------------
  Media list
 ------------------------------------------------------------------------ */

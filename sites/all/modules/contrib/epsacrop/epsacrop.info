@@ -1,0 +1,12 @@
+name = Epsa Crop
+description = Allow an user to choose coordinates for different presets on an image.
+version = 7.x-2.x-dev
+core = 7.x
+package = Media
+dependencies[] = image
+; Information added by drupal.org packaging script on 2011-12-23
+version = "7.x-2.2"
+core = "7.x"
+project = "epsacrop"
+datestamp = "1324651840"
+
