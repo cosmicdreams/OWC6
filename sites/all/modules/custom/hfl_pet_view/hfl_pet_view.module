@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HFL Pet View feature.
+ */
+
+include_once 'hfl_pet_view.features.inc';
