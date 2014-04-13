@@ -56,6 +56,7 @@
       <?php endif; ?>
         </div>
       </div>
+      </header>
     <?php endif; ?>
 
     <!-- Title, slogan and menu -->
