@@ -233,7 +233,7 @@
 
   <!--.page-bottom-triptych  Hey Wilbur -->
 
-      <div class="row row_triptych">
+      <div class="row row_featuredpet">
           <ul class="medium-block-grid-3 large-block-grid-3">
               <li><?php print render($page['front_featured_pets']); ?></li>
           </ul>
