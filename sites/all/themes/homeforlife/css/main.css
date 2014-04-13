@@ -2063,7 +2063,7 @@ category: components
 
 */
 .slideshow-wrapper .orbit-container .orbit-slides-container li {
-  max-height: 300px;
+  max-height: 600px;
   overflow: hidden;
 }
 .slideshow-wrapper .orbit-container .orbit-slides-container li img {
