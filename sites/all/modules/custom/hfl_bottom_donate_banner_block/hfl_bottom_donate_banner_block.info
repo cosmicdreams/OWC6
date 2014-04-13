@@ -1,7 +1,7 @@
 name = HFL Bottom Donate Banner block
 description = Long banner block on the bottom of all pages
 core = 7.x
-package = Features
+package = Home For Life
 version = 7.x-1.0
 project = hfl_bottom_donate_banner_block
 dependencies[] = fe_block
