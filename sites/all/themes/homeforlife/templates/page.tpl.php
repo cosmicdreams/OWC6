@@ -262,11 +262,11 @@
       </div>
     </div>
   </div>
-  <?php if ($site_name) :?>
-    <div class="copyright large-12 columns">
-      &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
-    </div>
-  <?php endif; ?>
+
+  <div class="copyright large-12 columns">
+    &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+  </div>
+
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
