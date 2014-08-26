@@ -275,8 +275,6 @@
         <ul class="inline-list">
           <li><a href="https://twitter.com/HFLAnimals" class="webicon twitter small">Tweet us on Twitter</a></li>
           <li><a href="https://www.youtube.com/user/homeforlifesanctuary" class="webicon youtube small">Watch us on YouTube</a></li>
-          <li><a href="https://plus.google.com/104230133696484755295/posts" class="webicon googleplus small">+1 us on Google Plus</a></li>
-          <li><a href="http://www.pinterest.com/homeforlife/" class="webicon pinterest small">Pin us on Pinterest</a></li>
           <li><a href="https://www.facebook.com/homeforlifeorg" class="webicon facebook small">Like us on Facebook</a></li>
         </ul>
       </div>
